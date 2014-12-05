@@ -522,7 +522,7 @@ button:active,
 .page-section {
   padding: 4em 0 6em;
 }
-.page-section:nth-child(even) {
+.page-section:nth-child(odd) {
   background: #f6f6f6;
 }
 .section__title {
@@ -544,13 +544,51 @@ img {
   margin: 0 auto;
   max-width: 90%;
 }
+/* ==========================================================================
+   =MASTHEAD
+   ========================================================================== */
+.masthead {
+  overflow: hidden;
+}
+.masthead-cont {
+  font-size: 16px;
+}
+.masthead .logo {
+  height: 1.5em;
+  float: left;
+  padding: 1.5em 0;
+}
+.masthead .logo img {
+  max-height: 100%;
+}
+.masthead .menu {
+  float: right;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+.menu a {
+  display: block;
+  padding: 1.5em;
+}
+.menu a:hover {
+  background: #f6f6f6;
+}
 /* Hero
    ========================================================================== */
-.section--hero {
+.section--hero.section--hero {
   background: url("../images/HongPhucDang.jpg");
-  padding: 9em 0 12em;
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
+}
+.section--hero {
+  padding: 9em 0 12em;
   position: relative;
 }
 .section--hero h1 {
