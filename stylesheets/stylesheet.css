@@ -165,13 +165,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* ICONS */
 @font-face {
   font-family: 'fossasia';
-  src:url('../fonts/fossasia.eot?-8e8cfv');
-  src:url('../fonts/fossasia.eot?#iefix-8e8cfv') format('embedded-opentype'),
-    url('../fonts/fossasia.woff?-8e8cfv') format('woff'),
-    url('../fonts/fossasia.ttf?-8e8cfv') format('truetype'),
-    url('../fonts/fossasia.svg?-8e8cfv#fossasia') format('svg');
+  src:url('../fonts/fossasia.eot?-twofvr');
+  src:url('../fonts/fossasia.eot?#iefix-twofvr') format('embedded-opentype'),
+    url('../fonts/fossasia.woff?-twofvr') format('woff'),
+    url('../fonts/fossasia.ttf?-twofvr') format('truetype'),
+    url('../fonts/fossasia.svg?-twofvr#fossasia') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -190,6 +192,12 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail:before {
+  content: "\e604";
+}
+.icon-link:before {
+  content: "\e605";
+}
 .icon-github:before {
   content: "\e600";
 }
@@ -199,12 +207,10 @@ table {
 .icon-facebook:before {
   content: "\e602";
 }
-.icon-googleplus:before {
+.icon-gplus:before {
   content: "\e603";
 }
-.icon-mail:before {
-  content: "\e604";
-}
+
 
 /* Sympl.css v3.0.0 sympl.namanyayg.com | 
 Namanyay Goel | www.namanyayg.com | @namanyayg */
@@ -580,18 +586,44 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.person__img__social {
+.person__img__info {
   opacity: 0;
-  top: -100%;
   position: absolute; 
   left: 0;
   right: 0;
+  background: rgba(0,0,0,.5);
+  border-radius: 50%;
   height: 100%;
-  background: black;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  -webkit-transform:  scale(0.5);
+     -moz-transform:  scale(0.5);
+          transform:  scale(0.5);
+  
+  -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
 }
-.person__img:hover .person__img__social {
+.person__img:hover .person__img__info {
     opacity: 1;
-    top: 0;
+    -webkit-transform:  scale(1);
+     -moz-transform:  scale(1);
+          transform:  scale(1);
+}
+.person__img__info__cont {
+  position: relative; 
+  top:  50%;
+  -webkit-transform:  translateY(-50%);
+     -moz-transform:  translateY(-50%);
+          transform:  translateY(-50%);
+}
+.person__img__info a {
+  color: white;
+  font-size: 1.125em;
+  padding: 0 .5em;
 }
 .person__img img {
   border-radius: 50%;
