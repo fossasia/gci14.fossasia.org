@@ -167,11 +167,11 @@ table {
 }
 @font-face {
   font-family: 'fossasia';
-  src:url('fonts/fossasia.eot?-8e8cfv');
-  src:url('fonts/fossasia.eot?#iefix-8e8cfv') format('embedded-opentype'),
-    url('fonts/fossasia.woff?-8e8cfv') format('woff'),
-    url('fonts/fossasia.ttf?-8e8cfv') format('truetype'),
-    url('fonts/fossasia.svg?-8e8cfv#fossasia') format('svg');
+  src:url('../fonts/fossasia.eot?-8e8cfv');
+  src:url('../fonts/fossasia.eot?#iefix-8e8cfv') format('embedded-opentype'),
+    url('../fonts/fossasia.woff?-8e8cfv') format('woff'),
+    url('../fonts/fossasia.ttf?-8e8cfv') format('truetype'),
+    url('../fonts/fossasia.svg?-8e8cfv#fossasia') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -574,9 +574,28 @@ img {
   padding: 1em;
   text-align: center;
 }
-.person__img img {
+.person__img {
+  position: relative;
+  display: block;
   border-radius: 50%;
   overflow: hidden;
+}
+.person__img__social {
+  opacity: 0;
+  top: -100%;
+  position: absolute; 
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: black;
+}
+.person__img:hover .person__img__social {
+    opacity: 1;
+    top: 0;
+}
+.person__img img {
+  border-radius: 50%;
+  display: block;
 }
 .person__name {
   font-size: 1.5em;
