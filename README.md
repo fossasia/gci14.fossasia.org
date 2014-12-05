@@ -1,4 +1,3 @@
 fossasia.github.io
 ==================
-
-FOSSASIA Community Site
+FOSSASIA GCI Site
