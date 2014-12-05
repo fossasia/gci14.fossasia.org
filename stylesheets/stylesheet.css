@@ -165,6 +165,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'fossasia';
+  src:url('fonts/fossasia.eot?-8e8cfv');
+  src:url('fonts/fossasia.eot?#iefix-8e8cfv') format('embedded-opentype'),
+    url('fonts/fossasia.woff?-8e8cfv') format('woff'),
+    url('fonts/fossasia.ttf?-8e8cfv') format('truetype'),
+    url('fonts/fossasia.svg?-8e8cfv#fossasia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fossasia';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\e600";
+}
+.icon-twitter:before {
+  content: "\e601";
+}
+.icon-facebook:before {
+  content: "\e602";
+}
+.icon-googleplus:before {
+  content: "\e603";
+}
+.icon-mail:before {
+  content: "\e604";
+}
+
 /* Sympl.css v3.0.0 sympl.namanyayg.com | 
 Namanyay Goel | www.namanyayg.com | @namanyayg */
 body {
