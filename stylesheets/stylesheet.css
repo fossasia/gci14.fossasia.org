@@ -536,8 +536,6 @@ img {
 .person__img img {
   border-radius: 50%;
   overflow: hidden;
-  height: 300px;
-  width: 300px;
 }
 .person__name {
   font-size: 1.5em;
