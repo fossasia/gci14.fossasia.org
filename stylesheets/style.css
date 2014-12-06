@@ -1,0 +1,369 @@
+/* ================================
+Imports
+================================= */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
+@import url('animate.css');
+
+/* ================================
+General
+================================= */
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	
+}
+
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	color: #3a3a3a;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.lead{
+	font-weight: 400;
+}
+
+button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	border: 1px solid transparent;
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.428571429;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+button.navbar-toggle {
+	background: #2b2b2b;
+	border: none;
+	color: #fff;
+}
+
+.btn-theme,.btn-theme:hover,.btn-theme:focus{
+	color: #fff;
+}
+.btn-theme:hover{
+	background: transparent !important;
+	border-color: #999;
+	color: #999;
+}
+
+
+/* ================================
+margin, padding
+================================= */
+.mar-top0 {
+	margin-top: 0;
+}
+.mar-top10 {
+	margin-top: 10px;
+}
+.mar-top20 {
+	margin-top: 20px;
+}
+.mar-top30 {
+	margin-top: 30px;
+}
+.mar-top40 {
+	margin-top: 40px;
+}
+
+
+
+/* ================================
+Home sections
+================================= */
+
+.home-section {
+	width: 100%;
+	padding: 70px 0px 70px 0px;
+}
+
+/* --- heading --- */
+.section-heading {
+	margin-bottom: 50px;
+}
+	
+.section-heading h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+	
+.section-heading .heading-line {
+	margin:0 auto;
+	display: block;
+	height: 1px;
+	width: 80px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+	
+/* --- section bg var --- */
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-gray {
+	background: #f8f8f8;
+}
+
+.bg-dark {
+	background: #575757;
+}
+
+
+/* --- section content general color --- */
+
+.color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
+	color: #fff;
+}
+
+
+.color-light p {
+	color: #eee;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+}
+
+/* ==========================
+Spacer
+============================= */
+
+#spacer1{	
+	background-image: url(../images/spacer/1.jpg);
+	background-position: center center;
+}
+#spacer2{	
+	background-image: url(../images/spacer/2.jpg);
+	background-position: left center;
+}
+
+
+/* ================================
+Intro
+================================= */
+
+#intro{
+    height:605px;
+    width:100%;
+    background-color: #FFF;
+    background-image: url(../images/HongPhucDang.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    overflow-y:hidden;
+    text-align:center;
+    position:relative;
+}
+#intro .gradient {
+	height: 605px;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+	overflow-y:hidden;
+	position:relative;
+}
+.intro-text {
+	position:relative;
+	width:100%;
+	margin-top:140px;
+	z-index:1000;
+}
+#intro .brand {
+	margin-top: 40px;
+}
+.intro-text h1 a {
+	color:#fff;
+	text-align:center;
+	font-weight: 700;
+	font-size: 40px; 
+	line-height:1.1em;
+	padding-top:30px;
+	text-transform: uppercase;	
+}
+.intro-text h1 a:hover {
+	text-decoration: none;
+}
+
+.intro-text .logo {
+	width: 320px;
+	height: 136px;
+}
+
+.line-spacer {
+	width: 20%;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	border-bottom:1px solid #fff;
+}
+
+.intro-text p span {
+	color:#fff;
+	font-size: 24px;
+	text-align:center;
+	font-weight: 300;
+}
+
+/* ================================
+Mentors & Students
+================================= */
+.box-team img {
+	margin-bottom: 30px;
+}
+
+.max-min {
+	max-height: 250px;
+	min-height: 250px;
+}
+
+
+/* ================================
+Services
+================================= */
+
+.service-box p {
+	margin-bottom: 20px;
+}
+
+.service.carousel h4,.service.carousel p {
+	text-align: left;
+}
+
+
+.service .carousel-control{
+	background: none;
+}
+
+.service .screenshot{
+	overflow: hidden;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.service .screenshot img{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 4px;
+	width: 400px;
+}
+
+.service .carousel-indicators {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-bottom: 8px;
+	width: 100%;
+	background: #ffffff;
+}
+
+.service .carousel-indicators .active {
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+}
+
+.service .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #eeeeee;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+/* ================================
+Footer
+================================= */
+footer {
+	background: #2b2b2b;
+	color: #ddd;
+	padding: 50px 0 30px;
+}
+
+footer .heart {
+	color: #ff69b4;
+	font-size: 125%;
+}
+
+/* ================================
+more media queries
+================================= */
+
+@media (max-width:768px) {
+	#intro{
+		background-image: url(../images/HongPhucDang.jpg);
+		background-size:100%;
+	}
+	.box-team, .box-team img {
+		text-align: center;
+	}
+	.box-team img {
+		float: none;
+		margin:0 auto;
+	}	
+	.box-team {
+		margin-bottom: 30px;
+	}	
+}
+
+@media (max-width:992px) {
+	.service p{
+			margin-bottom: 60px;
+	}
+
+}
+
+@media (max-width:480px){
+	#intro{
+		background-image: none;
+	}
+}
