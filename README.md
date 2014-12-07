@@ -25,5 +25,11 @@ FOSSASIA is Free and Open Source Software (FOSS) event for developers, officials
 This year FOSSASIA is one of mentoring organizations during Google Code-In. 
 
 ---
+
+FOSSASIA invites all students to work on tasks mentored by itself. If you're the student you can add your name and photo to http://fossasia.github.io/ by uploading image and editing index.html file. 
+
+---
 URL of website: http://fossasia.github.io/
 URL of main FOSSASIA's website: http://fossasia.org/
+FOSSASIA's Facebook: http://facebook.com/fossasia
+FOSSASIA's Twitter: http://twitter.com/fossasia
