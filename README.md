@@ -27,7 +27,7 @@ This year FOSSASIA is one of mentoring organizations during Google Code-In.
 ---
 
 FOSSASIA invites all students to work on tasks mentored by itself. If you're the student you can add your name and photo to http://fossasia.github.io/ by uploading image and editing index.html file. 
-
+There you can see guidelines: http://www.google-melange.com/gci/task/view/google/gci2014/4526650616184832
 ---
 URL of website: http://fossasia.github.io/
 URL of main FOSSASIA's website: http://fossasia.org/
