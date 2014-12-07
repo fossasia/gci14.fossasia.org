@@ -678,6 +678,9 @@ img {
   text-align: center;
   padding: 3em 0;
 }
+.colophon a:hover{
+    text-decoration: underline;
+}
 .heart {
   color: #ff69b4;
 }
