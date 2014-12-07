@@ -5,10 +5,15 @@ Students have to be between 13 and 17 years old, they also have to upload parent
 Main goal of contest is to propagate open-source idea between young people and give them possibility to solve tasks for partnering organizations.
 
 There 5 kinds of tasks:
+
 a) Code
+
 b) Documentation/Training
+
 c) Outreach/research
+
 d) Quality assurance
+
 e) User interface
 
 For solving tasks students can get many prizes. Grand Prize is founded by Google four-day trip to San Francisco and Google headquaters.
