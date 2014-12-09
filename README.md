@@ -41,7 +41,24 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 6) Enter command `git add images/students/nameofyourphoto.yourfilextenstion`
 
-7) Use editor to open index.html file in main directory, look for section for students and using samples add your name and photo to it
+7) Use editor to open index.html file in main directory, look for section for students and using samples add your name and photo to it. You can see example of code below:
+
+```html
+<div class="sympl onethird">
+          <section class="person person--student">
+            <div class="person__img">
+                <div class="person__img__info"><div class="person__img__info__cont">
+                  <a href="https://twitter.com/YOURTWITTER"><i class="icon-twitter"></i></a> <!-- You can remove this line -->
+                  <a href="http://github.com/YOURGITHUB"><i class="icon-github"></i></a> <!-- You can remove this line -->
+                </div></div>
+                <img src="images/students/NAMEOFYOURPHOTO.EXTENSTIONOFYOURPHOTO">
+            </div>
+            <h1 class="person__name">YOUR NAME THERE</h1>
+          </section>
+        </div>
+```
+
+
 
 8) Enter command `git add index.html`
 
