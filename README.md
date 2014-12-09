@@ -37,7 +37,7 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 4) Go to the folder using `cd fossasia.github.io` command
 
-5) Copy your photo to `images/students` directory rescaling it before (to size about 300px * 270 px)
+5) Copy your photo to `images/students` directory rescaling it before (to size about 300px * 300 px)
 
 6) Enter command `git add images/students/nameofyourphoto.yourfilextenstion`
 
