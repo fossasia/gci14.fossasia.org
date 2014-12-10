@@ -213,7 +213,7 @@ table {
 }
 
 
-/* Sympl.css v3.0.0 sympl.namanyayg.com | 
+/* Sympl.css v3.0.0 sympl.namanyayg.com |
 Namanyay Goel | www.namanyayg.com | @namanyayg */
 body {
   margin: 0;
@@ -255,7 +255,7 @@ h3,
 h4,
 h5,
 h6 {
-/* Set defaults for all headings here, 
+/* Set defaults for all headings here,
     you might want to change fonts or sizes */
   font-weight: 100;
   color: #222;
@@ -503,7 +503,7 @@ button:active,
   box-shadow: inset 0 0 10em rgba(0,0,0,0.2);
 }
 /* ==========================================================================
-   
+
     LET'S GET STARTED!
 
    ========================================================================== */
@@ -550,6 +550,10 @@ img {
    ========================================================================== */
 .masthead {
   overflow: hidden;
+  position: fixed;
+  background: white;
+  z-index: 3;
+  width: 100%
 }
 .masthead-cont {
   font-size: 16px;
@@ -587,6 +591,7 @@ img {
   background: url("../images/HongPhucDang.jpg");
   background-position: center center;
   background-size: cover;
+  top:2.5em;
 }
 .section--hero {
   padding: 9em 0 12em;
@@ -627,7 +632,7 @@ img {
 }
 .person__img__info {
   opacity: 0;
-  position: absolute; 
+  position: absolute;
   left: 0;
   right: 0;
   background: rgba(0,0,0,.5);
@@ -636,11 +641,11 @@ img {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  
+
   -webkit-transform:  scale(0.5);
      -moz-transform:  scale(0.5);
           transform:  scale(0.5);
-  
+
   -webkit-transition: all .3s ease;
      -moz-transition: all .3s ease;
       -ms-transition: all .3s ease;
@@ -653,7 +658,7 @@ img {
           transform:  scale(1);
 }
 .person__img__info__cont {
-  position: relative; 
+  position: relative;
   top:  50%;
   -webkit-transform:  translateY(-50%);
      -moz-transform:  translateY(-50%);
@@ -708,3 +713,18 @@ img {
     font-size: 100%;
   }
 }
+
+/* ==========================================================================
+   =TWITTER FEED
+   ========================================================================== */
+
+.twitterFeed {
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
