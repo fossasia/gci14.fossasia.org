@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
 -->
 <!-- if IE 7<html class="no-js lt-ie9 lt-ie8">
@@ -18,6 +18,7 @@
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="javascripts/main.js"></script>
+
     <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
   -->
     <title>FOSSASIA GCI</title>
@@ -32,11 +33,15 @@
                     <img src="images/fossasia-dark.png" alt="FOSSASIA">
                 </div>
 
-                <div class="menu">
+                <div class="menu">	
                     <nav>
                         <ul>
-                            <li><a href="http://blog.fossasia.org/">Blog</a>
-                            </li>
+                            <li><a href="http://blog.fossasia.org/">Blog</a></li>
+                            <li class="scroll"><a href="#about">About</a></li>
+                            <li class="scroll"><a href="#mentors">Mentors</a></li>
+                            <li class="scroll"><a href="#students">Students</a></li>
+                            <li class="scroll"><a href="#contributors">Contributors</a></li>
+                            <li class="scroll"><a href="#tweet_feed">Live Tweet Feed</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +55,7 @@
             <div class="subtitle">Makers of the Free and Open Source tech community in Asia.</div>
         </div>
     </section>
-    <section class="section--about page-section">
+    <section class="section--about page-section" id="about">
         <div class="wrap">
             <h1 class="section__title">About</h1>
             <div class="box-team wow shake" data-wow-delay="0.3s">
@@ -58,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="section--about page-section">
+    <section class="section--about page-section" id="mentors">
         <div class="wrap">
             <h1 class="section__title">Mentors</h1>
             <div class="stack stack-clean">
@@ -118,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="section--about page-section">
+    <section class="section--about page-section" id="students">
         <div class="wrap">
             <h1 class="section__title">Students</h1>
             <div class="stack stack-clean">
@@ -269,7 +274,7 @@
             </div>
         </div>
     </section>
-    <section class="section--about page-section">
+    <section class="section--about page-section" id="contributors">
         <div class="wrap">
            <div class="box-team wow pulse" data-wow-delay="0.1s"><h1 class="section__title">Thank you for contributing!</h1></div>
             <div class="box-team wow pulse" data-wow-delay="0.5s"><h1 class="section__title">Спасибо за вклад!</h1></div>
@@ -281,7 +286,7 @@
         </div>
     </section>
     </section class="twitterfeed">
-      <div class="twitter">
+      <div class="twitter" id="tweet_feed">
         <h1 class = "section_title">Twitter Feed</h1>
       </div>
       <div align="center">

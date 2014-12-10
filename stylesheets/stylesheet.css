@@ -550,6 +550,10 @@ img {
    ========================================================================== */
 .masthead {
   overflow: hidden;
+  position: fixed;
+  background: white;
+  z-index: 3;
+  width: 100%
 }
 .masthead-cont {
   font-size: 16px;
@@ -587,6 +591,7 @@ img {
   background: url("../images/HongPhucDang.jpg");
   background-position: center center;
   background-size: cover;
+  top:2.5em;
 }
 .section--hero {
   padding: 9em 0 12em;
