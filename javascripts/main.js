@@ -4,6 +4,7 @@ $(document).ready(function () {
         $('.banner').unslider({
             fluid:true,
             dots:true,
+            keys:true,
             speed:500
         });
     });
