@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
 -->
 <!-- if IE 7<html class="no-js lt-ie9 lt-ie8">
@@ -16,11 +16,7 @@
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="javascripts/main.js"></script>
-
-    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
-  -->
+    
     <title>FOSSASIA GCI</title>
 </head>
 
@@ -37,12 +33,12 @@
                     <nav>
                         <ul>
                             <li><a href="http://blog.fossasia.org/">BLOG</a></li>
-                            <li class="scroll"><a href="#about">ABOUT</a></li>
-                            <li class="scroll"><a href="#map">MAP</a></li>
-                            <li class="scroll"><a href="#mentors">MENTORS</a></li>
-                            <li class="scroll"><a href="#students">STUDENTS</a></li>
-                            <li class="scroll"><a href="#contributors">CONTRIBUTORS</a></li>
-                            <li class="scroll"><a href="#tweet_feed">TWITTER FEED</a></li>
+                            <li class="scroll"><a href="#about" onclick="aniScroll($(this).attr('href')); return false">ABOUT</a></li>
+                            <li class="scroll"><a href="#map" onclick="aniScroll($(this).attr('href')); return false">MAP</a></li>
+                            <li class="scroll"><a href="#mentors" onclick="aniScroll($(this).attr('href')); return false">MENTORS</a></li>
+                            <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
+                            <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
+                            <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -342,7 +338,14 @@
     </footer>
 
     <!-- js -->
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+
+    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+  -->
     <script src="javascripts/wow.min.js"></script>
-    <script src="javascripts/custom.js"></script>
+    <script src="javascripts/main.js"></script>
+    
 </body>
 </html>
