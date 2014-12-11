@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
 -->
 <!-- if IE 7<html class="no-js lt-ie9 lt-ie8">
@@ -16,11 +16,8 @@
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
-    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
-  -->
     <title>FOSSASIA GCI</title>
 </head>
 
@@ -37,24 +34,54 @@
                     <nav>
                         <ul>
                             <li><a href="http://blog.fossasia.org/">BLOG</a></li>
-                            <li class="scroll"><a href="#about">ABOUT</a></li>
-                            <li class="scroll"><a href="#map">MAP</a></li>
-                            <li class="scroll"><a href="#mentors">MENTORS</a></li>
-                            <li class="scroll"><a href="#students">STUDENTS</a></li>
-                            <li class="scroll"><a href="#contributors">CONTRIBUTORS</a></li>
-                            <li class="scroll"><a href="#tweet_feed">TWITTER FEED</a></li>
+                            <li class="scroll"><a href="#about" onclick="aniScroll($(this).attr('href')); return false">ABOUT</a></li>
+                            <li class="scroll"><a href="#map" onclick="aniScroll($(this).attr('href')); return false">MAP</a></li>
+                            <li class="scroll"><a href="#mentors" onclick="aniScroll($(this).attr('href')); return false">MENTORS</a></li>
+                            <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
+                            <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
+                            <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
+							              <li class="scroll"><a href="#tweetfeed_photostream">FOSSASIA Photos</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <section class="section--hero page-section">
-        <div class="section__overlay"></div>
-        <div class="section__content">
-            <h1><span>FOSSASIA</span><img src="images/logo.png"></h1>
-            <div class="subtitle">Makers of the Free and Open Source tech community in Asia.</div>
-        </div>
+    <section class="banner">
+        <ul>
+        <li style="background-image: url('images/IMG1.jpg');">
+                <div class="inner">
+                    <h1>
+                        <img src="images/logo.png" height="150px" width="300px">
+                    </h1>
+                    <p>Developing the free and open-source tech community in Asia since 2009</p>
+
+                    <a class="btn" href="http://fossasia.org">Home Page</a>
+                </div>
+            </li>
+
+            <li style="background-image: url('images/IMG2.jpg');">
+                <div class="inner">
+                    <h1>Participating in Google Code-In 2014</h1>
+                    <p></p>
+                    <a href="http://www.google-melange.com/gci/org/google/gci2014/fossasia" class="btn">Code-In Home</a>
+                </div>
+            </li>
+
+            <li style="background-image: url('images/IMG3.jpg');">
+                <div class="inner">
+                    <h1>FOSSASIA 2011</h1>
+                    <p>Ho Chi Minh City on November 11–12, 2011</p>
+                </div>
+            </li>
+
+            <li style="background-image: url('images/IMG4.jpg');">
+                <div class="inner">
+                    <h1>FOSSASIA 2014</h1>
+                    <p>Phnom Penh Cambodia</p>
+                </div>
+            </li>
+        </ul>
     </section>
     <section class="section--about page-section" id="about">
         <div class="wrap">
@@ -127,6 +154,64 @@
                         </section>
                     </div>
                 </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://github.com/birajkarmakar" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/birajkarmakar" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="mailto:brnet00@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                        <a href="http://birajkarmakar.wordpress.com/" target="_blank"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/biraj.jpg">
+                            </div>
+                            <h1 class="person__name">Biraj Karmakar</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://github.com/andunslg" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/andunslg" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="mailto:andunslg@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                        <a href="http://www.insightforfuture.blogspot.com/" target="_blank"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/andunslg.jpg">
+                            </div>
+                            <h1 class="person__name">Andun S.L. Gunawardana</h1>
+                        </section>
+                    </div>
+                </div>
+                 <div class="sympl onethird">
+                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://github.com/kokoye2007" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/kokoye2007" target="_blank"><i class="icon-twitter"></i></a>
+                                         <a href="https://fb.com/kokoye2007" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="mailto:kokoye2007@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                        <a href="http://ubuntu-mm.net/" target="_blank"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/kokoye2007.png">
+                            </div>
+                            <h1 class="person__name">Ko Ko Ye`</h1>
+                        </section>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -240,7 +325,7 @@
                                         <a href="http://udeepak.wordpress.com/" target="_blank"><i class="icon-link"></i></a>
                                         <a href="https://twitter.com/udeepak" target="_blank"><i class="icon-twitter"></i></a>
                                         <a href="https://www.facebook.com/upendra.deepak" target="_blank"><i class="icon-facebook"></i></a>
-                                     	<a href="mailto:udeepak010@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                        <a href="mailto:udeepak010@gmail.com" target="_blank"><i class="icon-mail"></i></a>
                                     </div>
                                 </div>
                                 <img src="images/students/Deepak.jpg">
@@ -312,37 +397,91 @@
                         </section>
                     </div>
                 </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="mailto:samarjeet2702@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                        <a href="http://github.com/samarjeet27" target="_blank"><i class="icon-github"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/samarjeet.jpg">
+                            </div>
+                            <h1 class="person__name">Samarjeet</h1>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="section--about page-section" id="contributors">
         <div class="wrap">
-           <div class="box-team wow pulse" data-wow-delay="0.1s"><h1 class="section__title">Thank you for contributing!</h1></div>
-            <div class="box-team wow pulse" data-wow-delay="0.5s"><h1 class="section__title">Спасибо за вклад!</h1></div>
-            <div class="box-team wow pulse" data-wow-delay="0.9s"><h1 class="section__title">දායකවූවාට ස්තුතියි!</h1></div>
-            <div class="stack stack-clean">
-                <div id="contr">
-                </div>
-            </div>
+         <div class="box-team wow pulse" data-wow-delay="0.1s"><h1 class="section__title">  Thank you for contributing!</h1></div>
+         <div class="box-team wow pulse" data-wow-delay="0.5s"><h1 class="section__title">  Спасибо за вклад!</h1></div>
+         <div class="box-team wow pulse" data-wow-delay="0.9s"><h1 class="section__title">  දායකවූවාට ස්තුතියි!</h1></div>
+         <div class="box-team wow pulse" data-wow-delay="0.13s"><h1 class="section__title"> ပူးေပါင္းကူညီမႈအတြက္ ေက်းဇူးတင္ပါသည္။ </h1></div>
+
+         <div class="stack stack-clean">
+            <div id="contr"></div>
+         </div>
+        
         </div>
     </section>
-    <section class="section--about page-section" id="tweet_feed">
-        <div class="wrap">
-            <h1 class="section__title">Twitter feed</h1>
-            <div class="twitterFeed">
-                <img src="images/twitter.png" alt="bird" />
-                <a class="twitter-timeline" href="https://twitter.com/fossasia" data-widget-id="542296628598935552" data-chrome="nofooter">Tweets by @fossasia</a>
+    <section class="section--about page-section" id="tweetfeed_photostream">
+	<table>
+	<tr>
+	<td style="width:60%;">
+	 <div class="wrap">
+            <h1>Twitter feed</h1>
+        </div>
+	</td>
+	<td style="width:40%;">
+	 <div class="wrap" >
+            <h1>Photo streams</h1>
+        </div>
+	</td>
+	</tr>
+	<tr>
+	<td style="width:60%;">
+	 <div class="wrap">
+            <div>
+				<img src="images/twitter.png" alt="bird" />
+                            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
             </div>
         </div>
+	</td>
+	<td style="width:40%;">
+	 <div class="wrap">
+            <div style="width:100%;margin:auto;background: #F6F6F6;" >
+					<object width="500px" height="500px" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="500px" height="500px" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" allowFullScreen="true" /> </object>
+				</div>
+        </div>
+	</td>
+	</tr>
+	</table>
+	
+        
     </section>
 
     <footer class="colophon">
         <p>Made with <span class="heart">♥</span> for <a style="color:inherit;" href="http://www.google-melange.com/gci/homepage/google/gci2014">Code-In</a> &nbsp;&bull;&nbsp; <a href="https://github.com/fossasia/fossasia.github.io">Fork On Github</a>
         </p>
     </footer>
-
+    
     <!-- js -->
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+
+    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+  -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="javascripts/wow.min.js"></script>
-    <script src="javascripts/custom.js"></script>
+    <script type="text/javascript" src="javascripts/unslider.min.js"></script>
+    <script src="javascripts/main.js"></script>
 </body>
 </html>

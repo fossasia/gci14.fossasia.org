@@ -541,7 +541,7 @@ img {
   max-width: 100%;
 }
 .wrap {
-  width: 50em;
+  width: 60em;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -584,6 +584,7 @@ img {
 }
 .menu a:hover {
   background: #f6f6f6;
+  opacity:1.0;
 }
 /* Hero
    ========================================================================== */
@@ -720,11 +721,34 @@ img {
 
 .twitterFeed {
   width: 80%;
-  height: 250px;
+  height: 500px;
   margin: 0 auto;
   display: block;
 }
 
+/* overlay */
 
+header{
+  background-color: #f6f6f6;
+  opacity: 0.6;
+  position: absolute;
+  z-index:100;
+  width:100%
+}
+header:hover{
+  background-color:white;
+  opacity:0.7;
+}
+.logo,.menu:hover{
+  opacity:1.0;
+}
 
+/* ==========================================================================
+   =TABLE PROPERTIES
+   ========================================================================== */
+   
+table{
+    width:100%;
+    table-layout:fixed;
+	}
 
