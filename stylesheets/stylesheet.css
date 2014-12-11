@@ -541,7 +541,7 @@ img {
   max-width: 100%;
 }
 .wrap {
-  width: 50em;
+  width: 60em;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -718,14 +718,20 @@ img {
    =TWITTER FEED
    ========================================================================== */
 
-.twitter .section_title {
-  text-align : center;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2em;
-  margin: 0 0 0.5em;
+.twitterFeed {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
 }
 
-
+/* ==========================================================================
+   =TABLE PROPERTIES
+   ========================================================================== */
+   
+table{
+    width:100%;
+    table-layout:fixed;
+	}
 
 
