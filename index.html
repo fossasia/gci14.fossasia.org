@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
+
     <title>FOSSASIA GCI</title>
 </head>
 
@@ -40,6 +40,7 @@
                             <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
                             <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
                             <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
+							              <li class="scroll"><a href="#tweetfeed_photostream">FOSSASIA Photos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -426,14 +427,42 @@
         
         </div>
     </section>
-    <section class="section--about page-section" id="tweet_feed">
-        <div class="wrap">
-            <h1 class="section__title">Twitter feed</h1>
-            <div class="twitterFeed">
-                <img src="images/twitter.png" alt="bird" />
-                <a class="twitter-timeline" href="https://twitter.com/fossasia" data-widget-id="542296628598935552" data-chrome="nofooter">Tweets by @fossasia</a>
+    <section class="section--about page-section" id="tweetfeed_photostream">
+	<table>
+	<tr>
+	<td style="width:60%;">
+	 <div class="wrap">
+            <h1>Twitter feed</h1>
+        </div>
+	</td>
+	<td style="width:40%;">
+	 <div class="wrap" >
+            <h1>Photo streams</h1>
+        </div>
+	</td>
+	</tr>
+	<tr>
+	<td style="width:60%;">
+	 <div class="wrap">
+            <div>
+				<img src="images/twitter.png" alt="bird" />
+                            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
             </div>
         </div>
+	</td>
+	<td style="width:40%;">
+	 <div class="wrap">
+            <div style="width:100%;margin:auto;background: #F6F6F6;" >
+					<object width="500px" height="500px" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="500px" height="500px" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" allowFullScreen="true" /> </object>
+				</div>
+        </div>
+	</td>
+	</tr>
+	</table>
+	
+        
     </section>
 
     <footer class="colophon">
@@ -452,6 +481,5 @@
     <script src="javascripts/wow.min.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
     <script src="javascripts/main.js"></script>
-    
 </body>
 </html>

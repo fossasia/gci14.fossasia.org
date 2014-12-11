@@ -31,7 +31,6 @@ $(document).ready(function () {
     })
 });
 
-
 function aniScroll(id){
     $('html, body').animate({
         scrollTop: $(id).offset().top
