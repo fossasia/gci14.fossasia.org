@@ -1,7 +1,17 @@
 
 $(document).ready(function () {
+    $(function() {
+        $('.banner').unslider({
+            fluid:true,
+            dots:true,
+            keys:true,
+            speed:500
+        });
+    });
+    
     var owner = "fossasia";
     var repo = "fossasia.github.io";
+
     $.ajax({
         url: "http://api.github.com/repos/" + owner + "/" + repo + "/contributors",
         dataType: "jsonp",
