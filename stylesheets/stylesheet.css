@@ -698,12 +698,14 @@ img {
 .boxes {
   display: block;
   padding: 0 0 20px 0;
+  text-align: center;
 }
 .box {
   width: 330px;
   font-size: 15px;
   padding: 0 15px;
   display: inline-table;
+  text-align: left;
 }
 .box .box_title {
   font-weight: bold;
