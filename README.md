@@ -25,6 +25,13 @@ FOSSASIA is Free and Open Source Software (FOSS) event for developers, officials
 This year FOSSASIA is one of mentoring organizations during Google Code-In. 
 
 ---
+## GCI Students guide
+
+There's number of tasks with a wide variety outthere. Feel free to claim and work on!  
+
+**Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work. So in addition to finishing tasks quickly pay attention to submit the best work you can. Help each others out. Engage in conversations. Make friends!. Enjoy!!
+
+## Adding images
 
 FOSSASIA invites all students to work on tasks mentored by itself. If you're the student you can add your name and photo to http://fossasia.github.io/ by uploading image and editing index.html file. 
 There you can see guidelines: http://www.google-melange.com/gci/task/view/google/gci2014/4526650616184832 . Below there's simple instruction:
