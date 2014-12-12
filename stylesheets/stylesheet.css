@@ -27,7 +27,7 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Lato', sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -541,7 +541,7 @@ img {
   max-width: 100%;
 }
 .wrap {
-  width: 50em;
+  width: 60em;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -550,6 +550,10 @@ img {
    ========================================================================== */
 .masthead {
   overflow: hidden;
+  position: fixed;
+  background: white;
+  z-index: 3;
+  width: 100%
 }
 .masthead-cont {
   font-size: 16px;
@@ -588,6 +592,7 @@ img {
   background: url("../images/HongPhucDang.jpg");
   background-position: center center;
   background-size: cover;
+  top:2.5em;
 }
 .section--hero {
   padding: 9em 0 12em;
@@ -672,19 +677,95 @@ img {
 .person__name {
   font-size: 1.5em;
 }
-/* ==========================================================================
+ /* ==========================================================================
    =FOOTER
    ========================================================================== */
 .colophon {
-  color: #88a0c2;
-  text-align: center;
-  padding: 3em 0;
+  background-color: #e0e0e0;
+  padding: 10px;
 }
 .colophon a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
+.colophon p {
+  text-align: center;
+}
+
 .heart {
+  font-size: 20px;
   color: #ff69b4;
+}
+.boxes {
+  display: block;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+.box {
+  width: 330px;
+  font-size: 15px;
+  padding: 0 15px;
+  display: inline-table;
+}
+.box .box_title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2b2b2b;
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+.social li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.list .link {
+   list-style-image: url(../images/list/list_style_link.png);
+}
+
+.list .event {
+   list-style-image: url(../images/list/list_style_event.png);
+}
+
+.social .facebook {
+  background: url(../images/list/facebook.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .twitter {
+  background: url(../images/list/twitter.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .googleplus {
+  background: url(../images/list/googleplus.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .flickr {
+  background: url(../images/list/flickr.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .github {
+  background: url(../images/list/github.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.made_text {
+  border-top: 1px solid #f6f6f6;
+  font-size: 14px;
+  padding: 5px 0;
 }
 /* ==========================================================================
    =MEDIA
@@ -716,7 +797,7 @@ img {
 
 .twitterFeed {
   width: 80%;
-  height: 250px;
+  height: 500px;
   margin: 0 auto;
   display: block;
 }
@@ -737,3 +818,13 @@ header:hover{
 .logo,.menu:hover{
   opacity:1.0;
 }
+
+/* ==========================================================================
+   =TABLE PROPERTIES
+   ========================================================================== */
+   
+table{
+    width:100%;
+    table-layout:fixed;
+	}
+
