@@ -34,9 +34,9 @@ $(document).ready(function () {
 function aniScroll(id){
     $('html, body').animate({
         scrollTop: $(id).offset().top
-    }, 1000);
-    
-    document.location.hash = id;
+    }, 1000, "swing", function(){
+       document.location.hash = id; 
+    });
     
     return false
 }
