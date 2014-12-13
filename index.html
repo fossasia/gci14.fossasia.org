@@ -42,7 +42,7 @@
                             <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
                             <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
                             <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
-				            <li class="scroll"><a href="#tweetfeed_photostream" onclick="aniScroll($(this).attr('href')); return false">FOSSASIA Photos</a></li>
+				            <li class="scroll"><a href="#photostream" onclick="aniScroll($(this).attr('href')); return false">FOSSASIA Photos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -468,16 +468,16 @@
         </div>
     </section>
     <section class="section--about page-section" id="tweetfeed_photostream">
-    <span id="tweet_feed"></span>
+    <span ></span>
 	<table>
 	<tr>
 	<td style="width:60%;">
-	 <div class="wrap">
+	 <div class="wrap" id="tweet_feed">
             <h1>Twitter feed</h1>
         </div>
 	</td>
 	<td style="width:40%;">
-	 <div class="wrap" >
+	 <div class="wrap" id="photostream">
             <h1>Photo streams</h1>
         </div>
 	</td>
