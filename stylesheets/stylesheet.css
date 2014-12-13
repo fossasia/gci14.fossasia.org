@@ -521,7 +521,7 @@ button:active,
   bottom: 0;
 }
 .page-section {
-  padding: 4em 0 6em;
+  padding: 4em 0 3em;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
@@ -677,6 +677,44 @@ img {
 .person__name {
   font-size: 1.5em;
 }
+/* SUBSCRIBE EMAIL
+   ========================================================================== */
+ #mc_embed_signup{
+ padding-bottom: 5%;
+ clear:left;
+}
+#mc_embed_signup_scroll{
+  text-align:center;
+}
+#mc_embed_signup_scroll input#mce-EMAIL{
+  margin:auto;
+  display: block;
+  padding: 8px 4px;
+  text-indent: 5px;
+  color: #818181;
+  font-size: 1.0em;
+  background: #f3f3f3;
+  font-weight: bold;
+  width: 25%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#mc_embed_signup_scroll input#mc-embedded-subscribe {
+  margin: 10px auto auto auto;
+  width: 25%;
+}
+#mc_embed_signup_scroll label{
+ display: block; 
+ font-size: 200% !important;
+ padding-left: 20px; 
+ color: #616161; 
+ font-weight: bold;
+}
+
  /* ==========================================================================
    =FOOTER
    ========================================================================== */
