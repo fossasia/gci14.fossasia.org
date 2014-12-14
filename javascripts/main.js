@@ -4,10 +4,11 @@ $(document).ready(function () {
     // Main Slider
     //
     $('.banner').unslider({
-        fluid:true,
-        dots:true,
-        keys:true,
-        speed:500
+        fluid: true,
+        dots: true,
+        keys: true,
+        speed: 500,
+        delay: 5000
     });
 
 
