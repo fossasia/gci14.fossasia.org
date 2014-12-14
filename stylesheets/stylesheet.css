@@ -552,7 +552,7 @@ img {
   overflow: hidden;
   position: fixed;
   background: rgba(255,255,255,.9);
-  z-index: 3;
+  z-index: 999999;
   width: 100%
 }
 .masthead-cont {
