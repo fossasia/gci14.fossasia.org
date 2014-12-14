@@ -673,6 +673,7 @@ img {
 .person__img img {
   border-radius: 50%;
   display: block;
+  width: 100%;
 }
 .person__name {
   font-size: 1.5em;
@@ -689,8 +690,7 @@ img {
 
 
 /* ==========================================================================
-=======
-/* SUBSCRIBE EMAIL
+   SUBSCRIBE EMAIL
    ========================================================================== */
  #mc_embed_signup{
  padding-bottom: 5%;
