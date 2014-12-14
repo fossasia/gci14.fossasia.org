@@ -551,7 +551,7 @@ img {
 .masthead {
   overflow: hidden;
   position: fixed;
-  background: white;
+  background: rgba(255,255,255,.9);
   z-index: 3;
   width: 100%
 }
@@ -572,6 +572,7 @@ img {
 .menu ul {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 .menu li {
   list-style: none;
@@ -583,8 +584,7 @@ img {
   padding: 1.5em;
 }
 .menu a:hover {
-  background: #f6f6f6;
-  opacity:1.0;
+  background: #fff;
 }
 /* Hero
    ========================================================================== */
@@ -833,29 +833,12 @@ img {
   display: block;
 }
 
-/* overlay */
-
-header{
-  background-color: #f6f6f6;
-  opacity: 0.6;
-  position: absolute;
-  z-index:100;
-  width:100%
-}
-header:hover{
-  background-color:white;
-  opacity:0.7;
-}
-.logo,.menu:hover{
-  opacity:1.0;
-}
-
 /* ==========================================================================
    =TABLE PROPERTIES
    ========================================================================== */
    
 table{
-    width:100%;
-    table-layout:fixed;
-	}
+  width:100%;
+  table-layout:fixed;
+}
 

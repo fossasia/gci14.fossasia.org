@@ -10,6 +10,7 @@ $(document).ready(function () {
         speed:500
     });
 
+
     //
     // Github linking contributers    
     //
@@ -34,10 +35,10 @@ $(document).ready(function () {
         }
     })
 
+
     //
     // Menu
     //
-
     $('a[href^="#"]').on('click', function() {
         var id = $(this).attr('href');
 
