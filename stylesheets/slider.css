@@ -74,7 +74,6 @@
 		margin: 25px 0 0;
 		padding: 9px 22px 7px;
 		clear: both;
-		background-color: #000000;
 		color: #fff;
 		font-size: 12px;
 		font-weight: bold;
@@ -85,23 +84,13 @@
 		border-radius: 5px;
 	}
 		.banner .btn:hover {
-			background: rgba(255,255,255,.05);
+			background: rgba(0,0,0, .5);
 		}
+
 		.banner .btn:active {
-			-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+			background: white;
 		}
 		
-	.banner .btn, .banner .dot {
-		-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	}
 	
 	.banner .dots {
 		position: absolute;
