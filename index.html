@@ -19,11 +19,27 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
-
+	
+	<script type="text/javascript">
+	function renderFbLike() {
+		var parent = document.getElementById('fblikediv');
+		var child = document.getElementById('fblikeimg');
+		parent.removeChild(child);
+		
+		var html2 = "<iframe src=\"http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/fossasia&send=false&layout=button_count&width=450&show_faces=false&action=like&colorscheme=light&font&height=60&appId=258346014244946\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:450px; height:40px;\" allowTransparency=\"true\"></iframe>";
+    		document.getElementById('fblikediv').innerHTML = html2;
+	}
+	</script>
     <title>FOSSASIA GCI</title>
 </head>
 
 <body>
+<div style = "position: fixed;top: 50%;left: 1%;z-index: 100;background-color:#d3d3d3; width:125px">
+<div id="fblikediv"><img src="images/fb-like-button.png" id="fblikeimg" onMouseOver="return renderFbLike();"></div>
+<a href="https://twitter.com/fossasia" class="twitter-follow-button" data-show-count="false"><img src="images/twitter_button.png"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
     <header class="masthead">
         <div class="wrap">
             <div class="masthead-cont">
@@ -561,6 +577,7 @@
     <script src="javascripts/wow.min.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
     <script src="javascripts/main.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "ur-8db458bb-c12b-3dae-b0f0-61d9b63d17ff", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </body>
 </html>
