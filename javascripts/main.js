@@ -1,14 +1,18 @@
-
 $(document).ready(function () {
-    $(function() {
-        $('.banner').unslider({
-            fluid:true,
-            dots:true,
-            keys:true,
-            speed:500
-        });
+
+    //
+    // Main Slider
+    //
+    $('.banner').unslider({
+        fluid:true,
+        dots:true,
+        keys:true,
+        speed:500
     });
-    
+
+    //
+    // Github linking contributers    
+    //
     var owner = "fossasia";
     var repo = "fossasia.github.io";
 
@@ -29,21 +33,26 @@ $(document).ready(function () {
             }
         }
     })
-});
 
-function aniScroll(id){
-    $('html, body').animate({
-        scrollTop: $(id).offset().top
-    }, 1000, "swing", function(){
-       document.location.hash = id; 
+    //
+    // Menu
+    //
+
+    $('a[href^="#"]').on('click', function() {
+        var id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 1000, "swing", function(){
+           document.location.hash = id; 
+        });
+
+        return false;
     });
-    
-    return false
-}
 
-(function ($) {
 
-	//animation
-	new WOW().init();
-
-})(jQuery);
+    //
+    // Animation
+    //
+    new WOW().init();
+});
