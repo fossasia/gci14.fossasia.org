@@ -10,6 +10,11 @@
 	box-sizing: border-box;
 }
 
+.highlight{
+    background-color: #000000;
+    opacity: 0.7; 
+}
+
 .banner h1, h2, h3, h4, b {
 	font-weight: 300;
 	font-family: Lato, Bree, sans-serif;
@@ -21,7 +26,6 @@
 	b {
 		font-weight: 500;
 		font-size: 16px;
-		
 		color: #c3522f;
 	}
 
@@ -56,7 +60,6 @@
 		-o-background-size: 100% 100%;
 		-ms-background-size: 100% 100%;
 /*		background-size: 100% 100%;*/
-		
 		box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
 	}
 	
@@ -72,7 +75,7 @@
 		margin: 25px 0 0;
 		padding: 9px 22px 7px;
 		clear: both;
-		
+		background-color: #000000;
 		color: #fff;
 		font-size: 12px;
 		font-weight: bold;
@@ -136,16 +139,19 @@
 	.banner h1, .banner h2 {
 		font-size: 24px;
 		line-height: 30px;
+		background-color: #000000;
 	}
 	.banner ul li {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		height: 240px;
+		background-color: #000000;
 	}
 	.banner p {
 		font-size: 15px;
 		width: 80%;
 		margin: 0 auto;
+		background-color: #000000;
 	}
 	pre {
 		overflow: auto;
@@ -158,4 +164,5 @@
 	z-index: 2;
 	height:;
 	margin-left: -17px;
+	background-color: #000000;
 }

@@ -521,7 +521,7 @@ button:active,
   bottom: 0;
 }
 .page-section {
-  padding: 4em 0 6em;
+  padding: 4em 0 3em;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
@@ -541,7 +541,7 @@ img {
   max-width: 100%;
 }
 .wrap {
-  width: 50em;
+  width: 60em;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -679,6 +679,7 @@ img {
 }
 
 
+
 .person--contributer h1 {
   font-size: 1.25em;
 }
@@ -688,18 +689,114 @@ img {
 
 
 /* ==========================================================================
+=======
+/* SUBSCRIBE EMAIL
+   ========================================================================== */
+ #mc_embed_signup{
+ padding-bottom: 5%;
+ clear:left;
+}
+#mc_embed_signup_scroll{
+  text-align:center;
+}
+#mc_embed_signup_scroll input#mce-EMAIL{
+  margin:auto;
+  display: block;
+  padding: 8px 4px;
+  text-indent: 5px;
+  color: #818181;
+  font-size: 1.0em;
+  background: #f3f3f3;
+  font-weight: bold;
+  width: 25%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#mc_embed_signup_scroll input#mc-embedded-subscribe {
+  margin: 10px auto auto auto;
+  width: 25%;
+}
+#mc_embed_signup_scroll label{
+ display: block; 
+ font-size: 200% !important;
+ padding-left: 20px; 
+ color: #616161; 
+ font-weight: bold;
+}
+
+ /* ==========================================================================
    =FOOTER
    ========================================================================== */
-.colophon {
-  color: #88a0c2;
+.colophon p {
   text-align: center;
-  padding: 3em 0;
-}
-.colophon a:hover{
-    text-decoration: underline;
 }
 .heart {
-  color: #ff69b4;
+  color: hotpink;
+}
+.box .box_title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2b2b2b;
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+.social li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.list .link {
+   list-style-image: url(../images/list/list_style_link.png);
+}
+
+.list .event {
+   list-style-image: url(../images/list/list_style_event.png);
+}
+
+.social .facebook {
+  background: url(../images/list/facebook.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .twitter {
+  background: url(../images/list/twitter.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .googleplus {
+  background: url(../images/list/googleplus.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .flickr {
+  background: url(../images/list/flickr.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .github {
+  background: url(../images/list/github.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.made_text {
+  border-top: 1px solid #f6f6f6;
+  font-size: 14px;
+  padding: 5px 0;
 }
 /* ==========================================================================
    =MEDIA
@@ -731,7 +828,7 @@ img {
 
 .twitterFeed {
   width: 80%;
-  height: 250px;
+  height: 500px;
   margin: 0 auto;
   display: block;
 }
@@ -740,7 +837,7 @@ img {
 
 header{
   background-color: #f6f6f6;
-  opacity:0.6;
+  opacity: 0.6;
   position: absolute;
   z-index:100;
   width:100%
@@ -752,3 +849,13 @@ header:hover{
 .logo,.menu:hover{
   opacity:1.0;
 }
+
+/* ==========================================================================
+   =TABLE PROPERTIES
+   ========================================================================== */
+   
+table{
+    width:100%;
+    table-layout:fixed;
+	}
+
