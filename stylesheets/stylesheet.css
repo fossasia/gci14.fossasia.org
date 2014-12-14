@@ -551,8 +551,8 @@ img {
 .masthead {
   overflow: hidden;
   position: fixed;
-  background: white;
-  z-index: 3;
+  background: rgba(255,255,255,.9);
+  z-index: 999999;
   width: 100%
 }
 .masthead-cont {
@@ -572,6 +572,7 @@ img {
 .menu ul {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 .menu li {
   list-style: none;
@@ -583,8 +584,7 @@ img {
   padding: 1.5em;
 }
 .menu a:hover {
-  background: #f6f6f6;
-  opacity:1.0;
+  background: #fff;
 }
 /* Hero
    ========================================================================== */
@@ -673,11 +673,24 @@ img {
 .person__img img {
   border-radius: 50%;
   display: block;
+  width: 100%;
 }
 .person__name {
   font-size: 1.5em;
 }
-/* SUBSCRIBE EMAIL
+
+
+
+.person--contributer h1 {
+  font-size: 1.25em;
+}
+.person--contributer .person__img {
+  margin: 0 1em;
+}
+
+
+/* ==========================================================================
+   SUBSCRIBE EMAIL
    ========================================================================== */
  #mc_embed_signup{
  padding-bottom: 5%;
@@ -719,30 +732,21 @@ img {
    =FOOTER
    ========================================================================== */
 .colophon {
-  background-color: #e0e0e0;
-  padding: 10px;
+  background: #f6f6f6;
+  font-size: .75em;
+  padding-top: 3em;
+  margin-top: 3em;
 }
-.colophon a:hover{
-    text-decoration: none;
+.colophon h3 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
 .colophon p {
   text-align: center;
 }
-
 .heart {
-  font-size: 20px;
-  color: #ff69b4;
-}
-.boxes {
-  display: block;
-  padding: 0 0 20px 0;
-  text-align: center;
-}
-.box {
-  width: 330px;
-  font-size: 15px;
-  padding: 0 15px;
-  display: inline-table;
+  color: hotpink;
 }
 .box .box_title {
   font-weight: bold;
@@ -801,9 +805,7 @@ img {
 }
 
 .made_text {
-  border-top: 1px solid #f6f6f6;
-  font-size: 14px;
-  padding: 5px 0;
+  padding: 2em 0;
 }
 /* ==========================================================================
    =MEDIA
@@ -840,29 +842,12 @@ img {
   display: block;
 }
 
-/* overlay */
-
-header{
-  background-color: #f6f6f6;
-  opacity: 0.6;
-  position: absolute;
-  z-index:100;
-  width:100%
-}
-header:hover{
-  background-color:white;
-  opacity:0.7;
-}
-.logo,.menu:hover{
-  opacity:1.0;
-}
-
 /* ==========================================================================
    =TABLE PROPERTIES
    ========================================================================== */
    
 table{
-    width:100%;
-    table-layout:fixed;
-	}
+  width:100%;
+  table-layout:fixed;
+}
 
