@@ -14,6 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
@@ -40,7 +42,7 @@
                             <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
                             <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
                             <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
-							              <li class="scroll"><a href="#tweetfeed_photostream">FOSSASIA Photos</a></li>
+				            <li class="scroll"><a href="#photostream" onclick="aniScroll($(this).attr('href')); return false">FOSSASIA Photos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -466,15 +468,16 @@
         </div>
     </section>
     <section class="section--about page-section" id="tweetfeed_photostream">
+    <span ></span>
 	<table>
 	<tr>
 	<td style="width:60%;">
-	 <div class="wrap">
+	 <div class="wrap" id="tweet_feed">
             <h1>Twitter feed</h1>
         </div>
 	</td>
 	<td style="width:40%;">
-	 <div class="wrap" >
+	 <div class="wrap" id="photostream">
             <h1>Photo streams</h1>
         </div>
 	</td>
