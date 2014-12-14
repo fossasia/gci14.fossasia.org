@@ -522,9 +522,11 @@ button:active,
 }
 .page-section {
   padding: 4em 0 3em;
+    overflow: hidden;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
+  text-align: center;
 }
 .section__title {
   text-align: center;
@@ -562,6 +564,7 @@ img {
   height: 1.5em;
   float: left;
   padding: 1.5em 0;
+  text-align: center;
 }
 .masthead .logo img {
   max-height: 100%;
@@ -578,6 +581,7 @@ img {
   list-style: none;
   display: block;
   float: left;
+  text-align: center;
 }
 .menu a {
   display: block;
@@ -851,3 +855,65 @@ table{
   table-layout:fixed;
 }
 
+/* ==========================================================================
+   =MOBILE
+   ========================================================================== */
+body, html {
+    /*Fixes an issue with unwanted horizontal scrolling on the whole page*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 60em) {
+    .menu li {
+        width:33.3333%;
+    }
+    .logo {
+        width:100%;   
+    }
+    .masthead {
+        position:relative;   
+    }
+    #map iframe {
+        height: 300px;
+    }
+    .animated {
+        -webkit-animation-name: none;
+        animation-name: none;
+    }
+}
+@media (max-width: 45em) {
+    .menu li {
+        width:50%;
+    }
+}
+@media (max-width: 30em) {
+    .person {
+        height: 100px;   
+    }
+    .person__img {
+        width: 25%;
+        float: left;
+        overflow: visible;
+    }
+    .person__name {
+        text-align: right;   
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .person__img__info {
+        opacity: 1;
+        background: none;
+        -webkit-transform:none;
+        transform: none;
+        width: 400%;
+    }
+    .person__img__info__cont {
+        position: absolute;
+        right: 0px;
+        top: auto;
+        bottom: -20px;
+        border-radius: 10px;
+        background-color: rgba(52, 152, 219, 0.5);   
+    }
+}
