@@ -543,7 +543,7 @@ img {
 .wrap {
   width: 60em;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 100%;
 }
 /* ==========================================================================
    =MASTHEAD
@@ -561,7 +561,7 @@ img {
 .masthead .logo {
   height: 1.5em;
   float: left;
-  padding: 1.5em 0;
+  padding: 1.0em 0;
 }
 .masthead .logo img {
   max-height: 100%;
