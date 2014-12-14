@@ -731,6 +731,17 @@ img {
  /* ==========================================================================
    =FOOTER
    ========================================================================== */
+.colophon {
+  background: #f6f6f6;
+  font-size: .75em;
+  padding-top: 3em;
+  margin-top: 3em;
+}
+.colophon h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .colophon p {
   text-align: center;
 }
@@ -794,9 +805,7 @@ img {
 }
 
 .made_text {
-  border-top: 1px solid #f6f6f6;
-  font-size: 14px;
-  padding: 5px 0;
+  padding: 2em 0;
 }
 /* ==========================================================================
    =MEDIA
