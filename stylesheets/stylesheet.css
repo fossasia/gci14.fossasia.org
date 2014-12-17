@@ -863,6 +863,9 @@ body, html {
     max-width: 100%;
     overflow-x: hidden;
 }
+.toggle{
+display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
+}
 @media (max-width: 60em) {
     .menu li {
         width:33.3333%;
