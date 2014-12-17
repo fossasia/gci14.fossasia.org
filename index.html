@@ -1,16 +1,7 @@
-﻿<!DOCTYPE html>
-<!-- if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
--->
-<!-- if IE 7<html class="no-js lt-ie9 lt-ie8">
--->
-<!-- if IE 8<html class="no-js lt-ie9">
--->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
@@ -21,10 +12,18 @@
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
     <title>FOSSASIA GCI</title>
+	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1024px)' href='stylesheets/sidebar-style.css' />
 </head>
 
 <body>
-    <header class="masthead">
+
+
+<input type="checkbox" id="sidebartoggler" name="" value="" style="display:none;"><!-- just for toggle option-->
+
+<div class="page-wrap">
+  
+  <label for="sidebartoggler" class="toggle"><img src="images/menu.png" alt="Menu Button" height="42px" width="42px"></label>
+  <header class="masthead">
         <div class="wrap">
             <div class="masthead-cont">
 
@@ -49,7 +48,9 @@
             </div>
         </div>
     </header>
-    <section class="banner">
+  <div class="page-content">
+  
+ <section class="banner">
         <ul>
 			<li style="background-image: url('images/IMG1.jpg');">
                 <div class="inner" bgcolor="white">
@@ -637,6 +638,24 @@
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
     <script src="javascripts/main.js"></script>
+  
+  </div>
+  <div class="sidebar"><!--didn't use jquery to change name of the class, so making a new div-->
+                        <ul>
+                            <li><a href="http://blog.fossasia.org/">Blog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#map">Map</a></li>
+                            <li><a href="#mentors">Mentors</a></li>
+                            <li><a href="#students">Students</a></li>
+                            <li><a href="#contributors">Contributors</a></li>
+                            <li><a href="#tweet_feed">Twitter Feed</a></li>
+		                    <li><a href="#photostream">Photo Stream</a></li>
+                        </ul>
+						</div>
+
+
+</div>
+  
 
 </body>
 </html>
