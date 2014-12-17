@@ -10,6 +10,10 @@
 	box-sizing: border-box;
 }
 
+.highlight{
+	background: rgba(0,0,0,.3)
+}
+
 .banner h1, h2, h3, h4, b {
 	font-weight: 300;
 	font-family: Lato, Bree, sans-serif;
@@ -117,7 +121,9 @@ b {
 	opacity: 1;
 }
 
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
+	
 	.banner h1, .banner h2 {
 		font-size: 24px;
 		line-height: 30px;
@@ -139,19 +145,6 @@ b {
 		overflow: auto;
 	}
 }
-
-@media only screen and (min-device-width: 470px) and (max-device-width: 1024px), (max-width: 1024px) {
-	.masthead-cont {
-		font-size: 12px;
-	}
-	.inner h1 {
-		background: rgba(0,0,0, .5);
-	}
-	.inner p {
-		background: rgba(0,0,0, .5);
-	}
-}
-
 #logo {
 	position: absolute;
 	left: 80px;

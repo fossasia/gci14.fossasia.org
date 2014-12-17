@@ -57,22 +57,6 @@ $(document).ready(function () {
     // Animation
     //
     new WOW().init();
-    function changeImage() {
-        if (window.matchMedia('(max-width: 690px)').matches && window.matchMedia('(min-width: 470px)')) {
-            $(".logo img").attr("src", "favicon.ico");
-            $(".logo img").css({"magin-right":"20px"});
-        } else {
-            $(".logo img").attr("src", "images/fossasia-dark.png");
-        }
-    }
-
-    function addImage() {
-        if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
-            $(".menu").prepend($(".logo"));
-        } else {
-            $(".masthead-cont").prepend($(".logo"));
-        }
-    }
 
     function changeTitle() {
         if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
@@ -83,8 +67,6 @@ $(document).ready(function () {
     }
 
     function caller() {
-        addImage();
-        changeImage();
         changeTitle();
     }
 

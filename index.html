@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<!-- if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
--->
-<!-- if IE 7<html class="no-js lt-ie9 lt-ie8">
--->
-<!-- if IE 8<html class="no-js lt-ie9">
--->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -22,17 +13,26 @@
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
     <title>FOSSASIA GCI</title>
+	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1024px)' href='stylesheets/sidebar-style.css' />
 </head>
 
 <body>
-    <header class="masthead">
+
+
+<input type="checkbox" id="sidebartoggler" name="" value="" style="display:none;"><!-- just for toggle option-->
+
+<div class="page-wrap">
+  
+  <label for="sidebartoggler" class="toggle"><img src="images/menu.png" alt="Menu Button" height="42px" width="42px"></label>
+  <header class="masthead">
         <div class="wrap">
             <div class="masthead-cont">
 
+                <div class="logo">
+                    <img src="images/fossasia-dark.png" alt="FOSSASIA">
+                </div>
+
                 <div class="menu">	
-                    <div class="logo">
-                        <img src="images/fossasia-dark.png" alt="FOSSASIA">
-                    </div>
                     <nav>
                         <ul>
                             <li><a href="http://blog.fossasia.org/">Blog</a></li>
@@ -41,17 +41,19 @@
                             <li><a href="#mentors">Mentors</a></li>
                             <li><a href="#students">Students</a></li>
                             <li><a href="#contributors">Contributors</a></li>
-                            <li><a href="#photostream">Photo Stream</a></li>
                             <li><a href="#tweet_feed">Twitter Feed</a></li>
+		                    <li><a href="#photostream">Photo Stream</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+  <div class="page-content">
+  
     <section class="banner">
         <ul>
-			<li style="background-image: url('images/IMG1.jpg');">
+            <li style="background-image: url('images/IMG1.jpg');">
                 <div class="inner" bgcolor="white">
                     <h1 id="main-head">
                         <span class="highlight">FOSSASIA</span>
@@ -97,7 +99,7 @@
     </section>
     <section class="section--about page-section" id="map">
       <div class="wrap">
-        <h1 class="section__title">Find Us Near You</h1>
+        <h1 class="section__title">Map</h1>
         <iframe src="http://fossasia.net/map/map.html" style="border:0px #FFFFFF none;" name="myiframe" scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="600" width=100%></iframe>
       </div>
     </section>
@@ -452,6 +454,24 @@
                         </section>
                     </div>
                 </div>
+		<div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/iamiqram" target="_blank"><i class="icon-facebook"></i></a> <!-- You can remove this line -->
+                                        <a href="https://twitter.com/Hossainalikram" target="_blank"><i class="icon-twitter"></i></a><!-- You can remove this line -->
+                                        <a href="https://plus.google.com/105021607665650472962" target="_blank"><i class="icon-gplus"></i></a>
+                                        <a href="https://github.com/hossainalikram" target="_blank"><i class="icon-github"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/ikram.jpg">
+                            </div>
+                            <h1 class="person__name">Hossain Al Ikram</h1>
+                        </section>
+                    </div>
+                </div>
                 <div class="sympl onethird">
                     <div class="box-team wow fadeIn" data-wow-delay="0.1s">
                         <section class="person person--student">
@@ -467,6 +487,23 @@
                                 <img src="images/students/Kristina.jpg">
                             </div>
                             <h1 class="person__name">Kristina Pironkova</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="http://github.com/kamena" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://www.facebook.com/kamichka" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="mailto:kamena.dacheva@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/kamena.jpg">
+                            </div>
+                            <h1 class="person__name">Kamena Dacheva</h1>
                         </section>
                     </div>
                 </div>
@@ -487,12 +524,31 @@
                     </div>
                 </div>
                 <div class="sympl onethird">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.1s">
                         <section class="person person--student">
                             <div class="person__img">
                                 <div class="person__img__info">
                                     <div class="person__img__info__cont">
-                                        <a href="https://github.com/akshattripathi" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
+                                        <a href="https://www.facebook.com/anukulsangwan10" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="http://github.com/anukul" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/anukulsangwan" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="mailto:anukulsangwan@icloud.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/anukul.png">
+                            </div>
+                            <h1 class="person__name">Anukul Sangwan</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/akshat.tripathi.10" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://github.com/akshattripathi" target="_blank"><i class="icon-github"></i></a>
                                         <a href="mailto:akshat1tripathi@gmail.com" target="_blank"><i class="icon-mail"></i></a>
                                     </div>
                                 </div>
@@ -511,6 +567,7 @@
          <div class="box-team wow pulse" data-wow-delay="0.5s"><h2 class="section__title">  Спасибо за вклад!</h2></div>
          <div class="box-team wow pulse" data-wow-delay="0.1s"><h2 class="section__title">  Благодаря за приноса Ви!</h2></div>
          <div class="box-team wow pulse" data-wow-delay="0.9s"><h2 class="section__title">  දායකවූවාට ස්තුතියි!</h2></div>
+         <div class="box-team wow pulse" data-wow-delay="0.13s"><h2 class="section__title"> ပူးေပါင္းကူညီမႈအတြက္ ေက်းဇူးတင္ပါသည္။ </h2></div>
 		 <div class="box-team wow pulse" data-wow-delay="0.13s"><h2 class="section__title">   योगदान के लिए धन्यवाद! </h2></div>
 
          <div class="stack stack-clean">
@@ -523,12 +580,21 @@
 	<div class="section--photostream page-section" id="photostream">
 		<div class="wrap" align="center">
             <div style="width:100%;margin:auto;" >
-                <h1 class="section__title">Photo Stream</h1>
 					<object width="500px" height="500px" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="500px" height="500px" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" allowFullScreen="true" /> </object>
 				</div>
         </div>        
     </div>
 	
+    <div class="section--about page-section" id="tweet_feed">
+        <div class="wrap" align="center">
+        <div>
+            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+            </div>
+        </div>
+    </div>
+
     <div class="section--mailchimp page-section" id="email">
         <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
@@ -540,16 +606,6 @@
                         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
             </form>
-        </div>
-    </div>
-
-    <div class="section--about page-section" id="tweet_feed">
-        <div class="wrap" align="center">
-        <div>
-            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-            </div>
         </div>
     </div>
  
@@ -598,8 +654,28 @@
   -->
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="javascripts/wow.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.event.move.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
     <script src="javascripts/main.js"></script>
+  
+  </div>
+  <div class="sidebar"><!--didn't use jquery to change name of the class, so making a new div-->
+                        <ul>
+                            <li><a href="http://blog.fossasia.org/">Blog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#map">Map</a></li>
+                            <li><a href="#mentors">Mentors</a></li>
+                            <li><a href="#students">Students</a></li>
+                            <li><a href="#contributors">Contributors</a></li>
+                            <li><a href="#tweet_feed">Twitter Feed</a></li>
+		                    <li><a href="#photostream">Photo Stream</a></li>
+                        </ul>
+						</div>
+
+
+</div>
+  
 
 </body>
 </html>
