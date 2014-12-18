@@ -727,7 +727,7 @@ img {
   display: block;
   padding: 8px 4px;
   text-indent: 5px;
-  color: #818181;
+  color: black;
   font-size: 1.0em;
   background: #f3f3f3;
   font-weight: bold;
@@ -747,7 +747,7 @@ img {
  display: block; 
  font-size: 200% !important;
  padding-left: 20px; 
- color: #616161; 
+ color: #000000; 
  font-weight: bold;
 }
 
@@ -938,4 +938,80 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
     }
+}
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9{ width: 100%; }
+#slide1{
+	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 300px;
+	margin: 0;
+	padding: 70px 0 260px 0;
+	background-size: cover;
+}
+
+#slide2{
+	
+	background:rgba(0,0,0,0.4);
+	background: url(../img/slide2.jpg) 50% 0 no-repeat fixed;
+	color: #333333;
+	height: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 70px 0;
+	background-size: cover;
+	
+}
+
+#slide3{
+	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 4100px;
+	padding: 70px 0 0 0;	
+	background-size: cover;
+}
+
+#slide4{background: url(../img/slide4.jpg) 50% 0 no-repeat fixed;
+	background-color: #fff;
+	color: #333333;
+	height: 3500px;
+	padding: 70px 0;
+	background-size: cover;
+}
+
+#slide5{
+	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	height: 3000px;
+	margin: 0 auto;
+	padding: 70px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+#slide6{background: url(../img/slide6.jpg) 50% 0 no-repeat fixed;
+	background-color: #fff;
+	color: #333333;
+	height:900px;
+	padding: 70px 0;
+	background-size: cover;
+}
+
+#slide7{
+	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
+	height: 800px;
+	margin: 0 auto;
+	padding: 70px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+#slide8{background: url(../img/slide8.jpg) 50% 0 no-repeat fixed;
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+	padding: 70px 0;
+	background-size: cover;
 }
