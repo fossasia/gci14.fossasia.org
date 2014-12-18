@@ -10,51 +10,70 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
-    <title>FOSSASIA GCI</title>
+    <title>FOSSASIA Google Code-In 2014/15</title>
+	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1024px)' href='stylesheets/sidebar-style.css' />
 </head>
+    <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-17146009-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 <body>
-    <header class="masthead">
+
+
+<input type="checkbox" id="sidebartoggler" name="" value="" style="display:none;"><!-- just for toggle option-->
+
+<div class="page-wrap">
+  
+  <label for="sidebartoggler" class="toggle"><img src="images/menu.png" alt="Menu Button" height="42px" width="42px"></label>
+  <header class="masthead">
         <div class="wrap">
             <div class="masthead-cont">
-
                 <div class="logo">
                     <img src="images/fossasia-dark.png" alt="FOSSASIA">
                 </div>
-
                 <div class="menu">	
                     <nav>
                         <ul>
-                            <li><a href="http://blog.fossasia.org/">BLOG</a></li>
-                            <li class="scroll"><a href="#about" onclick="aniScroll($(this).attr('href')); return false">ABOUT</a></li>
-                            <li class="scroll"><a href="#map" onclick="aniScroll($(this).attr('href')); return false">MAP</a></li>
-                            <li class="scroll"><a href="#mentors" onclick="aniScroll($(this).attr('href')); return false">MENTORS</a></li>
-                            <li class="scroll"><a href="#students" onclick="aniScroll($(this).attr('href')); return false">STUDENTS</a></li>
-                            <li class="scroll"><a href="#contributors" onclick="aniScroll($(this).attr('href')); return false">CONTRIBUTORS</a></li>
-                            <li class="scroll"><a href="#tweet_feed" onclick="aniScroll($(this).attr('href')); return false">TWITTER FEED</a></li>
-							              <li class="scroll"><a href="#tweetfeed_photostream">FOSSASIA Photos</a></li>
+                            <li><a href="http://blog.fossasia.org/">Blog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#map">Map</a></li>
+                            <li><a href="#mentors">Mentors</a></li>
+                            <li><a href="#students">Students</a></li>
+                            <li><a href="#contributors">Contributors</a></li>
+                            <li><a href="#social">Social</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+  <div class="page-content">
+  
     <section class="banner">
         <ul>
-        <li style="background-image: url('images/IMG1.jpg');">
-                <div class="inner">
-                    <h1>
-                        <img src="images/logo.png" height="150px" width="300px">
+            <li style="background-image: url('images/IMG1.jpg');">
+                <div class="inner" bgcolor="white">
+                    <h1 id="main-head">
+                        <span class="highlight">FOSSASIA</span>
                     </h1>
-                    <p>Developing the free and open-source tech community in Asia since 2009</p>
+                    <p><span class="highlight">Developing the free and open-source tech community in Asia since 2009</span></p>
 
                     <a class="btn" href="http://fossasia.org">Home Page</a>
                 </div>
@@ -62,23 +81,25 @@
 
             <li style="background-image: url('images/IMG2.jpg');">
                 <div class="inner">
-                    <h1>Participating in Google Code-In 2014</h1>
-                    <p></p>
+                    <h1><span class="highlight">Participating in Google Code-In 2014</span></h1>
+                    <p><span class="highlight">Inspiring and helping youngsters develop their abilities in Computer Science.</span></p>
                     <a href="http://www.google-melange.com/gci/org/google/gci2014/fossasia" class="btn">Code-In Home</a>
                 </div>
             </li>
 
             <li style="background-image: url('images/IMG3.jpg');">
                 <div class="inner">
-                    <h1>FOSSASIA 2011</h1>
-                    <p>Ho Chi Minh City on November 11–12, 2011</p>
+                    <h1><span class="highlight">FOSSASIA 2011</span></h1>
+                    <p><span class="highlight">Ho Chi Minh City on November 11–12, 2011</span></p>
+                    <a href="http://2011.fossasia.org/" class="btn">FOSSASIA 2011 Home</a>
                 </div>
             </li>
 
             <li style="background-image: url('images/IMG4.jpg');">
                 <div class="inner">
-                    <h1>FOSSASIA 2014</h1>
-                    <p>Phnom Penh Cambodia</p>
+                    <h1><span class="highlight">FOSSASIA 2014</span></h1>
+                    <p><span class="highlight">Phnom Penh Cambodia</span></p>
+                    <a href="http://2014.fossasia.org/" class="btn">FOSSASIA 2014 Home</a>
                 </div>
             </li>
         </ul>
@@ -86,7 +107,7 @@
     <section class="section--about page-section" id="about">
         <div class="wrap">
             <h1 class="section__title">About</h1>
-            <div class="box-team wow shake" data-wow-delay="0.3s">
+            <div>
                 <p>FOSSASIA is the top Free and Open Source technology event in Asia for developers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009. Previous events took place in Cambodia and Vietnam.</p>
             </div>
         </div>
@@ -102,7 +123,7 @@
             <h1 class="section__title">Mentors</h1>
             <div class="stack stack-clean">
                 <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -115,22 +136,27 @@
                                           <a href="#"><i class="icon-facebook"></i></a>
                                           <a href="#"><i class="icon-gplus"></i></a>
                                           -->
-                                        <a href="https://github.com/RoonyH" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/hpdang" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/hpdang" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://plus.google.com/u/0/104694870145426083517/posts" target="_blank"><i class="icon-gplus"></i></a>     
+                                        <a href="https://github.com/hpdang" target="_blank"><i class="icon-github"></i></a>
                                     </div>
                                 </div>
-                                <img src="images/mentors/arunaherath.jpg">
+                                <img src="images/mentors/HongPhucDang.jpg">
                             </div>
-                            <h1 class="person__name">Aruna Herath</h1>
+                            <h1 class="person__name">Hong Phuc</h1>
                         </section>
                     </div>
                 </div>
                 <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
                                     <div class="person__img__info__cont">
                                         <a href="https://github.com/mariobehling" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/mariobehling" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/mariobehling" target="_blank"><i class="icon-facebook"></i></a>
                                     </div>
                                 </div>
                                 <img src="images/mentors/mariobehling.jpg">
@@ -140,23 +166,23 @@
                     </div>
                 </div>
                 <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
                                     <div class="person__img__info__cont">
-                                        <a href="https://github.com/hongquan" target="_blank"><i class="icon-github"></i></a>
+										<a href="https://github.com/RoonyH" target="_blank"><i class="icon-github"></i></a>
                                     </div>
                                 </div>
-                                <img src="images/mentors/hongquan.jpg">
+                                <img src="images/mentors/arunaherath.jpg">
                             </div>
-                            <h1 class="person__name">Nguyen Hong Quân</h1>
+                            <h1 class="person__name">Aruna Herath</h1>
                         </section>
                     </div>
                 </div>
 
                 <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -175,7 +201,7 @@
                 </div>
 
                 <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -193,7 +219,7 @@
                     </div>
                 </div>
                  <div class="sympl onethird">
-                    <div class="box-team wow tada" data-wow-delay="0.1s">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -211,6 +237,343 @@
                         </section>
                     </div>
                 </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Andreas Braeu</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Andre Rebentisch</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Kalpa Welivitigoda</h1>
+                        </section>
+                    </div>
+                </div>                
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Praveen Patil</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Sandareka Wickramanayake</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Uditha Bandara Wijerathna</h1>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Michael Cheng</h1>
+                        </section>
+                    </div>
+                </div>                                                                
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Ulrich von Zadow</h1>
+                        </section>
+                    </div>
+                </div>   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">codeanticode</h1>
+                        </section>
+                    </div>
+                </div>   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">astroiseur</h1>
+                        </section>
+                    </div>
+                </div>                                   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Uditha Wijerathna</h1>
+                        </section>
+                    </div>
+                </div>  
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">eMBee</h1>
+                        </section>
+                    </div>
+                </div>   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">royalharsh95</h1>
+                        </section>
+                    </div>
+                </div>   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Hon Nguyen</h1>
+                        </section>
+                    </div>
+                </div>    
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Tong Hui</h1>
+                        </section>
+                    </div>
+                </div>   
+
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--mentor">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                          <a href="#"><i class="icon-mail"></i></a>
+                                          <a href="#"><i class="icon-link"></i></a>
+                                          <a href="#"><i class="icon-github"></i></a>
+                                          <a href="#"><i class="icon-twitter"></i></a>
+                                          <a href="#"><i class="icon-facebook"></i></a>
+                                          <a href="#"><i class="icon-gplus"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/mentors/mentor.png">
+                            </div>
+                            <h1 class="person__name">Mitar</h1>
+                        </section>
+                    </div>
+                </div>   
+
 
             </div>
         </div>
@@ -232,6 +595,23 @@
                                 <img src="images/students/namanyay.jpg">
                             </div>
                             <h1 class="person__name">Namanyay</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://twitter.com/pbozhinov" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="http://github.com/3phase" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="mailto:pbozhinow@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/Petko.jpg">
+                            </div>
+                            <h1 class="person__name">Petko Bozhinov</h1>
                         </section>
                     </div>
                 </div>
@@ -419,6 +799,42 @@
                             <div class="person__img">
                                 <div class="person__img__info">
                                     <div class="person__img__info__cont">
+                                        <a href="https://twitter.com/Amr__Ramadan" target="_blank"><i class="icon-twitter"></i></a> <!-- You can remove this line -->
+                                        <a href="https://github.com/amroto" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
+                                        <a href="https://www.facebook.com/AmrRamadan97" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="mailto:theamroto@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/Amr.jpg">
+                            </div>
+                            <h1 class="person__name">Amr Ramadan</h1>
+                        </section>
+                    </div>
+                </div>
+		<div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/iamiqram" target="_blank"><i class="icon-facebook"></i></a> <!-- You can remove this line -->
+                                        <a href="https://twitter.com/Hossainalikram" target="_blank"><i class="icon-twitter"></i></a><!-- You can remove this line -->
+                                        <a href="https://plus.google.com/105021607665650472962" target="_blank"><i class="icon-gplus"></i></a>
+                                        <a href="https://github.com/hossainalikram" target="_blank"><i class="icon-github"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/ikram.jpg">
+                            </div>
+                            <h1 class="person__name">Hossain Al Ikram</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
                                         <a href="http://github.com/krisipironkova" target="_blank"><i class="icon-github"></i></a>
                                         <a href="https://twitter.com/krisipironkova" target="_blank"><i class="icon-twitter"></i></a>
                                         <a href="https://www.facebook.com/chrisiie" target="_blank"><i class="icon-facebook"></i></a>
@@ -431,15 +847,85 @@
                         </section>
                     </div>
                 </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="http://github.com/kamena" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://www.facebook.com/kamichka" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="mailto:kamena.dacheva@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/kamena.jpg">
+                            </div>
+                            <h1 class="person__name">Kamena Dacheva</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://github.com/meghprkh" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
+                                        <a href="mailto:meghjp@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/meghprkh.jpg">
+                            </div>
+                            <h1 class="person__name">Megh Parikh</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/anukulsangwan10" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="http://github.com/anukul" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="https://twitter.com/anukulsangwan" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="mailto:anukulsangwan@icloud.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/anukul.png">
+                            </div>
+                            <h1 class="person__name">Anukul Sangwan</h1>
+                        </section>
+                    </div>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/akshat.tripathi.10" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://github.com/akshattripathi" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="mailto:akshat1tripathi@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/akshat.jpg">
+                            </div>
+                            <h1 class="person__name">Akshat Tripathi</h1>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="section--about page-section" id="contributors">
         <div class="wrap">
          <div class="box-team wow pulse" data-wow-delay="0.1s"><h1 class="section__title">  Thank you for contributing!</h1></div>
-         <div class="box-team wow pulse" data-wow-delay="0.5s"><h1 class="section__title">  Спасибо за вклад!</h1></div>
-         <div class="box-team wow pulse" data-wow-delay="0.9s"><h1 class="section__title">  දායකවූවාට ස්තුතියි!</h1></div>
-         <div class="box-team wow pulse" data-wow-delay="0.13s"><h1 class="section__title"> ပူးေပါင္းကူညီမႈအတြက္ ေက်းဇူးတင္ပါသည္။ </h1></div>
+         <div class="box-team wow pulse" data-wow-delay="0.5s"><h2 class="section__title">  Спасибо за вклад!</h2></div>
+         <div class="box-team wow pulse" data-wow-delay="0.1s"><h2 class="section__title">  Благодаря за приноса Ви!</h2></div>
+         <div class="box-team wow pulse" data-wow-delay="0.9s"><h2 class="section__title">  දායකවූවාට ස්තුතියි!</h2></div>
+         <div class="box-team wow pulse" data-wow-delay="0.13s"><h2 class="section__title"> ပူးေပါင္းကူညီမႈအတြက္ ေက်းဇူးတင္ပါသည္။ </h2></div>
+		 <div class="box-team wow pulse" data-wow-delay="0.13s"><h2 class="section__title">   योगदान के लिए धन्यवाद! </h2></div>
 
          <div class="stack stack-clean">
             <div id="contr"></div>
@@ -447,49 +933,45 @@
         
         </div>
     </section>
-    <section class="section--about page-section" id="tweetfeed_photostream">
-	<table>
-	<tr>
-	<td style="width:60%;">
-	 <div class="wrap">
-            <h1>Twitter feed</h1>
-        </div>
-	</td>
-	<td style="width:40%;">
-	 <div class="wrap" >
-            <h1>Photo streams</h1>
-        </div>
-	</td>
-	</tr>
-	<tr>
-	<td style="width:60%;">
-	 <div class="wrap">
-            <div>
-				<img src="images/twitter.png" alt="bird" />
-                            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
+
+	<div class="section--photostream page-section" id="photostream">
+		<div class="wrap" align="center">
+            <div style="width:100%;margin:auto;" >
+					<object width="900" height="680"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to=" width="900" height="680"></embed></object>
+				</div>
+        </div>        
+    </div>
+	
+    <div class="section--about page-section" id="tweet_feed">
+        <div class="wrap" align="center">
+        <div>
+            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
             </div>
         </div>
-	</td>
-	<td style="width:40%;">
-	 <div class="wrap">
-            <div style="width:100%;margin:auto;background: #F6F6F6;" >
-					<object width="500px" height="500px" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="500px" height="500px" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Ffossasia%2Fshow&amp;page_show_back_url=%2Fphotos%2Ffossasia%2F&amp;user_id=45240298@N08" allowFullScreen="true" /> </object>
-				</div>
+    </div>
+
+    <div class="section--mailchimp page-section" id="email">
+        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup">
+            <form action="http://fossasia.us9.list-manage.com/subscribe/post?u=d5cf526b4ceea238da3512fb3&amp;id=2be821d83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Why not subscribe?</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="fossasia@example.com" required>
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_d5cf526b4ceea238da3512fb3_2be821d83b" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
         </div>
-	</td>
-	</tr>
-	</table>
-	
-        
-    </section>
+    </div>
+ 
 
     <footer class="colophon">
         <div class="wrap">
-            <div class="boxes">
-                <div class="box">
-                    <h1 class="box_title">Social Media</h1>
+            <div class="stack sympl-stack">
+                <div class="sympl onethird">
+                    <h3>Social Media</h3>
                     <ul class="social">
                         <a href="https://www.facebook.com/fossasia"><li class="facebook"></li></a>
                         <a href="http://twitter.com/fossasia"><li class="twitter"></li></a>
@@ -498,17 +980,19 @@
                         <a href="https://github.com/fossasia"><li class="github"></li></a>
                     </ul>
                 </div>
-                <div class="box">
-                    <h1 class="box_title">FOSSASIA Links</h1>
+                <div class="sympl onethird">
+                    <h3>FOSSASIA Links</h3>
                     <ul class="list">
+                        <a href="http://blog.fossasia.net/"><li class="link">FOSSASIA Blog</li></a>                        
                         <a href="http://fossasia.net/"><li class="link">FOSSASIA Community Network</li></a>
                         <a href="http://blog.fossasia.org/code-conduct"><li class="link">Code of Conduct</li></a>
                         <a href="http://fossasia.org/"><li class="link">FOSSASIA Summit</li></a>
                     </ul>
                 </div>
-                <div class="box">
-                    <h1 class="box_title">FOSSASIA Events</h1>
+                <div class="sympl onethird">
+                    <h3>Events</h3>
                     <ul class="list">
+                        <a href="http://2015.fossasia.org/"><li class="event">FOSSASIA '15</li></a>                    
                         <a href="http://2014.fossasia.org/"><li class="event">FOSSASIA '14</li></a>
                         <a href="http://opendesign.asia/"><li class="event">FOSSASIA '12</li></a>
                         <a href="http://2011.fossasia.org/"><li class="event">FOSSASIA '11</li></a>
@@ -532,6 +1016,7 @@
     <script type="text/javascript" src="javascripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <script src="javascripts/main.js"></script>  
+
 </body>
 </html>

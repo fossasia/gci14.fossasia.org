@@ -34,6 +34,18 @@ html {
 body {
   margin: 0;
 }
+::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
+-webkit-::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
+-moz-::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
 a:focus {
   outline: thin dotted;
 }
@@ -521,14 +533,16 @@ button:active,
   bottom: 0;
 }
 .page-section {
-  padding: 4em 0 6em;
+  padding: 4em 0 3em;
+    overflow: hidden;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
+  text-align: center;
 }
 .section__title {
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 2em;
   margin: 0 0 0.5em;
@@ -551,9 +565,15 @@ img {
 .masthead {
   overflow: hidden;
   position: fixed;
-  background: white;
-  z-index: 3;
-  width: 100%
+  background: rgba(255,255,255,.6);
+  z-index: 999999;
+  width: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+}
+.masthead:hover {
+  background: rgba(240,240,240,1);
 }
 .masthead-cont {
   font-size: 16px;
@@ -562,6 +582,7 @@ img {
   height: 1.5em;
   float: left;
   padding: 1.5em 0;
+  text-align: center;
 }
 .masthead .logo img {
   max-height: 100%;
@@ -572,19 +593,21 @@ img {
 .menu ul {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 .menu li {
   list-style: none;
   display: block;
   float: left;
+  text-align: center;
 }
 .menu a {
   display: block;
   padding: 1.5em;
 }
 .menu a:hover {
-  background: #f6f6f6;
-  opacity:1.0;
+  background: #fff;
+  text-decoration: underline;
 }
 /* Hero
    ========================================================================== */
@@ -673,38 +696,80 @@ img {
 .person__img img {
   border-radius: 50%;
   display: block;
+  width: 100%;
 }
 .person__name {
   font-size: 1.5em;
 }
+
+
+
+.person--contributer h1 {
+  font-size: 1.25em;
+}
+.person--contributer .person__img {
+  margin: 0 1em;
+}
+
+
+/* ==========================================================================
+   SUBSCRIBE EMAIL
+   ========================================================================== */
+ #mc_embed_signup{
+ padding-bottom: 5%;
+ clear:left;
+}
+#mc_embed_signup_scroll{
+  text-align:center;
+}
+#mc_embed_signup_scroll input#mce-EMAIL{
+  margin:auto;
+  display: block;
+  padding: 8px 4px;
+  text-indent: 5px;
+  color: #818181;
+  font-size: 1.0em;
+  background: #f3f3f3;
+  font-weight: bold;
+  width: 36%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#mc_embed_signup_scroll input#mc-embedded-subscribe {
+  margin: 10px auto auto auto;
+  width: 25%;
+}
+#mc_embed_signup_scroll label{
+ display: block; 
+ font-size: 200% !important;
+ padding-left: 20px; 
+ color: #616161; 
+ font-weight: bold;
+}
+
  /* ==========================================================================
    =FOOTER
    ========================================================================== */
 .colophon {
-  background-color: #e0e0e0;
-  padding: 10px;
+  background: #f6f6f6;
+  font-size: .75em;
+  padding-top: 3em;
+  margin-top: 3em;
 }
-.colophon a:hover{
-    text-decoration: none;
+.colophon h3 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
 .colophon p {
   text-align: center;
 }
-
 .heart {
-  font-size: 20px;
-  color: #ff69b4;
-}
-.boxes {
-  display: block;
-  padding: 0 0 20px 0;
-  text-align: center;
-}
-.box {
-  width: 330px;
-  font-size: 15px;
-  padding: 0 15px;
-  display: inline-table;
+  color: hotpink;
 }
 .box .box_title {
   font-weight: bold;
@@ -763,9 +828,7 @@ img {
 }
 
 .made_text {
-  border-top: 1px solid #f6f6f6;
-  font-size: 14px;
-  padding: 5px 0;
+  padding: 2em 0;
 }
 /* ==========================================================================
    =MEDIA
@@ -802,29 +865,77 @@ img {
   display: block;
 }
 
-/* overlay */
-
-header{
-  background-color: #f6f6f6;
-  opacity: 0.6;
-  position: absolute;
-  z-index:100;
-  width:100%
-}
-header:hover{
-  background-color:white;
-  opacity:0.7;
-}
-.logo,.menu:hover{
-  opacity:1.0;
-}
-
 /* ==========================================================================
    =TABLE PROPERTIES
    ========================================================================== */
    
 table{
-    width:100%;
-    table-layout:fixed;
-	}
+  width:100%;
+  table-layout:fixed;
+}
 
+/* ==========================================================================
+   =MOBILE
+   ========================================================================== */
+body, html {
+    /*Fixes an issue with unwanted horizontal scrolling on the whole page*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.toggle{
+display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
+}
+@media (max-width: 60em) {
+    .menu li {
+        width:33.3333%;
+    }
+    .logo {
+        width:100%;   
+    }
+    .masthead {
+        position:relative;   
+    }
+    #map iframe {
+        height: 300px;
+    }
+    .animated {
+        -webkit-animation-name: none;
+        animation-name: none;
+    }
+}
+@media (max-width: 45em) {
+    .menu li {
+        width:50%;
+    }
+}
+@media (max-width: 30em) {
+    .person {
+        height: 100px;   
+    }
+    .person__img {
+        width: 25%;
+        float: left;
+        overflow: visible;
+    }
+    .person__name {
+        text-align: right;   
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .person__img__info {
+        opacity: 1;
+        background: none;
+        -webkit-transform:none;
+        transform: none;
+        width: 400%;
+    }
+    .person__img__info__cont {
+        position: absolute;
+        right: 0px;
+        top: auto;
+        bottom: -20px;
+        border-radius: 10px;
+        background-color: rgba(52, 152, 219, 0.5);   
+    }
+}
