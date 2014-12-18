@@ -34,6 +34,18 @@ html {
 body {
   margin: 0;
 }
+::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
+-webkit-::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
+-moz-::selection {
+  color: #FFFFFF;
+  background-color: #66CC99;
+}
 a:focus {
   outline: thin dotted;
 }
@@ -530,10 +542,11 @@ button:active,
 }
 .section__title {
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 2em;
   margin: 0 0 0.5em;
+  font-family: 'Poiret One', Arial;
 }
 .section__content {
   position: relative;
@@ -553,9 +566,15 @@ img {
 .masthead {
   overflow: hidden;
   position: fixed;
-  background: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.6);
   z-index: 999999;
-  width: 100%
+  width: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+}
+.masthead:hover {
+  background: rgba(240,240,240,1);
 }
 .masthead-cont {
   font-size: 16px;
@@ -589,6 +608,7 @@ img {
 }
 .menu a:hover {
   background: #fff;
+  text-decoration: underline;
 }
 /* Hero
    ========================================================================== */
@@ -712,7 +732,7 @@ img {
   font-size: 1.0em;
   background: #f3f3f3;
   font-weight: bold;
-  width: 25%;
+  width: 36%;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;

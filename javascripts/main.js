@@ -57,4 +57,19 @@ $(document).ready(function () {
     // Animation
     //
     new WOW().init();
+
+    function changeTitle() {
+        if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
+            $("#main-head").html('<span class="highlight">FOSSASIA</span>');
+        } else {
+            $("#main-head").html('<img src="images/logo.png" height="150px" width="300px">');
+        }
+    }
+
+    function caller() {
+        changeTitle();
+    }
+
+    window.onload = caller();
+    window.addEventListener("resize", caller);
 });

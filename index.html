@@ -17,12 +17,14 @@
     
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
     <title>FOSSASIA GCI</title>
 	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1024px)' href='stylesheets/sidebar-style.css' />
 </head>
+
 
 <body>
 
@@ -35,11 +37,9 @@
   <header class="masthead">
         <div class="wrap">
             <div class="masthead-cont">
-
                 <div class="logo">
                     <img src="images/fossasia-dark.png" alt="FOSSASIA">
                 </div>
-
                 <div class="menu">	
                     <nav>
                         <ul>
@@ -58,12 +58,12 @@
     </header>
   <div class="page-content">
   
- <section class="banner">
+    <section class="banner">
         <ul>
-			<li style="background-image: url('images/IMG1.jpg');">
+            <li style="background-image: url('images/IMG1.jpg');">
                 <div class="inner" bgcolor="white">
-                    <h1>
-                        <img src="images/logo.png" height="150px" width="300px">
+                    <h1 id="main-head">
+                        <span class="highlight">FOSSASIA</span>
                     </h1>
                     <p><span class="highlight">Developing the free and open-source tech community in Asia since 2009</span></p>
 
@@ -74,7 +74,7 @@
             <li style="background-image: url('images/IMG2.jpg');">
                 <div class="inner">
                     <h1><span class="highlight">Participating in Google Code-In 2014</span></h1>
-                    <p></p>
+                    <p><span class="highlight">Inspiring and helping youngsters develop their abilities in Computer Science.</span></p>
                     <a href="http://www.google-melange.com/gci/org/google/gci2014/fossasia" class="btn">Code-In Home</a>
                 </div>
             </li>
@@ -83,6 +83,7 @@
                 <div class="inner">
                     <h1><span class="highlight">FOSSASIA 2011</span></h1>
                     <p><span class="highlight">Ho Chi Minh City on November 11–12, 2011</span></p>
+                    <a href="http://2011.fossasia.org/" class="btn">FOSSASIA 2011 Home</a>
                 </div>
             </li>
 
@@ -90,6 +91,7 @@
                 <div class="inner">
                     <h1><span class="highlight">FOSSASIA 2014</span></h1>
                     <p><span class="highlight">Phnom Penh Cambodia</span></p>
+                    <a href="http://2014.fossasia.org/" class="btn">FOSSASIA 2014 Home</a>
                 </div>
             </li>
         </ul>
@@ -551,6 +553,23 @@
                         </section>
                     </div>
                 </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.1s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://www.facebook.com/akshat.tripathi.10" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://github.com/akshattripathi" target="_blank"><i class="icon-github"></i></a>
+                                        <a href="mailto:akshat1tripathi@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/akshat.jpg">
+                            </div>
+                            <h1 class="person__name">Akshat Tripathi</h1>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -569,17 +588,7 @@
         
         </div>
     </section>
-	
-    <div class="section--about page-section" id="social">
-		<div class="wrap" align="center">
-        <div>
-            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-            </div>
-        </div>
-	</div>
-	
+
 	<div class="section--photostream page-section" id="photostream">
 		<div class="wrap" align="center">
             <div style="width:100%;margin:auto;" >
@@ -588,6 +597,16 @@
         </div>        
     </div>
 	
+    <div class="section--about page-section" id="tweet_feed">
+        <div class="wrap" align="center">
+        <div>
+            <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+            </div>
+        </div>
+    </div>
+
     <div class="section--mailchimp page-section" id="email">
         <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
