@@ -22,7 +22,7 @@
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css" media="all">
 
     <title>FOSSASIA Google Code-In 2014/15</title>
-	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1024px)' href='stylesheets/sidebar-style.css' />
+	<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1280px)' href='stylesheets/sidebar-style.css' />
 </head>
     <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,6 +36,16 @@
     </script>
 <body>
 
+<!-- Facebook initialize -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1505876126310823&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <input type="checkbox" id="sidebartoggler" name="" value="" style="display:none;"><!-- just for toggle option-->
 
@@ -48,7 +58,7 @@
                 <div class="logo">
                     <img src="images/fossasia-dark.png" alt="FOSSASIA">
                 </div>
-                <div class="menu">	
+                <div class="menu" style="width:1000px;">	
                     <nav>
                         <ul>
                             <li><a href="http://blog.fossasia.org/">Blog</a></li>
@@ -60,6 +70,8 @@
                             <li><a href="#social">Social</a></li>
                         </ul>
                     </nav>
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Ffossasia&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1505876126310823" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px; width:60px; margin-top:25px;" allowTransparency="true" class="socialbtn"></iframe>
+                <div id="twitter-holder" style="width:60px; display:inline-block; top:-15px; position:relative;"><a href="https://twitter.com/fossasia" class="twitter-follow-button socialbtn" data-show-count="false" data-show-screen-name="false">Follow @fossasia</a></div>
                 </div>
             </div>
         </div>
@@ -955,12 +967,13 @@
     </div>
 	
     <div class="section--about page-section" id="tweet_feed">
-        <div class="wrap" align="center">
-        <div>
+        <div class="wrap" align="center" style="width:80em;">
+        <div style="display:inline-block; width:500px; margin-right:100px;">
             <a class="twitter-timeline"  href="https://twitter.com/fossasia" data-widget-id="542728261743042560">Tweets by @fossasia</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
             </div>
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;width=500&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=1505876126310823" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:500px; display:inline-block;" allowTransparency="true"></iframe>
         </div>
     </div>
 
@@ -982,17 +995,18 @@
     <footer class="colophon">
         <div class="wrap">
             <div class="stack sympl-stack">
-                <div class="sympl onethird">
+                <div class="sympl twofifths">
                     <h3>Social Media</h3>
                     <ul class="social">
                         <a href="https://www.facebook.com/fossasia"><li class="facebook"></li></a>
                         <a href="http://twitter.com/fossasia"><li class="twitter"></li></a>
                         <a href="https://plus.google.com/108920596016838318216"><li class="googleplus"></li></a>
+                        <a href="https://www.linkedin.com/groups/FOSSASIA-3762811"><li class="linkedin"></li></a>
                         <a href="https://www.flickr.com/photos/fossasia/"><li class="flickr"></li></a>
                         <a href="https://github.com/fossasia"><li class="github"></li></a>
                     </ul>
                 </div>
-                <div class="sympl onethird">
+                <div class="sympl twofifths">
                     <h3>FOSSASIA Links</h3>
                     <ul class="list">
                         <a href="http://blog.fossasia.net/"><li class="link">FOSSASIA Blog</li></a>                        
@@ -1001,7 +1015,7 @@
                         <a href="http://fossasia.org/"><li class="link">FOSSASIA Summit</li></a>
                     </ul>
                 </div>
-                <div class="sympl onethird">
+                <div class="sympl onefifth">
                     <h3>Events</h3>
                     <ul class="list">
                         <a href="http://2015.fossasia.org/"><li class="event">FOSSASIA '15</li></a>                    
@@ -1029,6 +1043,8 @@
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
     <script src="javascripts/main.js"></script>  
+    <!-- Twitter js -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
 </html>
