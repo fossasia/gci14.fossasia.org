@@ -837,6 +837,10 @@ img {
   display: inline-block;
 }
 
+.bottom-git{
+  background-color:rgba(174, 174, 174, 0.66);
+}
+
 .made_text {
   padding: 2em 0;
 }
