@@ -609,6 +609,9 @@ img {
   background: #fff;
   text-decoration: underline;
 }
+.socialbtn{
+        margin-left: 15px;
+    }
 /* Hero
    ========================================================================== */
 .section--hero.section--hero {
@@ -822,6 +825,13 @@ img {
 
 .social .github {
   background: url(../images/list/github.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.social .linkedin {
+  background: url(../images/list/linkedin.png) no-repeat;
   width: 48px;
   height: 48px;
   display: inline-block;
