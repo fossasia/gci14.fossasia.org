@@ -581,7 +581,7 @@ img {
 .masthead .logo {
   height: 1.5em;
   float: left;
-  padding: 1.5em 0;
+  padding: 0.5em 0;
   text-align: center;
 }
 .masthead .logo img {
