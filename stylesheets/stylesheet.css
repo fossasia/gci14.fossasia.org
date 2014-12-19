@@ -947,7 +947,6 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 #slide1{
 	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
-	height: 300px;
 	margin: 0;
 	padding: 70px 0 260px 0;
 	background-size: cover;
@@ -958,7 +957,6 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 	background:rgba(0,0,0,0.4);
 	background: url(../img/slide2.jpg) 50% 0 no-repeat fixed;
 	color: #333333;
-	height: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 70px 0;
@@ -969,7 +967,6 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 #slide3{
 	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
-	height: 4100px;
 	padding: 70px 0 0 0;	
 	background-size: cover;
 }
@@ -977,14 +974,12 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 #slide4{background: url(../img/slide4.jpg) 50% 0 no-repeat fixed;
 	background-color: #fff;
 	color: #333333;
-	height: 3500px;
 	padding: 70px 0;
 	background-size: cover;
 }
 
 #slide5{
 	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	height: 3400px;
 	margin: 0 auto;
 	padding: 70px 0;
 	color: #fff;
@@ -994,14 +989,12 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 #slide6{background: url(../img/slide6.jpg) 50% 0 no-repeat fixed;
 	background-color: #fff;
 	color: #333333;
-	height:900px;
 	padding: 70px 0;
 	background-size: cover;
 }
 
 #slide7{
 	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
-	height: 800px;
 	margin: 0 auto;
 	padding: 70px 0;
 	color: #fff;
@@ -1011,7 +1004,6 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 #slide8{background: url(../img/slide8.jpg) 50% 0 no-repeat fixed;
 	background-color: #fff;
 	color: #333333;
-	height: 300px;
 	padding: 70px 0;
 	background-size: cover;
 }
