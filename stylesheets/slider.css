@@ -11,7 +11,7 @@
 }
 
 .highlight{
-	background: rgba(0,0,0,.3)
+	
 }
 
 .banner h1, h2, h3, h4, b {
@@ -39,7 +39,6 @@ b {
 	
 	color: rgba(255,255,255,.6);
 	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
-	
 	background: #5b4d3d;
 	box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
@@ -110,7 +109,7 @@ b {
 	border-radius: 6px;
 	
 	cursor: pointer;
-	opacity: .4;
+	opacity: 0.4;
 	
 	-webkit-transition: background .5s, opacity .5s;
 	-moz-transition: background .5s, opacity .5s;

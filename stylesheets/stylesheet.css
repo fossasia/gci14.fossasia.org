@@ -351,9 +351,11 @@ h6 {
 }
 .onefifth {
   width: 20%;
+  margin-left: 1.2em;
 }
 .twofifths {
-  width: 40%;
+  width: 35%;
+  margin-left: 1.2em;
 }
 .threefifths {
   width: 60%;
@@ -638,6 +640,7 @@ img {
   padding: 0;
   position: absolute;
   width: 1px;
+  background-color: red;
 }
 .section--hero .subtitle {
   text-align: center;
@@ -648,7 +651,7 @@ img {
 /* Person
    ========================================================================== */
 .person {
-  padding: 1em;
+  padding: 0em;
   text-align: center;
 }
 .person__img {
@@ -694,7 +697,7 @@ img {
 .person__img__info a {
   color: white;
   font-size: 1.125em;
-  padding: 0 .5em;
+  padding: 0.5em;
 }
 .person__img img {
   border-radius: 50%;
@@ -756,7 +759,7 @@ img {
 }
 #mc_embed_signup_scroll label{ 
  display:block;
- font-size: 3.000em !important;
+ font-size: 2.750em !important;
  padding-left: 0.650em; 
  color: #217bb8; 
  font-weight: bold;
