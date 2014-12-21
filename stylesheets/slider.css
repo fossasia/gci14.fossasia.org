@@ -110,7 +110,7 @@ b {
 	border-radius: 6px;
 	
 	cursor: pointer;
-	opacity: .4;
+	opacity: 0.4;
 	
 	-webkit-transition: background .5s, opacity .5s;
 	-moz-transition: background .5s, opacity .5s;
