@@ -1,30 +1,39 @@
-html, body {
+html, body 
+{
   margin: 0;
-  padding: 0; }
-.masthead{
+  padding: 0; 
+}
+.masthead
+{
 display:none;
 }
-.wrap {
+.wrap 
+{
   width: 60em;
   margin: 30px;
   max-width: 90%;
 }
-.unit {
+.unit 
+{
   height: 100px;
   width: 30%;
   margin: 1.5%;
   background: #cccccc;
-  float: left; }
+  float: left; 
+}
 
-.page-content {
+.page-content 
+{
   position: relative;
   z-index: 0;
   -webkit-transition: all 0.15s ease-out 0;
   -moz-transition: all 0.15s ease-out 0;
   transition: all 0.15s ease-out 0;
-  background: #eeeeee; }
+  background: #eeeeee; 
+}
 
-.toggle {
+.toggle 
+{
 display:block;
   text-decoration: none;
   font-size: 30px;
@@ -36,9 +45,11 @@ display:block;
   top: 20px;
   left: 20px;
   z-index: 1;
-  cursor: pointer; }
+  cursor: pointer; 
+}
 
-.sidebar {
+.sidebar 
+{
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -49,28 +60,43 @@ display:block;
   width: 120px;
   padding: 30px;
   background: #333333;
-  z-index: 0; }
-  .sidebar ul {
+  z-index: 0; 
+}
+.sidebar ul 
+{
     list-style: none;
     margin: 0;
-    padding: 0; }
-  .sidebar li {
+    padding: 0; 
+}
+.sidebar li 
+{
     color: rgba(255, 255, 255, 0.8);
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     margin: 0;
     margin-bottom: 16px;
     -webkit-font-smoothing: antialiased;
-    cursor: pointer; }
-    .sidebar li:hover {
-      color: white; }
+    cursor: pointer; 
+}
+.sidebar li:hover 
+{
+      color: white; 
+}
 
-#sidebartoggler {
-  display: none; }
-  #sidebartoggler:checked + .page-wrap .sidebar {
-    left: 0px; }
-  #sidebartoggler:checked + .page-wrap .toggle {
-    left: 200px; }
-  #sidebartoggler:checked + .page-wrap .page-content {
-    padding-left: 180px; }
+#sidebartoggler 
+{
+  display: none; 
+}
+  #sidebartoggler:checked + .page-wrap .sidebar 
+{
+    left: 0px; 
+}
+  #sidebartoggler:checked + .page-wrap .toggle 
+{
+    left: 2.500em; 
+}
+  #sidebartoggler:checked + .page-wrap .page-content 
+{
+    padding-left: 7.5em; 
+}
 	
