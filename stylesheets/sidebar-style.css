@@ -4,6 +4,11 @@ html, body {
 .masthead{
 display:none;
 }
+.wrap {
+  width: 60em;
+  margin: 30px;
+  max-width: 90%;
+}
 .unit {
   height: 100px;
   width: 30%;
@@ -68,3 +73,4 @@ display:block;
     left: 200px; }
   #sidebartoggler:checked + .page-wrap .page-content {
     padding-left: 180px; }
+	
