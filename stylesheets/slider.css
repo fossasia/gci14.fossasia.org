@@ -127,19 +127,16 @@ b {
 	.banner h1, .banner h2 {
 		font-size: 24px;
 		line-height: 30px;
-		background-color: #000000;
 	}
 	.banner ul li {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		height: 240px;
-		background-color: #000000;
 	}
 	.banner p {
 		font-size: 15px;
 		width: 80%;
 		margin: 0 auto;
-		background-color: #000000;
 	}
 	pre {
 		overflow: auto;
