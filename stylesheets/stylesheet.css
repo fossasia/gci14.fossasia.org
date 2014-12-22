@@ -659,6 +659,11 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
+
+.person__img img {
+	min-width: 120px;
+}
+
 .person__img__info {
   opacity: 0;
   position: absolute;
