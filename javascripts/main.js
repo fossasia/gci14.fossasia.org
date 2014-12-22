@@ -96,16 +96,18 @@ $(document).ready(function () {
     // mobile version background
     if(detectmob()){
         for (var i = 0;i < 9;i++){
-            num = i+1
-            elem = '#slide'+num
-            if(num%2 == 1)
-                color = '#f6f6f6'
-            else
-                color = '#fff'
-            $(elem).css('background', color)
+            num = i+1;
+            elem = '#slide'+num;
+            if(num%2 == 1){
+                color = '#f6f6f6';
+            }
+            else{
+                color = '#fff';
+            }
+            $(elem).css('background', color);
         }
         // set about text black
-        $('#slide1 p').css('color', '#000')
+        $('#slide1 p').css('color', '#000');
 
     }
 });
