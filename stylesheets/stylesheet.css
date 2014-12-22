@@ -607,7 +607,7 @@ img {
 }
 .menu a:hover {
   background: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .socialbtn{
         margin-left: 15px;
