@@ -956,7 +956,10 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9{ width: 100%; }
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9{ 
+  width: 100%; 
+}
+
 #slide1{
 	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
