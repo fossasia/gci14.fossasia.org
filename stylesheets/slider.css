@@ -11,23 +11,22 @@
 }
 
 .highlight{
-    background-color: #000000;
-    opacity: 0.7; 
+	background: rgba(0,0,0,.3)
 }
 
 .banner h1, h2, h3, h4, b {
 	font-weight: 300;
 	font-family: Lato, Bree, sans-serif;
 }
-	h2 {
-		font-size: 28px;
-		padding-bottom: 60px;
-	}
-	b {
-		font-weight: 500;
-		font-size: 16px;
-		color: #c3522f;
-	}
+h2 {
+	font-size: 28px;
+	padding-bottom: 60px;
+}
+b {
+	font-weight: 500;
+	font-size: 16px;
+	color: #c3522f;
+}
 
 .banner {
 	position: relative;
@@ -44,94 +43,83 @@
 	background: #5b4d3d;
 	box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
-	.banner ul {
-		list-style: none;
-		width: 300%;
-	}
-	.banner ul li {
-		display: block;
-		float: left;
-		width: 33%;
-		padding: 160px 0 110px;
-		min-height: 640px;
-		background-position: center center;
-/*		-webkit-background-size: 100% 100%;*/
-		-moz-background-size: 100% 100%;
-		-o-background-size: 100% 100%;
-		-ms-background-size: 100% 100%;
-/*		background-size: 100% 100%;*/
-		box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
-	}
+.banner ul {
+	list-style: none;
+	width: 300%;
+}
+.banner ul li {
+	display: block;
+	float: left;
+	width: 33%;
+	padding: 160px 0 110px;
+	min-height: 640px;
+	background-position: center center;
+	/*		-webkit-background-size: 100% 100%;*/
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-ms-background-size: 100% 100%;
+	/*		background-size: 100% 100%;*/
+	box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+
+.banner h1, .banner h2 {
+	font-size: 40px;
+	line-height: 52px;
 	
-	.banner h1, .banner h2 {
-		font-size: 40px;
-		line-height: 52px;
-		
-		color: #fff;
-	}
+	color: #fff;
+}
+
+.banner .btn {
+	display: inline-block;
+	margin: 25px 0 0;
+	padding: 9px 22px 7px;
+	clear: both;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
 	
-	.banner .btn {
-		display: inline-block;
-		margin: 25px 0 0;
-		padding: 9px 22px 7px;
-		clear: both;
-		background-color: #000000;
-		color: #fff;
-		font-size: 12px;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-decoration: none;
-		
-		border: 2px solid rgba(255,255,255,.4);
-		border-radius: 5px;
-	}
-		.banner .btn:hover {
-			background: rgba(255,255,255,.05);
-		}
-		.banner .btn:active {
-			-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			-o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-			filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-		}
-		
-	.banner .btn, .banner .dot {
-		-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-		filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	}
+	border: 2px solid rgba(255,255,255,.4);
+	border-radius: 5px;
+}
+.banner .btn:hover {
+	background: rgba(0,0,0, .5);
+}
+
+.banner .btn:active {
+	background: white;
+}
+
+
+.banner .dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+.banner .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
 	
-	.banner .dots {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 20px;
-	}
-		.banner .dots li {
-			display: inline-block;
-			width: 10px;
-			height: 10px;
-			margin: 0 4px;
-			
-			text-indent: -999em;
-			
-			border: 2px solid #fff;
-			border-radius: 6px;
-			
-			cursor: pointer;
-			opacity: .4;
-			
-			-webkit-transition: background .5s, opacity .5s;
-			-moz-transition: background .5s, opacity .5s;
-			transition: background .5s, opacity .5s;
-		}
-			.banner .dots li.active {
-				background: #fff;
-				opacity: 1;
-			}
+	text-indent: -999em;
+	
+	border: 2px solid #fff;
+	border-radius: 6px;
+	
+	cursor: pointer;
+	opacity: 0.4;
+	
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+	background: #fff;
+	opacity: 1;
+}
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
@@ -139,19 +127,16 @@
 	.banner h1, .banner h2 {
 		font-size: 24px;
 		line-height: 30px;
-		background-color: #000000;
 	}
 	.banner ul li {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		height: 240px;
-		background-color: #000000;
 	}
 	.banner p {
 		font-size: 15px;
 		width: 80%;
 		margin: 0 auto;
-		background-color: #000000;
 	}
 	pre {
 		overflow: auto;
