@@ -37,7 +37,7 @@ $(document).ready(function () {
             data = data.data;
             var n = data.length;
             for (var i = 0; i < n; i++) {
-                var str = '<div class="sympl quarter"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login)
+                var str = '<div class="sympl onefifth"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login)
                 // str = '<div class="sympl quarter"><section class="person person--contributer"><div class="person__img">';
                 // str += '<div class="person__img__info"><div class="person__img__info__cont">';
                 // str += '<a target="_blank" href="' + data[i].html_url + '"><i class="icon-github"></i></a></div></div>';
