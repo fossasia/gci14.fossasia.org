@@ -1,0 +1,1462 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    116.40739, 
+                    39.90421
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Beijing", 
+                "name": "Beijing Linux User Group", 
+                "url": "http://beijinglug.org", 
+                "ml": "http://beijinglug.org", 
+                "twitter": "@beijinglug", 
+                "mtime": "2014-12-03T00:40:28.106Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://beijinglug.org/index.php?format=feed&type=rss", 
+                        "type": "rss", 
+                        "name": "Bejinglug Blog"
+                    }
+                ], 
+                "irc": "irc://irc.freenode.net/#chinalug", 
+                "email": "mb@mariobehling.de"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    106.6943626, 
+                    10.768451
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Saigon", 
+                "name": "Saigon Linux User Group", 
+                "url": "https://saigonlug.org", 
+                "mtime": "2014-12-16T09:50:06.818Z", 
+                "facebook": "https://www.facebook.com/SaigonLUG", 
+                "metacommunity": "Linux-saigon", 
+                "feeds": [
+                    {
+                        "category": "forum", 
+                        "url": "https://saigonlug.org/feed/", 
+                        "type": "rss", 
+                        "name": "Saigon Linux User group"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    73.0667, 
+                    33.7167
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Islamabad", 
+                "name": "Pakistan Software Expert Board", 
+                "url": "http://www.pseb.org.pk/", 
+                "twitter": "@PSEB", 
+                "phone": "+92-51-9204074", 
+                "facebook": "https://www.facebook.com/PSEB.org", 
+                "mtime": "2014-12-16T07:35:10.470Z", 
+                "email": "info@pseb.org.pk"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    89.707253, 
+                    27.461738
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Yusipang", 
+                "name": "Dzongkha Linux Google Group", 
+                "url": "http://dzongkha.sourceforge.net", 
+                "ml": "https://lists.sourceforge.net/lists/listinfo/dzongkha-l10n", 
+                "mtime": "2014-12-17T03:32:26.407Z", 
+                "phone": "+975-02-323215", 
+                "metacommunity": "Linux-dz", 
+                "email": "DzongkhaLinux@googlegroups.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    126.9667, 
+                    37.55
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Seoul", 
+                "name": "Korea JBoss User Group", 
+                "url": "http://cafe.naver.com/jbossug", 
+                "facebook": "https://www.facebook.com/groups/jbossusergroup/events/", 
+                "mtime": "2014-12-15T12:14:28.867Z", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "http://cafe.rss.naver.com/jbossug", 
+                        "type": "rss"
+                    }
+                ], 
+                "email": "jbossusergroup@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    106.667, 
+                    10.75
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://h0lug.sourceforge.net/", 
+                "city": "Ho Chi Minh", 
+                "mtime": "2014-12-21T12:42:59.926Z", 
+                "email": "h0tp@users.sourceforge.net", 
+                "name": "H\u00f8LUG: The GNU/Linux User Group of H\u00f8z"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    106.8167, 
+                    6.2
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Jakarta", 
+                "name": "ECHO", 
+                "url": "http://wiz.echo.or.id/", 
+                "ml": "newbie_hacker@yahoogroups.com", 
+                "twitter": "@echordc", 
+                "googleplus": "https://plus.google.com/+EchoOrId/posts", 
+                "facebook": "https://www.facebook.com/groups/echordc/", 
+                "mtime": "2014-12-13T21:27:50.409Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://wiz.echo.or.id/feeds/posts/default", 
+                        "type": "atom", 
+                        "name": "EchoZine"
+                    }
+                ], 
+                "email": "erc@echo.or.id"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    126.9667, 
+                    37.55
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "South korea", 
+                "name": "Ubuntu Korean Team", 
+                "url": "http://ubuntu-kr.org/", 
+                "ml": "http://lists.ubuntu.com/mailman/listinfo/ubuntu-ko", 
+                "facebook": "https://www.facebook.com/groups/ubuntu.ko/", 
+                "mtime": "2014-12-15T12:43:19.477Z", 
+                "feeds": [
+                    {
+                        "category": "forum", 
+                        "url": "http://forum.ubuntu.or.kr/"
+                    }, 
+                    {
+                        "category": "wiki", 
+                        "url": "http://forum.ubuntu.or.kr/", 
+                        "name": "Ubuntu wiki"
+                    }, 
+                    {
+                        "category": "wiki", 
+                        "url": "https://wiki.ubuntu.com/KoreanTeam", 
+                        "name": "Korean Ubuntu team wiki"
+                    }, 
+                    {
+                        "category": "others", 
+                        "url": "http://loco.ubuntu.com/teams/ubuntu-ko/", 
+                        "name": "Summary"
+                    }
+                ], 
+                "irc": "irc://freenode.net/#ubuntu-ko"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    55.3333, 
+                    24.95
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Dubai", 
+                "name": "Dubai DevNights Meetup", 
+                "url": "http://www.devnights.com/", 
+                "twitter": "@DevNights", 
+                "facebook": "https://www.facebook.com/devnights", 
+                "mtime": "2014-12-13T00:56:40.512Z"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    51.533, 
+                    25.283
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Doha", 
+                "name": "QGLUG", 
+                "url": "http://qglug.org/", 
+                "ml": "http://lists.qglug.org/mailman/listinfo/list", 
+                "twitter": "@qglug", 
+                "mtime": "2014-12-11T14:47:40.084Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://qglug.org/?feed=rss2", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }, 
+                    {
+                        "category": "forum", 
+                        "url": "http://qglug.org/?feed=comments-rss2", 
+                        "type": "rss", 
+                        "name": "Comment RSS Feed"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    121.033, 
+                    14.633
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Quezon City", 
+                "name": "Bluepoint Foundation", 
+                "url": "http://bluepoint.com.ph/", 
+                "twitter": "@bluepointph", 
+                "mtime": "2014-12-21T18:37:10.127Z", 
+                "facebook": "https://www.facebook.com/BluepointFoundation", 
+                "address": {
+                    "Street": "Quezon Avenue near corner Edsa", 
+                    "Name": "Bantayog ng mga Bayani (Monument to the Heroes) Memorial Center"
+                }, 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://bluepoint.com.ph/rss.php?ver=2.0", 
+                        "type": "rss", 
+                        "name": "Main RSS feed"
+                    }
+                ], 
+                "email": "info@bluepoint.com.ph"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    67, 
+                    24.85
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Karachi", 
+                "name": "Linux Pakistan", 
+                "url": "http://linuxpakistan.org", 
+                "ml": "http://www.linuxpakistan.net/forum/", 
+                "mtime": "2014-12-13T11:02:35.349Z", 
+                "phone": "+92 2136 622134", 
+                "address": {
+                    "Street": "4 - E - 1/6 Nazimabad", 
+                    "Name": "Linux Pakistan", 
+                    "Zipcode": "74600"
+                }, 
+                "email": "tariq@linuxpakistan.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    73.8567, 
+                    18.5203
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Pune", 
+                "name": "Pune GNU/Linux Users", 
+                "url": "http://www.plug.org.in", 
+                "ml": "http://www.plug.org.in/mailing-list/", 
+                "mtime": "2014-12-11T12:21:58.852Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.plug.org.in/feed/", 
+                        "type": "rss", 
+                        "name": "Pune Linux User Group"
+                    }
+                ], 
+                "email": "webmaster@plug.org.in"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    88.3667, 
+                    22.5667
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Calcutta", 
+                "name": "Indian Linux Group- Calcutta", 
+                "url": "http://ilugcal.tripod.com/", 
+                "phone": "033442-4008", 
+                "mtime": "2014-12-20T08:38:43.533Z", 
+                "email": "indradg@cal.vsnl.net.in"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    45, 
+                    24
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Western Asia", 
+                "name": "Ubuntu Saudi Arabia LoCo Team", 
+                "url": "https://wiki.ubuntu.com/SaudiTeam/English", 
+                "mtime": "2014-12-19T17:21:20.028Z", 
+                "feeds": [
+                    {
+                        "category": "forum", 
+                        "url": "http://ubuntuforums.org/forumdisplay.php?f=264"
+                    }, 
+                    {
+                        "category": "forum", 
+                        "url": "https://groups.google.com/forum/#!forum/ubuntu-sa"
+                    }
+                ], 
+                "irc": "irc://freenode.net/ #ubuntu-sa"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    35.917, 
+                    31.933
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Amman", 
+                "name": "JoLug", 
+                "url": "http://www.jolug.org/", 
+                "ml": "jolug@googlegroups.com", 
+                "mtime": "2014-12-12T14:07:06.494Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.jolug.org/ar/rss.xml", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }
+                ], 
+                "email": "opensource@just.edu.jo"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    33.367, 
+                    35.1
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Latsia", 
+                "name": "Ubuntu-cy", 
+                "url": "http://www.ubuntucy.org/", 
+                "ml": "https://lists.ubuntu.com/mailman/listinfo/ubuntu-cy", 
+                "twitter": "@savvasradevic/ubuntu-cy", 
+                "mtime": "2014-12-12T14:40:36.250Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.ubuntucy.org/forum/feed.php", 
+                        "type": "atom", 
+                        "name": "Main Atom Feed"
+                    }, 
+                    {
+                        "category": "forum", 
+                        "url": "http://www.ubuntucy.org/forum/feed.php?mode=forums", 
+                        "type": "atom", 
+                        "name": "Forum feed"
+                    }
+                ], 
+                "irc": "irc://freenode.net/ubuntu-cy"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    121.033, 
+                    14.583
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Mandaluyong", 
+                "name": "Philippine Linux Windows Users Group", 
+                "url": "http://www.ph-lwug.org/", 
+                "twitter": "@phlwug", 
+                "facebook": "https://www.facebook.com/PHLWUG", 
+                "mtime": "2014-12-21T18:29:48.974Z", 
+                "email": "info@ph-lwug.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    74.788, 
+                    13.347
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Manipal", 
+                "name": "Linux User Group- Manipal", 
+                "url": "http://www.lugmanipal.org/", 
+                "twitter": "@LUGManipal", 
+                "mtime": "2014-12-20T09:25:19.996Z", 
+                "email": "discussion@lists.lugmanipal.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    96.127621, 
+                    16.825818
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Yangon", 
+                "name": "Ubuntu Myanmar LoCo Team", 
+                "url": "http://loco.ubuntu.com/teams/ubuntu-mm", 
+                "ml": "ubuntu-mm@lists.launchpad.net", 
+                "twitter": "@u4mm", 
+                "googleplus": "https://plus.google.com/communities/116648417786995349982", 
+                "phone": "+959450022022", 
+                "facebook": "https://facebook.com/ubuntumm", 
+                "metacommunity": "ubuntu-mm", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "http://loco.ubuntu.com/feeds/teams/ubuntu-mm/", 
+                        "type": "rss", 
+                        "name": "Ubuntu-MM"
+                    }
+                ], 
+                "irc": "irc://irc.freenode.net:6667/#ubuntu-mm", 
+                "mtime": "2014-12-11T20:10:44.633Z", 
+                "email": "kokoye2007@gmail.com", 
+                "address": {
+                    "Street": "No_26(B), 1 FL, Maha Social Street,", 
+                    "Name": "Ubuntu Myanmar LoCo Team", 
+                    "Zipcode": "11041"
+                }
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    58.54, 
+                    23.61
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Muscat", 
+                "name": "FOSSC-Oman", 
+                "url": "http://fossc.om/", 
+                "phone": "+968 2414 3696", 
+                "facebook": "https://www.facebook.com/fossc.oman", 
+                "mtime": "2014-12-14T15:12:58.485Z", 
+                "email": "inquiry@fossc.om"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    103.8, 
+                    1.3
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Singapore", 
+                "name": "Python Users Group Singapore", 
+                "url": "http://pugs.org.sg/", 
+                "ml": "https://groups.google.com/d/forum/pythonsg", 
+                "twitter": "@pythonsg", 
+                "mtime": "2014-12-12T08:27:58.807Z", 
+                "facebook": "https://www.facebook.com/groups/pythonsg/", 
+                "address": {
+                    "Street": "Bartley Rise", 
+                    "Name": "37 Sunshine Terrace", 
+                    "Zipcode": "535712"
+                }, 
+                "email": "membership@pugs.org.sg"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    67.01, 
+                    24.86
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://linuxpakistan.net/", 
+                "city": "Karachi", 
+                "mtime": "2014-12-16T07:50:12.056Z", 
+                "email": "pluc-request@linux.com.pk", 
+                "name": "Pakistan Linux Users Community"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    90.365782, 
+                    23.816724
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Dhaka", 
+                "name": "Mozilla Bangladesh", 
+                "url": "http://mozillabd.org", 
+                "ml": "https://lists.mozilla.org/listinfo/community-bangladesh", 
+                "twitter": "@mozillabd", 
+                "mtime": "2014-12-14T13:37:47.664Z", 
+                "facebook": "https://www.facebook.com/groups/MozillaBD/", 
+                "metacommunity": "Mozilla-bd", 
+                "feeds": [
+                    {
+                        "category": "others"
+                    }
+                ], 
+                "irc": "irc://irc.mozilla.org:6697/#bangladesh", 
+                "email": "mahayalamkhan@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    96, 
+                    22
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Myanmar", 
+                "name": "Mozilla Myanmar", 
+                "url": "http://mozillamyanmar.org/", 
+                "twitter": "@mozillamyanmar", 
+                "facebook": "https://www.facebook.com/mozillamyanmar", 
+                "mtime": "2014-12-16T19:56:19.871Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://mozillamyanmar.org/feed/", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    53, 
+                    32
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Middle East", 
+                "name": "Iran On Rails", 
+                "url": "http://iranonrails.ir/", 
+                "twitter": "@iranonrails", 
+                "googleplus": "https://plus.google.com/+IranonrailsIrCommunity", 
+                "phone": "+989366452290", 
+                "facebook": "https://www.facebook.com/iranonrails/info?tab=page_info", 
+                "mtime": "2014-12-16T18:09:14.526Z", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "https://github.com/IranOnRails.atom", 
+                        "name": "Github"
+                    }
+                ], 
+                "irc": "irc://freenode.net/#iranonrails", 
+                "email": "info@iranonrails.ir"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    80.4428, 
+                    16.3008
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "https://www.facebook.com/KLUGian", 
+                "phone": "0863 522502", 
+                "mtime": "2014-12-20T09:09:52.283Z", 
+                "name": "KLUniversity-GNU/Linux User group(andhra pradesh)", 
+                "city": "Guntur"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    90.389536, 
+                    23.739878
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Dhaka", 
+                "name": "Bangladesh Open Source Network", 
+                "url": "http://bdosn.org", 
+                "metacommunity": "Osn-bd", 
+                "phone": "+88 01923 510073", 
+                "facebook": "https://www.facebook.com/bdosn/info", 
+                "address": {
+                    "Street": "Shelteck Niribili, 1st Floor, 210/2", 
+                    "Name": "Elephant Road, Dhaka , Bangladesh", 
+                    "Zipcode": "1205"
+                }, 
+                "mtime": "2014-12-14T13:25:07.452Z"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    96.083, 
+                    21.967
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Mandalay", 
+                "name": "Joomla! User Group Mandalay", 
+                "url": "http://community.joomla.org/user-groups/asia-pacific/myanmar/joomla-mandalay-myanmar.html", 
+                "twitter": "@JMandalay", 
+                "facebook": "http://www.facebook.com/pages/Joomla-Day-Mandalay/168500839851024", 
+                "mtime": "2014-12-16T22:03:50.909Z", 
+                "email": "kyawkyawhtun.mdy@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    47.967, 
+                    29.367
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Kuwait", 
+                "name": "Q8linux", 
+                "url": "http://www.q8linux.net/", 
+                "twitter": "@q8linux", 
+                "facebook": "https://www.facebook.com/TheLinuxFoundation", 
+                "mtime": "2014-12-11T15:29:03.791Z", 
+                "feeds": [
+                    {
+                        "category": "forum", 
+                        "url": "http://www.q8linux.net/feeds-2-rss20.xml", 
+                        "type": "rss", 
+                        "name": "Forum Feed"
+                    }, 
+                    {
+                        "category": "blog", 
+                        "url": "http://www.q8linux.net/feeds-1-rss20.xml", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }
+                ], 
+                "email": "Q8linux@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    67.035093, 
+                    24.911287
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Karachi", 
+                "name": "Pakistan Open Source Organization", 
+                "url": "http://www.pakistanopensource.org/", 
+                "address": {
+                    "Street": " 4-E-1/6 Nazimabad", 
+                    "Name": "Linuxpakistan", 
+                    "Zipcode": "74600"
+                }, 
+                "phone": "+92-21-6622134", 
+                "mtime": "2014-12-16T02:20:43.072Z", 
+                "metacommunity": "Linux Pakistan", 
+                "email": "admin@pakistanopensource.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    86.7333, 
+                    26.5333
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Kathmandu", 
+                "name": "Nepal Open Source Klub", 
+                "url": "http://www.nosk.org.np/", 
+                "ml": "open-nosk@googlegroups.com", 
+                "twitter": "@open_nosk", 
+                "googleplus": "https://plus.google.com/communities/110589297196280370630", 
+                "facebook": "https://www.facebook.com/nosklub", 
+                "address": {
+                    "Name": "Balkumari, lalitpur"
+                }, 
+                "irc": "irc://freenode.net/#nosk", 
+                "mtime": "2014-12-13T12:52:18.817Z", 
+                "email": "info@nosk.org.np"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    114.188, 
+                    22.267
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Hong Kong", 
+                "name": "Hong Kong Linux User Group", 
+                "url": "http://www.linux.org.hk/", 
+                "ml": "hklug@googlegroups.com", 
+                "mtime": "2014-12-13T10:44:48.868Z", 
+                "facebook": "https://www.facebook.com/groups/hklug/", 
+                "address": {
+                    "Street": "G.P.O. Box No. 11731", 
+                    "Name": "Hong Kong Linux User Group", 
+                    "Zipcode": "Hong Kong"
+                }, 
+                "email": "info@linux.hk"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    103, 
+                    35
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Chengdu", 
+                "name": "Chengdu GNU / Linux User Group (CDLug)", 
+                "url": "http://www.cdlug.org/", 
+                "mtime": "2014-12-15T10:33:36.381Z", 
+                "feeds": [
+                    {
+                        "category": "wiki", 
+                        "url": "http://wiki.cdlug.org/"
+                    }, 
+                    {
+                        "category": "others", 
+                        "url": "http://www.cdlug.org/feed/", 
+                        "type": "rss"
+                    }
+                ], 
+                "email": "cdlug_community@googlegroups.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    37.617, 
+                    55.75
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Moscow", 
+                "name": "Moscow Linux User Group", 
+                "url": "http://mlug.ru", 
+                "phone": "+7 9151 020503", 
+                "mtime": "2014-12-16T13:21:07.382Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://mlug.ru/.xml/?type=rss", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    121.033, 
+                    14.633
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Quezon City", 
+                "name": "University of the Philippines Linux Users' Group", 
+                "url": "http://web.uplug.org/", 
+                "twitter": "@unplugmensahero", 
+                "facebook": "http://facebook.com/unplugmensahero", 
+                "mtime": "2014-12-21T18:17:18.074Z", 
+                "email": "info@uplug.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    77.2, 
+                    28.6
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "New Delhi", 
+                "name": "Jamia Millia Islamia - Linux User's Group", 
+                "url": "http://www.jmilug.org/cms/", 
+                "twitter": "@jmilug", 
+                "googleplus": "https://plus.google.com/103791766535985599543", 
+                "mtime": "2014-12-15T12:46:57.035Z", 
+                "irc": "irc://freenode.net/jmilug"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    44.2, 
+                    15.333
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://www.linuxarabia.org/", 
+                "city": "Sana'a", 
+                "mtime": "2014-12-12T18:05:56.082Z", 
+                "email": "rami@yfosa.org", 
+                "name": "LinuxArabia"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    49.8822, 
+                    40.3953
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Bak\u0131", 
+                "name": "Az\u0259rbaycan \u0130nternet Forumu", 
+                "url": "http://aif.az/", 
+                "phone": "+994 12 924444", 
+                "facebook": "https://www.facebook.com/internetforum", 
+                "mtime": "2014-12-16T14:28:18.971Z", 
+                "email": "informasiya@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    28.9647222, 
+                    41.0186111
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Istanbul", 
+                "name": "Ceviz", 
+                "url": "http://www.ceviz.net/", 
+                "twitter": "@Ceviz_Net", 
+                "facebook": "https://www.facebook.com/ceviznet?ref=ts&fref=ts", 
+                "mtime": "2014-12-10T23:41:34.212Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.ceviz.net/feed/", 
+                        "type": "rss", 
+                        "name": "Ceviz Blog"
+                    }
+                ], 
+                "email": "info@ceviz.net"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    103.8, 
+                    1.3
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Singapore", 
+                "name": "The Singapore Linux Meetup Group", 
+                "url": "http://www.meetup.com/sg-linux/", 
+                "mtime": "2014-12-17T04:37:54.153Z", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "http://www.meetup.com/sg-linux", 
+                        "name": "Meetup"
+                    }
+                ], 
+                "email": "lumbrandon@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    34.131122, 
+                    39.2387034
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Malatya", 
+                "name": "Ubuntu Turkey", 
+                "url": "http://www.ubuntu-tr.net", 
+                "mtime": "2014-12-16T09:59:36.179Z", 
+                "metacommunity": "Ubuntu-tr", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.ubuntu-tr.net/feed/", 
+                        "type": "application/rss+xm", 
+                        "name": "Ubuntu T\u00fcrkiye &raquo; Beslemesi"
+                    }
+                ], 
+                "irc": "irc://irc.freenode.org/#ubuntu-tr"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    28.980849, 
+                    41.034565
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Istanbul", 
+                "name": "Mozilla Turkey", 
+                "url": "http://www.mozilla.org.tr", 
+                "ml": "https://lists.mozilla.org/listinfo/community-turkey", 
+                "twitter": "@FirefoxTurkiye", 
+                "address": {
+                    "Street": "Hasnun Galip Sokak No:1 34433 Istanbul"
+                }, 
+                "facebook": "https://www.facebook.com/FirefoxTurkiye", 
+                "metacommunity": "Mozilla-tr", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.mozilla.org.tr/feed/", 
+                        "type": "application/rss+xml", 
+                        "name": "Mozilla T\u00fcrkiye RSS Feed"
+                    }
+                ], 
+                "mtime": "2014-12-16T09:57:56.194Z", 
+                "email": "sakirascthe@gmail.com"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    106.5667, 
+                    29.5583
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Chongqing", 
+                "name": "ChongqingLUG", 
+                "url": "http://www.chongqinglug.org", 
+                "googleplus": "https://plus.google.com/b/107213821464014721807/communities/107917159329803156860", 
+                "phone": "+86-23-60374947", 
+                "mtime": "2014-12-16T11:43:20.820Z", 
+                "irc": "irc://webchat.freenode.net/chongqinglug", 
+                "email": "bootingman@chongqinglug.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    126.9667, 
+                    37.55
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Seoul", 
+                "name": "Seoul Tech Society", 
+                "url": "http://seoultechsociety.org/", 
+                "twitter": "@Seoul_Tech", 
+                "facebook": "https://www.facebook.com/SeoulTechSociety", 
+                "mtime": "2014-12-15T13:04:16.589Z", 
+                "email": "contacts@seoultechsociety.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    77.614298, 
+                    12.9634504
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Bengaluru", 
+                "name": "Mozilla India", 
+                "url": "http://mozillaindia.org", 
+                "ml": "https://lists.mozilla.org/listinfo/community-india", 
+                "twitter": "@mozillain", 
+                "address": {
+                    "Street": "10, Serenity, 3rd Floor, \u2018A\u2019 Cross Palm Grove Road, Austin Town", 
+                    "Name": "Bengaluru"
+                }, 
+                "facebook": "https://www.facebook.com/mozillaindia", 
+                "metacommunity": "Mozilla-in", 
+                "feeds": [
+                    {
+                        "category": "others"
+                    }
+                ], 
+                "irc": "irc://irc.mozilla.org:6697/#india", 
+                "mtime": "2014-12-14T13:47:26.688Z"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    90.392495, 
+                    23.725599
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Dhaka", 
+                "name": "Ubuntu Bangladesh LoCo Team", 
+                "url": "http://loco.ubuntu.com/teams/ubuntu-bd/", 
+                "ml": "ubuntu-bd@lists.ubuntu.com", 
+                "mtime": "2014-12-14T13:20:59.735Z", 
+                "facebook": "https://www.facebook.com/groups/ubuntubd", 
+                "metacommunity": "ubuntu-bd", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "http://loco.ubuntu.com/feeds/teams/ubuntu-bd/", 
+                        "type": "rss", 
+                        "name": "Ubuntu-BD"
+                    }
+                ], 
+                "irc": "irc://irc.freenode.net:8001/#ubuntu-bd", 
+                "email": "shahriar@linux.org.bd"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    35.183, 
+                    31.967
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Birzeit", 
+                "name": "PLUG", 
+                "url": "http://plug.ps/", 
+                "ml": "http://box905.bluehost.com/mailman/listinfo/list_plug.ps", 
+                "mtime": "2014-12-12T18:18:31.096Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://plug.ps/index.php?option=com_rss&feed=RSS2.0&no_html=1", 
+                        "type": "rss", 
+                        "name": "Main RSS Feed"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    30.3, 
+                    59.95
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Saint Petersburg", 
+                "name": "Saint Petersburg Linux User Group", 
+                "url": "http://spblug.org/index.en.html", 
+                "ml": "http://groups.google.com/group/spblinux/", 
+                "googleplus": "https://plus.google.com/109127630753609453011", 
+                "mtime": "2014-12-16T13:27:32.002Z", 
+                "irc": "irc://freenode.net/spblug", 
+                "email": "info@spblug.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    106.6943626, 
+                    10.768451
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Saigan", 
+                "name": "Ubuntu Vietnam", 
+                "url": "http://www.ubuntu-vn.org/", 
+                "ml": "https://lists.launchpad.net/ubuntu-vn", 
+                "mtime": "2014-12-16T09:53:14.694Z", 
+                "facebook": "https://www.facebook.com/ubuntu.vn", 
+                "metacommunity": "Ubuntu-vn", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.ubuntu-vn.org/rss.xml", 
+                        "name": "Ubuntu Vi\u1ec7t Nam RSS"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    96, 
+                    22
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://www.openmm.net/index.htm", 
+                "city": "Myanmar", 
+                "mtime": "2014-12-16T20:05:29.895Z", 
+                "email": "thetmgu@solvewaresolution.net", 
+                "name": "OpenMM"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    103.8, 
+                    1.3
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Singapore", 
+                "name": "SUSE Linux User Group - Singapore", 
+                "url": "http://www.slug-sg.org/", 
+                "googleplus": "https://plus.google.com/109974888121878499853", 
+                "facebook": "https://www.facebook.com/pages/openSUSE-Singapore/98569599976", 
+                "mtime": "2014-12-17T04:44:00.827Z"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    44.5167, 
+                    40.1833
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Yerevan", 
+                "name": "Internet Society of Armenia(ISOC AM)", 
+                "url": "http://www.isoc.am/", 
+                "phone": "(37460)272216", 
+                "mtime": "2014-12-18T06:25:09.088Z", 
+                "email": "isoc@isoc.am"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    86.7333, 
+                    26.5333
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "South Asia", 
+                "name": "Ruby community of Nepal", 
+                "url": "http://www.rubynepal.org/", 
+                "twitter": "@ruby_nepal", 
+                "mtime": "2014-12-16T17:43:38.665Z", 
+                "feeds": [
+                    {
+                        "category": "others", 
+                        "url": "http://www.rubynepal.org/made-in-nepal/", 
+                        "name": "Projects"
+                    }, 
+                    {
+                        "category": "blog", 
+                        "url": "http://www.rubynepal.org/blog/index.html"
+                    }, 
+                    {
+                        "category": "others", 
+                        "url": "http://www.rubynepal.org/atom.xml", 
+                        "type": "atom"
+                    }, 
+                    {
+                        "category": "others", 
+                        "url": "https://github.com/rubynepal", 
+                        "name": "Github"
+                    }, 
+                    {
+                        "category": "forum", 
+                        "url": "https://groups.google.com/forum/#!forum/ror-nepal", 
+                        "name": "google group"
+                    }
+                ], 
+                "email": "info@rubynepal.org"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    35.5, 
+                    33.883
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Beirut", 
+                "name": "Free Libre Open Source Lebanese Movement", 
+                "url": "http://oslm.cofares.net/", 
+                "twitter": "@OpenSourceLB", 
+                "facebook": "https://www.facebook.com/opensourcelebanon", 
+                "mtime": "2014-12-14T21:15:02.966Z", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://feeds.feedburner.com/oslm?format=xml", 
+                        "type": "xml", 
+                        "name": "Main XML Feed"
+                    }
+                ], 
+                "email": "pfares@cofares.net"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    32.64676, 
+                    39.8171395
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Istanbul", 
+                "name": "Turkey Linux Users Association", 
+                "url": "http://www.lkd.org.tr/en/hakkimizda/tarihce/", 
+                "twitter": "@lkdtr", 
+                "googleplus": "https://plus.google.com/112223499431908086443", 
+                "facebook": "http://www.facebook.com/lkdtr", 
+                "metacommunity": "Linux-tr", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://www.lkd.org.tr/en/feed/", 
+                        "type": "application/rss+xml", 
+                        "name": "Linux Kullan\u0131c\u0131lar\u0131 Derne\u011fi RSS Feed"
+                    }
+                ], 
+                "mtime": "2014-12-16T09:55:17.386Z", 
+                "identica": "http://identi.ca/lkdtr"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    105.8273507, 
+                    21.0189311
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Saigan", 
+                "name": "Hanoi Linux User Group", 
+                "url": "http://blog.hanoilug.org", 
+                "ml": "http://lists.hanoilug.org/mailman/listinfo", 
+                "mtime": "2014-12-16T09:51:54.736Z", 
+                "metacommunity": "Linux-hanoi", 
+                "feeds": [
+                    {
+                        "category": "blog", 
+                        "url": "http://blog.hanoilug.org/?feed=rss2", 
+                        "type": "rss", 
+                        "name": "HanoiLUG RSS Feed"
+                    }
+                ]
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    139.7667, 
+                    35.6833
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Tokyo", 
+                "name": "Ubuntu Japanese Team", 
+                "url": "http://www.ubuntulinux.jp", 
+                "mtime": "2014-12-14T13:59:43.851Z", 
+                "feeds": [
+                    {
+                        "category": "wiki", 
+                        "url": "https://wiki.ubuntulinux.jp/JapaneseTeamMember"
+                    }
+                ], 
+                "irc": "irc://freenode.net/#ubuntu-jp"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    32.8333, 
+                    39.9167
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Western Asia", 
+                "name": "Ubuntu Turkey", 
+                "url": "http://www.ubuntu-tr.net/", 
+                "mtime": "2014-12-19T16:52:35.888Z", 
+                "feeds": [
+                    {
+                        "category": "forum", 
+                        "url": "http://forum.ubuntu-tr.net"
+                    }, 
+                    {
+                        "category": "wiki", 
+                        "url": "http://wiki.ubuntu-tr.net"
+                    }
+                ], 
+                "irc": "irc://freenode.net/#ubuntu-tr"
+            }
+        }
+    ]
+}
