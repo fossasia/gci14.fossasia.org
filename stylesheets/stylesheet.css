@@ -1035,3 +1035,19 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 	padding: 70px 0;
 	background-size: cover;
 }
+
+.tweets-feed {
+  font-size:150%;
+}
+
+.timePosted{
+  font-size:80%;
+}
+
+.tweet a{
+  color:#38aaf8;
+}
+
+.tweet a:hover{
+  color:#2cc3ff;
+}

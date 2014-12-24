@@ -106,4 +106,30 @@ $(document).ready(function () {
         $('#slide1 p').css('color', '#000');
 
     }
+
+    $('.tweets-feed').each(function(index) {
+        $(this).attr('id', 'tweets-' + index);
+    }).each(function(index) {
+
+        function handleTweets(tweets) {
+            var x = tweets.length;
+            var n = 0;
+            var element = document.getElementById('tweets-' + index);
+            var html = '<ul class="slides">';
+            while (n < x) {
+                html += '<li>' + tweets[n] + '</li>';
+                n++;
+            }
+            html += '</ul>';
+            element.innerHTML = html;
+            $('.tweets-feed').unslider({
+                fluid:true,
+                delay:5000
+            });
+            return html;
+        }
+        // fetch(id, domId, max-tweets, enableLinks, showUser, showTime, dateFunction, showRT, custom-callback, interaction);
+        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
+
+    });
 });
