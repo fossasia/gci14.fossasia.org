@@ -730,6 +730,14 @@ img {
    SUBSCRIBE EMAIL
    ========================================================================== */
 
+input {
+  padding: .75em;
+  border: none;
+  border-radius: 2px;
+  transition: all .3s ease;
+  font-size: .75em;
+}
+
 #mc_embed_signup{
  padding-bottom: 1.000em;
  clear:left;
@@ -737,42 +745,27 @@ img {
 #mc_embed_signup_scroll{
   text-align:center;
 }
+
 #mc_embed_signup_scroll input#mce-EMAIL{
   margin:auto;
   display: block;
-  padding: 0.600em 0.250em;
-  text-indent: 0.313em;
-  color: black;
-  font-size: 1.000em;
-  font-family: Garamond;
   text-align:center;
-  background: #f3f3f3;
-  font-weight: bold;
-  width: 12.500em;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  -webkit-border-radius: 0.700em;
-  -moz-border-radius: 0.700em;
-  border-radius: 0.700em;
+  width: 12em;
+  margin: 1em auto;
 }
+
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
-  margin: 0.500em auto auto auto;
-  width: 19.000em;
-  height: 3.000em;
+  padding: 1em;
+  color: white;
   background-color:#217bb8;
-  font-family: Garamond;
-  font-size:0.700em;
-
-
+  font-size: .75em;
 }
 #mc_embed_signup_scroll label{ 
- display:block;
- font-size: 2.750em !important;
- padding-left: 0.650em; 
- color: #217bb8; 
- font-weight: bold;
- font-family: Garamond;	
+  display:block;
+  font-size: 2em !important;
+  margin: 0 auto;
+  color: #fff; 
+  font-weight: 300;
 }
  /* ==========================================================================
    =FOOTER
