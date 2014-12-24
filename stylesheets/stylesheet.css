@@ -541,7 +541,7 @@ button:active,
 }
 .page-section {
   padding: 4em 0 3em;
-    overflow: hidden;
+  overflow: hidden;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
