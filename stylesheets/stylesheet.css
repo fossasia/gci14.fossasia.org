@@ -1051,3 +1051,6 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 .tweet a:hover{
   color:#2cc3ff;
 }
+.tweets-feed .slides li{
+  list-style-type: none;
+}
