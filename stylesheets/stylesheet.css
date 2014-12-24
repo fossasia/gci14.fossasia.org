@@ -772,7 +772,7 @@ img {
 .colophon {
   background: #f6f6f6;
   font-size: .75em;
-  padding-top: 3em;
+  padding: 3em 0;
   margin-top: 3em;
 }
 .colophon h3 {
