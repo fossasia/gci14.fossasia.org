@@ -573,6 +573,9 @@ img {
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
+  
+  height: 3.25em;
+  overflow: hidden;
 }
 .masthead:hover {
   background: rgba(240,240,240,1);
@@ -583,7 +586,7 @@ img {
 .masthead .logo {
   height: 1.5em;
   float: left;
-  padding: 1.5em 0;
+  padding: 1.25em 0;
   text-align: center;
 }
 .masthead .logo img {
@@ -606,14 +609,19 @@ img {
 .menu a {
   display: block;
   padding: 1.5em;
+  line-height: 1;
 }
 .menu a:hover {
   background: #fff;
   text-decoration: none;
 }
 .socialbtn{
-        margin-left: 15px;
-    }
+  margin-left: 15px;
+}
+.twitter-width {
+  margin-top: 1.25em;
+}
+
 /* Hero
    ========================================================================== */
 .section--hero.section--hero {
@@ -775,14 +783,7 @@ img {
   padding: 3em 0;
   margin-top: 3em;
 }
-.colophon h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
-.colophon p {
-  text-align: center;
-}
 .heart {
   color: hotpink;
 }
