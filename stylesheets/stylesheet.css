@@ -963,70 +963,18 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9{ 
-  width: 100%; 
+.section-bg.section-bg {
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#slide1{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	margin: 0;
-	padding: 70px 0 260px 0;
-	background-size: cover;
-}
-
-#slide2{
-	
-	background:rgba(0,0,0,0.4);
-	background: url(../img/slide2.jpg) 50% 0 no-repeat fixed;
-	color: #333333;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 70px 0;
-	background-size: cover;
-	
-}
-
-#slide3{
-	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
-	color: #fff;
-	padding: 70px 0 0 0;	
-	background-size: cover;
-}
-
-#slide4{background: url(../img/slide4.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
-}
-
-#slide5{
-	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 70px 0;
-	color: #fff;
-	background-size: cover;
-}
-
-#slide6{background: url(../img/slide6.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
-}
-
-#slide7{
-	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 70px 0;
-	color: #fff;
-	background-size: cover;
-}
-
-#slide8{background: url(../img/slide8.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
-}
+.section-bg.section-bg--1 { background-image: url('../img/slide1.jpg'); }
+.section-bg.section-bg--2 { background-image: url('../img/slide2.jpg'); }
+.section-bg.section-bg--3 { background-image: url('../img/slide3.jpg'); }
+.section-bg.section-bg--4 { background-image: url('../img/slide4.jpg'); }
+.section-bg.section-bg--5 { background-image: url('../img/slide5.jpg'); }
+.section-bg.section-bg--6 { background-image: url('../img/slide6.jpg'); }
+.section-bg.section-bg--7 { background-image: url('../img/slide7.jpg'); }
+.section-bg.section-bg--8 { background-image: url('../img/slide8.jpg'); }
