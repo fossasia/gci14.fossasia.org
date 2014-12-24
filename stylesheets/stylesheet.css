@@ -46,11 +46,6 @@ body {
   color: #FFFFFF;
   background-color: #66CC99;
 }
-#photostream {
-  width: 60em;
-  margin: 0 auto;
-  max-width: 90%
-}
 a:focus {
   outline: thin dotted;
 }
@@ -978,3 +973,11 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 .section-bg.section-bg--6 { background-image: url('../img/slide6.jpg'); }
 .section-bg.section-bg--7 { background-image: url('../img/slide7.jpg'); }
 .section-bg.section-bg--8 { background-image: url('../img/slide8.jpg'); }
+
+
+#photostream {
+  width: 60em;
+  margin: 0 auto;
+  max-width: 90%;
+  display: block;
+}
