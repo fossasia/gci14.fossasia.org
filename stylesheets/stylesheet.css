@@ -773,7 +773,8 @@ input {
 .colophon {
   background: #f6f6f6;
   font-size: .75em;
-  padding: 3em 0;
+  padding: 2em 0;
+  text-align: center;
   margin-top: 3em;
 }
 
