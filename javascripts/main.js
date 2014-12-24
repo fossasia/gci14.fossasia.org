@@ -77,7 +77,8 @@ $(document).ready(function () {
         changeTitle();
     }
 
-    window.onload = caller();
+    $(window).on('resize', 'caller');
+    $(window).trigger('resize')
     window.addEventListener("resize", caller);
 
     // helper function to detect small screens
