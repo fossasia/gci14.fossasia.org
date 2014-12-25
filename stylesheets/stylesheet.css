@@ -949,34 +949,42 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 @media (max-width: 30em) {
     .person {
-        height: 100px;   
+        height: 180px;
+        margin-top:17px;
+        margin-bottom:17px;
     }
     .person__img {
         width: 25%;
         float: left;
         overflow: visible;
+        margin-left:35%;
     }
     .person__name {
         text-align: right;   
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        width:72%;
+        margin:0 auto 0 auto;
+        text-align:center;
+        padding-top:28px;
     }
     .person__img__info {
         opacity: 1;
         background: none;
         -webkit-transform:none;
         transform: none;
-        width: 400%;
+        width: 50%;
     }
     .person__img__info__cont {
         position: absolute;
-        right: 0px;
+        right: -9px;
         top: auto;
-        bottom: -20px;
+        bottom: -45px;
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
-        margin-right:110px;
+        margin-right:-40%;
+        width:195%;
     }
 }
 
