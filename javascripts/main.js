@@ -104,7 +104,6 @@ $(document).ready(function () {
         }
         // set about text black
         $('#slide1 p').css('color', '#000');
-
     }
 
     $('.tweets-feed').each(function(index) {
@@ -122,6 +121,8 @@ $(document).ready(function () {
             }
             html += '</ul>';
             element.innerHTML = html;
+            if(detectmob())
+                $('#slide7 p').css('color', '#000');
             $('.tweets-feed').unslider({
                 fluid:true,
                 delay:5000
