@@ -1,5 +1,5 @@
-# Fossasia's site for Google Code-in
-
+This repository has been created to save files of Google Code-In FOSSASIA's website telling about GCI 2014 mentors and students.
+---
 GCI (Google Code-In) is annual contest sponsored by Google, which directed for students of middle and secondary schools. 
 Students have to be between 13 and 17 years old, they also have to upload parental consent and document, which proofs their attendance to pre-university institution.
 Main goal of contest is to propagate open-source idea between young people and give them possibility to solve tasks for partnering organizations.
@@ -20,12 +20,12 @@ For solving tasks students can get many prizes. Grand Prize is founded by Google
 
 Contest is hosted on Melange system. Its website is: http://www.google-melange.com/gci/homepage/google/gci2014
 
-## About
-
+---
 FOSSASIA is Free and Open Source Software (FOSS) event for developers, officials and users in South-East Asia. Its main goal is fostering FOSS projects in Asia.
 This year FOSSASIA is one of mentoring organizations during Google Code-In. 
 
-## Developers
+---
+## GCI Students guide
 
 There's number of tasks with a wide variety outthere. Feel free to claim and work on!  
 
@@ -48,7 +48,24 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 6) Enter command `git add images/students/nameofyourphoto.yourfilextenstion`
 
-7) Use editor to open index.html file in main directory, look for section for students. Copy a student's section and make changes to it. Add your name, photo, and social network details.
+7) Use editor to open index.html file in main directory, look for section for students and using samples add your name and photo to it. You can see example of code below:
+
+```html
+<div class="sympl onethird">
+	<section class="person person--student">
+	  <div class="person__img">
+      <div class="person__img__info"><div class="person__img__info__cont">
+        <a href="https://twitter.com/YOURTWITTER"><i class="icon-twitter"></i></a> <!-- You can remove this line -->
+        <a href="http://github.com/YOURGITHUB"><i class="icon-github"></i></a> <!-- You can remove this line -->
+      </div></div>
+      <img src="images/students/NAMEOFYOURPHOTO.EXTENSTIONOFYOURPHOTO">
+	  </div>
+	  <h1 class="person__name">YOUR NAME THERE</h1>
+	</section>
+</div>
+```
+
+
 
 8) Enter command `git add index.html`
 
@@ -62,6 +79,7 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 13) Congrats! Now wait until it will be reviewed!
 
+---
 URL of website: http://fossasia.github.io/  
 URL of main FOSSASIA's website: http://fossasia.org/  
 FOSSASIA's Facebook: http://facebook.com/fossasia  
