@@ -77,13 +77,8 @@ $(document).ready(function () {
         changeTitle();
     }
 
-<<<<<<< HEAD
     $(window).on('resize', 'caller');
     $(window).trigger('resize')
-});
-=======
-    window.onload = caller();
-    window.addEventListener("resize", caller);
 
     // helper function to detect small screens
     function detectmob() {
@@ -144,4 +139,3 @@ $(document).ready(function () {
 
     });
 });
->>>>>>> upstream/master

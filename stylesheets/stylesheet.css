@@ -738,7 +738,13 @@ input {
   border: none;
   border-radius: 2px;
   transition: all .3s ease;
-  font-size: .75em;
+  font-size: .8em;
+  margin: 1em;
+}
+
+input:focus {
+  outline: none;
+  background: #eee;
 }
 
 #mc_embed_signup{
@@ -749,32 +755,11 @@ input {
   text-align:center;
 }
 
-#mc_embed_signup_scroll input#mce-EMAIL{
-  margin:auto;
-  display: block;
-  text-align:center;
-  width: 12em;
-  margin: 1em auto;
-  padding: 0.600em 0.250em;
-  text-indent: 0.313em;
-  color: #161616;
-  font-size: 1.000em;
-  text-align:center;
-  background: #f3f3f3;
-  font-weight: bold;
-  width: 17.5em;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius:3px;
-  -moz-border-radius:3px;
-}
-
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
   padding: 1em;
   color: white;
   background-color:#e12b00;
-  font-size: .75em;
+  font-size: .8em;
 }
 #mc_embed_signup_scroll label{ 
   display:block;
