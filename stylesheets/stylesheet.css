@@ -969,6 +969,7 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 .map {
   display: block;
   z-index: 10;
+  border: none;
 }
 
 table{
