@@ -589,6 +589,27 @@ img {
 .masthead .logo img {
   max-height: 100%;
 }
+
+.masthead .logo--light { display: none; }
+
+/* Masthead Alt Style */
+
+.masthead--plain, .masthead--plain:hover  {
+  background: rgba(0, 0, 0, .2)
+}
+
+.masthead--plain .menu a {
+  color: white;
+}
+
+.masthead--plain .menu a:hover {
+  background: rgba(0, 0, 0, .2)
+}
+
+.masthead--plain .logo--dark { display: none; }
+.masthead--plain .logo--light { display: block; }
+
+
 .masthead .menu {
   float: right;
 }

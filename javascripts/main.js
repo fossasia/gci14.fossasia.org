@@ -77,34 +77,19 @@ $(document).ready(function () {
         changeTitle();
     }
 
-    $(window).on('resize', 'caller');
+    $(window).on('resize', caller);
     $(window).trigger('resize')
 
-    // helper function to detect small screens
-    function detectmob() {
-        if(window.innerWidth < 700) {
-          return true;
-        } else {
-          return false;
-        }
-    }
+    // Scrolling menu
 
-    // mobile version background
-    if(detectmob()){
-        for (var i = 0;i < 9;i++){
-            num = i+1;
-            elem = '#slide'+num;
-            if(num%2 == 1){
-                color = '#f6f6f6';
-            }
-            else{
-                color = '#fff';
-            }
-            $(elem).css('background', color);
+    $(window).on('scroll', function() {
+        if ( parseFloat($(window).scrollTop()) >= parseFloat($('.masthead').height()) ) {
+            $('.masthead').removeClass('masthead--plain')
+        } else {
+            $('.masthead').addClass('masthead--plain')
         }
-        // set about text black
-        $('#slide1 p').css('color', '#000');
-    }
+    });
+
 
     $('.tweets-feed').each(function(index) {
         $(this).attr('id', 'tweets-' + index);
@@ -138,4 +123,6 @@ $(document).ready(function () {
         twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
 
     });
+
+    
 });
