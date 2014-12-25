@@ -577,7 +577,8 @@ img {
   background: rgba(240,240,240,1);
 }
 .masthead-cont {
-  font-size: 16px;
+  font-size: .8em;
+  overflow: hidden;
 }
 .masthead .logo {
   height: 1.5em;
@@ -606,6 +607,7 @@ img {
   display: block;
   padding: 1.5em;
   line-height: 1;
+  color: #444;
 }
 .menu a:hover {
   background: #fff;
@@ -615,7 +617,8 @@ img {
   margin-left: 15px;
 }
 .twitter-follow-button {
-  margin-top: 1.5em;
+  margin-top: 1.4em;
+  padding: 0;
 }
 
 /* Hero
