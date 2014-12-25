@@ -1077,3 +1077,8 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 .tweets-feed .slides li{
   list-style-type: none;
 }
+
+.follow {
+  position:absolute;
+  font-size:65%;
+}
