@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fossasia Community Map</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="apple-touch-icon" href="images/touch-icon-52.png" />
+  <link rel="apple-touch-icon" href="images/touch-icon-114.png" sizes="114x114" />
+  <link rel="apple-touch-icon" href="images/touch-icon-72.png" sizes="72x72" />
+  
+  <link rel="stylesheet" href="external/leaflet/leaflet.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="external/leaflet/leaflet.ie.css" /><![endif]-->
+  <link rel="stylesheet" href="external/leaflet/MarkerCluster.css" />
+  <link rel="stylesheet" href="external/leaflet/MarkerCluster.Default.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="external/leaflet/MarkerCluster.Default.ie.css" /><![endif]-->
+  <link rel="stylesheet" href="external/leaflet/leaflet-button-control.css" />
+  <link rel="stylesheet" href="community_map.css" />
+</head>
+<body>
+
+  <div id="map"></div>
+  
+  <script type="text/template" class="template" id="community-popup">
+    <div class="community-popup">
+    <% if ( props.name ) { %>
+      <h2><a href="<%- props.url %>" target="_window"><%- props.name %></a></h2>
+    <% } %>
+    
+    <% if (props.metacommunity) { %>
+      <h3><%- props.metacommunity %></h3>
+    <% } %>
+
+    <% if (props.city) { %>
+      <div class="city"><%- props.city  %></div>
+    <% } %>
+  
+    <% if (props.nodes) { %>
+      <div class="nodes">
+         Zug&auml;nge: <%- props.nodes  %>
+         <% if (props.state && props.age) { %>
+            <span class="state <%- props.state  %>" title="Die letzte Aktualisierung der Daten war vor <%- props.age  %> Tagen">(<%- props.state  %>)</span>
+         <% } %>
+      </div>
+    <% } %>
+
+    <% if (props.phone) { %>
+      <div class="phone">&#9742; <%- props.phone  %></div>
+    <% } %>
+
+    <ul class="contacts" style="height:<%- Math.round(props.contacts.length/6+0.4)*30+10 %>px; width: <%- 6*(30+5)%>px;">
+    <% _.each(props.contacts, function(contact, index, list) { %>
+      <li class="contact">
+        <a href="<%- contact.url %>" class="button <%- contact.type %>" target="_window"></a>
+      </li>
+    <% }); %>
+    </ul>
+    </div>
+  </script>
+  <script type="text/javascript" src="external/leaflet/leaflet.js"></script>
+  <script type="text/javascript" src="external/leaflet/leaflet-button-control.js"></script>
+  <script type="text/javascript" src="external/leaflet/leaflet.markercluster.js"></script>
+  <script type="text/javascript" src="external/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="external/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="community_map.js"></script>
+  <script>
+    var widget = FFCommunityMapWidget({
+        geoJson: 'ffGeoJson.json',
+        scrollByMousewheel : true,
+        hideLocationButton: false,
+        hideLayerControl: false,
+        hideInfoBox: true 
+    });
+  </script>
+</body>
+</html>

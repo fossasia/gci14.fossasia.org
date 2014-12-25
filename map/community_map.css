@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #map {
+  height: 100%;
+}
+
+/* Leaflet controls */
+.leaflet-bar a, .leaflet-bar a:hover {
+  color: #DF3A6C;
+}
+
+.leaflet-buttons-control-button {
+	height: 100%;
+	width: 100%;
+}
+/* /Leaflet controls */
+
+
+/* MarkerCluster */
+.marker-cluster-small,
+.marker-cluster-medium {
+	background-color: rgba(0, 158, 224, 0.3);
+}
+.marker-cluster-small div,
+.marker-cluster-medium div {
+  background-color: rgba(0, 158, 224, 0.7);
+}
+/* /MarkerCluster */
+
+/* community-popup */
+.community-popup h2, 
+.community-popup h3 { 
+  font-size: 12px;
+  margin: 0px;
+  color: #009ee0
+}
+.community-popup .leaflet-container a {
+  color: #009ee0;
+}
+.community-popup .nodes {
+  margin: 10px 0px;
+}
+.community-popup .state,
+.community-popup .state.unknown {
+  display: inline-block;
+  text-size: 0.5em;
+  color: lightgray;
+}
+.community-popup .state.up-to-date {
+  color: green;
+}
+.community-popup .state.valid {
+  color: orange;
+}
+.community-popup .state.outdated {
+  color: red;
+}
+
+.community-popup ul.contacts {
+  list-style: none;
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+.community-popup ul.contacts li.contact {
+  float: left;
+  margin: 5px 5px 0px 0px;
+}
+.community-popup ul.contacts li.contact a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: url(images/contact_icons.png);
+  background-repeat:no-repeat;
+  background-position:right top;
+  background-size: 30px 390px;
+}
+.community-popup ul.contacts li.contact a.button.www {
+ background-position: 0px 0px;
+}
+.community-popup ul.contacts li.contact a.button.email {
+ background-position: 0px -30px;
+}
+.community-popup ul.contacts li.contact a.button.phone {
+ background-position: 0px -60px;
+}
+.community-popup ul.contacts li.contact a.button.twitter {
+ background-position: 0px -90px;
+}
+.community-popup ul.contacts li.contact a.button.irc {
+ background-position: 0px -120px;
+}
+.community-popup ul.contacts li.contact a.button.jabber {
+ background-position: 0px -150px;
+}
+.community-popup ul.contacts li.contact a.button.rss {
+ background-position: 0px -180px;
+}
+.community-popup ul.contacts li.contact a.button.facebook {
+ background-position: 0px -210px;
+}
+.community-popup ul.contacts li.contact a.button.flickr {
+ background-position: 0px -240x;
+}
+.community-popup ul.contacts li.contact a.button.googleplus {
+ background-position: 0px -270px;
+}
+.community-popup ul.contacts li.contact a.button.identica {
+ background-position: 0px -300px;
+}
+.community-popup ul.contacts li.contact a.button.vimeo {
+ background-position: 0px -330px;
+}
+.community-popup ul.contacts li.contact a.button.youtube {
+ background-position: 0px -360px;
+}
+/* /community-popup */
+
+
+.info {
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info hr {
+    margin: 5px 0 5px;
+    color: #777;
+}
+@media only screen and (max-width: 768px) {
+  .info {
+    bottom: 30px;
+  }
+}

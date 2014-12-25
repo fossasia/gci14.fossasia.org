@@ -37,11 +37,7 @@ $(document).ready(function () {
             data = data.data;
             var n = data.length;
             for (var i = 0; i < n; i++) {
-                var str = '<div class="sympl quarter"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login)
-                // str = '<div class="sympl quarter"><section class="person person--contributer"><div class="person__img">';
-                // str += '<div class="person__img__info"><div class="person__img__info__cont">';
-                // str += '<a target="_blank" href="' + data[i].html_url + '"><i class="icon-github"></i></a></div></div>';
-                // str += '<img src="' + data[i].avatar_url + '"></div><h1 class="person__name">' + data[i].login + '</h1></section></div>';
+                var str = '<div class="sympl onefifth"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login)
                 $("#contr").append(str);
             }
         }
@@ -108,6 +104,33 @@ $(document).ready(function () {
         }
         // set about text black
         $('#slide1 p').css('color', '#000');
-
     }
+
+    $('.tweets-feed').each(function(index) {
+        $(this).attr('id', 'tweets-' + index);
+    }).each(function(index) {
+
+        function handleTweets(tweets) {
+            var x = tweets.length;
+            var n = 0;
+            var element = document.getElementById('tweets-' + index);
+            var html = '<ul class="slides">';
+            while (n < x) {
+                html += '<li>' + tweets[n] + '</li>';
+                n++;
+            }
+            html += '</ul>';
+            element.innerHTML = html;
+            if(detectmob())
+                $('#slide7 p').css('color', '#000');
+            $('.tweets-feed').unslider({
+                fluid:true,
+                delay:5000
+            });
+            return html;
+        }
+        // fetch(id, domId, max-tweets, enableLinks, showUser, showTime, dateFunction, showRT, custom-callback, interaction);
+        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
+
+    });
 });

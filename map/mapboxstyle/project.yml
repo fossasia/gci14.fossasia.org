@@ -1,0 +1,27 @@
+_prefs: 
+  baselayer: ''
+  saveCenter: true
+_properties: {}
+attribution: Map data © OpenStreetMap contributors
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 9.140625
+  - 48.821332549646634
+  - 6
+description: Map to display Freifunk and other free networks
+format: "png8:m=h:c=32"
+interactivity_layer: admin
+layers: null
+maxzoom: 22
+minzoom: 0
+mtime: 1398410448920
+name: Freifunk Community Map
+scale: 1
+source: "mapbox:///mapbox.mapbox-streets-v4"
+styles: 
+  - style.mss
+template: ''

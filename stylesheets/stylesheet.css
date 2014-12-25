@@ -562,6 +562,15 @@ img {
   max-width: 100%;
 }
 /* ==========================================================================
+   =SECTIONS
+   ========================================================================== */
+#mentors {
+  background-color:#D49A6A;
+}
+#students {
+  background-color:#8BA6D7;
+}
+/* ==========================================================================
    =MASTHEAD
    ========================================================================== */
 .masthead {
@@ -772,7 +781,6 @@ img {
 .colophon {
   background: #f6f6f6;
   font-size: .75em;
-  padding-top: 3em;
   margin-top: 3em;
 }
 .colophon h3 {
@@ -852,8 +860,13 @@ img {
   background-color:rgba(174, 174, 174, 0.66);
 }
 
+.bottom-git{
+  background-color:rgba(33, 123, 184, 0.26);
+  width:100%;
+}
+
 .made_text {
-  padding: 2em 0;
+  padding: 3em 0;
 }
 /* ==========================================================================
    =MEDIA
@@ -1034,4 +1047,23 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 	color: #333333;
 	padding: 70px 0;
 	background-size: cover;
+}
+
+.tweets-feed {
+  font-size:150%;
+}
+
+.timePosted{
+  font-size:80%;
+}
+
+.tweet a{
+  color:#38aaf8;
+}
+
+.tweet a:hover{
+  color:#2cc3ff;
+}
+.tweets-feed .slides li{
+  list-style-type: none;
 }
