@@ -975,6 +975,7 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         bottom: -20px;
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
+        margin-right:110px;
     }
 }
 
