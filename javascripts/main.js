@@ -77,6 +77,71 @@ $(document).ready(function () {
         changeTitle();
     }
 
+<<<<<<< HEAD
     $(window).on('resize', 'caller');
     $(window).trigger('resize')
 });
+=======
+    window.onload = caller();
+    window.addEventListener("resize", caller);
+
+    // helper function to detect small screens
+    function detectmob() {
+        if(window.innerWidth < 700) {
+          return true;
+        } else {
+          return false;
+        }
+    }
+
+    // mobile version background
+    if(detectmob()){
+        for (var i = 0;i < 9;i++){
+            num = i+1;
+            elem = '#slide'+num;
+            if(num%2 == 1){
+                color = '#f6f6f6';
+            }
+            else{
+                color = '#fff';
+            }
+            $(elem).css('background', color);
+        }
+        // set about text black
+        $('#slide1 p').css('color', '#000');
+    }
+
+    $('.tweets-feed').each(function(index) {
+        $(this).attr('id', 'tweets-' + index);
+    }).each(function(index) {
+
+        function handleTweets(tweets) {
+            var x = tweets.length;
+            var n = 0;
+            var element = document.getElementById('tweets-' + index);
+            var html = '<ul class="slides">';
+            while (n < x) {
+                html += '<li>' + tweets[n] + '</li>';
+                n++;
+            }
+            html += '</ul>';
+            element.innerHTML = html;
+            if(detectmob())
+                $('#slide7 p').css('color', '#000');
+
+            $('.tweets-feed').unslider({
+                fluid:true,
+                delay:5000
+            });
+            var elem = $('<p>').addClass('follow').text('Follow ');
+            elem.append($('<a>', {href:'http://twitter.com/fossasia', text:'@fossasia'}));
+            elem.append(' for more updates');
+            $('.tweets-feed').append(elem);
+            return html;
+        }
+        // fetch(id, domId, max-tweets, enableLinks, showUser, showTime, dateFunction, showRT, custom-callback, interaction);
+        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
+
+    });
+});
+>>>>>>> upstream/master

@@ -248,12 +248,12 @@ a:visited {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
-  color: #3498db;
+  color: #e52200;
 }
 a:hover,
 a:active,
 a:focus {
-  color: #217bb8;
+  color: #e12b00;
 }
 p {
   margin: 0;
@@ -556,6 +556,7 @@ button:active,
 img {
   max-width: 100%;
 }
+
 /* ==========================================================================
    =MASTHEAD
    ========================================================================== */
@@ -613,7 +614,7 @@ img {
 .socialbtn{
   margin-left: 15px;
 }
-.twitter-width {
+.twitter-follow-button {
   margin-top: 1.25em;
 }
 
@@ -708,6 +709,7 @@ img {
   border-radius: 50%;
   display: block;
   width: 100%;
+  min-width: 120px;
 }
 .person__name {
   font-size: 1.5em;
@@ -721,6 +723,9 @@ img {
 .person--contributer .person__img {
   margin: 0 1em;
 }
+
+
+
 /* ==========================================================================
    SUBSCRIBE EMAIL
    ========================================================================== */
@@ -747,12 +752,25 @@ input {
   text-align:center;
   width: 12em;
   margin: 1em auto;
+  padding: 0.600em 0.250em;
+  text-indent: 0.313em;
+  color: #161616;
+  font-size: 1.000em;
+  text-align:center;
+  background: #f3f3f3;
+  font-weight: bold;
+  width: 17.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius:3px;
+  -moz-border-radius:3px;
 }
 
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
   padding: 1em;
   color: white;
-  background-color:#217bb8;
+  background-color:#e12b00;
   font-size: .75em;
 }
 #mc_embed_signup_scroll label{ 
@@ -761,6 +779,7 @@ input {
   margin: 0 auto;
   color: #fff; 
   font-weight: 300;
+  font-size:0.700em;
 }
  /* ==========================================================================
    =FOOTER
@@ -842,12 +861,18 @@ input {
   background-color:rgba(174, 174, 174, 0.66);
 }
 
+.bottom-git{
+  background-color:rgba(33, 123, 184, 0.26);
+  width:100%;
+}
+
 .made_text {
-  padding: 2em 0;
+  padding: 3em 0;
 }
 /* ==========================================================================
    =MEDIA
    ========================================================================== */
+
 @media (max-width: 40em) {
   body,
   input,
@@ -869,29 +894,6 @@ input {
   }
 }
 
-/* ==========================================================================
-   =TWITTER FEED
-   ========================================================================== */
-
-.twitterFeed {
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
-  display: block;
-}
-
-/* ==========================================================================
-   =TABLE PROPERTIES
-   ========================================================================== */
-   
-table{
-  width:100%;
-  table-layout:fixed;
-}
-
-/* ==========================================================================
-   =MOBILE
-   ========================================================================== */
 body, html {
     /*Fixes an issue with unwanted horizontal scrolling on the whole page*/
     max-width: 100%;
@@ -925,38 +927,68 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 @media (max-width: 30em) {
     .person {
-        height: 100px;   
+        height: 180px;
+        margin-top:17px;
+        margin-bottom:17px;
     }
     .person__img {
         width: 25%;
         float: left;
         overflow: visible;
+        margin-left:35%;
     }
     .person__name {
         text-align: right;   
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        width:72%;
+        margin:0 auto 0 auto;
+        text-align:center;
+        padding-top:28px;
     }
     .person__img__info {
         opacity: 1;
         background: none;
         -webkit-transform:none;
         transform: none;
-        width: 400%;
+        width: 50%;
     }
     .person__img__info__cont {
         position: absolute;
-        right: 0px;
+        right: -9px;
         top: auto;
-        bottom: -20px;
+        bottom: -45px;
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
+        margin-right:-40%;
+        width:195%;
     }
 }
 
-/*= SLIDES STYLING
---------------------------------------------------------*/
+
+/* ==========================================================================
+   =MISC
+   ========================================================================== */
+
+.twitterFeed {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.map {
+  display: block;
+  z-index: 10;
+}
+
+table{
+  width:100%;
+  table-layout:fixed;
+}
+
+/* Slides */
 
 .section-bg.section-bg {
   background-size: cover;
@@ -965,14 +997,14 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
   background-attachment: fixed;
 }
 
-.section-bg.section-bg--1 { background-image: url('../img/slide1.jpg'); }
-.section-bg.section-bg--2 { background-image: url('../img/slide2.jpg'); }
-.section-bg.section-bg--3 { background-image: url('../img/slide3.jpg'); }
-.section-bg.section-bg--4 { background-image: url('../img/slide4.jpg'); }
-.section-bg.section-bg--5 { background-image: url('../img/slide5.jpg'); }
-.section-bg.section-bg--6 { background-image: url('../img/slide6.jpg'); }
-.section-bg.section-bg--7 { background-image: url('../img/slide7.jpg'); }
-.section-bg.section-bg--8 { background-image: url('../img/slide8.jpg'); }
+.section-bg.section-bg--1 { background-image: url('../images/bg/slide1.jpg'); }
+.section-bg.section-bg--2 { background-image: url('../images/bg/slide2.jpg'); }
+.section-bg.section-bg--3 { background-image: url('../images/bg/slide3.jpg'); }
+.section-bg.section-bg--4 { background-image: url('../images/bg/slide4.jpg'); }
+.section-bg.section-bg--5 { background-image: url('../images/bg/slide5.jpg'); }
+.section-bg.section-bg--6 { background-image: url('../images/bg/slide6.jpg'); }
+.section-bg.section-bg--7 { background-image: url('../images/bg/slide7.jpg'); }
+.section-bg.section-bg--8 { background-image: url('../images/bg/slide8.jpg'); }
 
 
 #photostream {

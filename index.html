@@ -34,7 +34,14 @@
 
       ga('create', 'UA-17146009-5', 'auto');
       ga('send', 'pageview');
-
+      function hide_map_wrap(){
+          $(".map_wrap").css("display","none");
+          console.log("click");
+      }
+      function set_map_wrap(){
+          $(".map_wrap").css("display","inline");
+          console.log("out");
+      }
     </script>
 <body>
 <section id="home">
@@ -123,7 +130,8 @@
     </section>
 
     <section id="map">
-        <iframe src="http://fossasia.net/map/map.html" style="border:0px;" name="myiframe" scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="900" width=100%></iframe>
+        <div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>
+        <iframe src="map/map.html" class="map" name="myiframe" onmouseout="set_map_wrap();"  scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="800" width=100% ></iframe>
 	 </div>
     </section>
 
@@ -1023,10 +1031,25 @@
         			    <h1 class="person__name">Phan Duy Duc</h1>
         			</section>
         		    </div>
-        		</div>
-            </div>
-    	</div>
-    </section>
+                </div>
+                <div class="sympl onethird">
+                    <div class="box-team wow fadeIn" data-wow-delay="0.3s">
+                        <section class="person person--student">
+                            <div class="person__img">
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        <a href="https://github.com/prudhvirajn" target="_blank"><i class="icon-github"></i></a> 
+                                        <a href="mailto:prudhvinaidu@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                    </div>
+                                </div>
+                                <img src="images/students/prudhvi.png">
+                            </div>
+                            <h1 class="person__name">Prudhviraj Naidu</h1>
+                        </section>
+                    </div>
+                </div>
+	       </div>
+        </section>
 
     <section id="thank_you" class="page-section section-bg section-bg--3">
         <div class="wrap">
@@ -1063,6 +1086,7 @@
             </div>
         </div>
     </div>
+	</div>
 
   <section id="facebook" class="page-section">
    <div id="facebook">
@@ -1102,7 +1126,7 @@
                     </ul>
                 </div>
                 <div class="sympl twofifths">
-                    <h3>FOSSASIA Links</h3>
+                    <h3 style="margin-left:-22px;">FOSSASIA Links</h3>
                     <ul class="list">
                         <a href="http://blog.fossasia.net/"><li class="link">FOSSASIA Blog</li></a>                        
                         <a href="http://fossasia.net/"><li class="link">FOSSASIA Community Network</li></a>
@@ -1111,7 +1135,7 @@
                     </ul>
                 </div>
                 <div class="sympl onefifth">
-                    <h3>Events</h3>
+                    <h3 style="margin-left:-22px;">Events</h3>
                     <ul class="list">
                         <a href="http://2015.fossasia.org/"><li class="event">FOSSASIA '15</li></a>                    
                         <a href="http://2014.fossasia.org/"><li class="event">FOSSASIA '14</li></a>
@@ -1133,6 +1157,7 @@
     <script type="text/javascript" src="javascripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
+    <script type="text/javascript" src="javascripts/twitter.fetcher.js"></script>
     <!-- Twitter js -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  <div class="sidebar"><!--didn't use jquery to change name of the class, so making a new div-->
