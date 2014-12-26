@@ -106,13 +106,12 @@ $(document).ready(function () {
             }
             html += '</ul>';
             element.innerHTML = html;
-            if(detectmob())
-                $('#slide7 p').css('color', '#000');
 
             $('.tweets-feed').unslider({
                 fluid:true,
                 delay:5000
             });
+            
             var elem = $('<p>').addClass('follow').text('Follow ');
             elem.append($('<a>', {href:'http://twitter.com/fossasia', text:'@fossasia'}));
             elem.append(' for more updates');
@@ -121,7 +120,6 @@ $(document).ready(function () {
         }
         // fetch(id, domId, max-tweets, enableLinks, showUser, showTime, dateFunction, showRT, custom-callback, interaction);
         twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
-
     });
 
     

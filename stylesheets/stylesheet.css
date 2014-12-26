@@ -985,11 +985,36 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
    =MISC
    ========================================================================== */
 
-.twitterFeed {
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
-  display: block;
+.tweets-feed {
+  font-size: 150%;
+  padding-bottom: 6em; 
+  color: white;
+}
+
+.timePosted{
+  font-size:80%;
+}
+
+.tweet a{
+  color:#ff3100;
+}
+
+.tweet a:hover{
+  color:#e52200;
+}
+.tweets-feed .slides li{
+  list-style-type: none;
+}
+
+.follow {
+  position:absolute;
+  font-size:65%;
+  width:90%;
+  margin-top:10px;
+}
+.follow a {
+  color:#ff3f01;
+  text-decoration: underline;
 }
 
 .map {
