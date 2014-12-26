@@ -22,11 +22,11 @@ html, body, #map {
 /* MarkerCluster */
 .marker-cluster-small,
 .marker-cluster-medium {
-	background-color: rgba(0, 158, 224, 0.3);
+	background-color: rgba(212, 0, 0, 0.3);
 }
 .marker-cluster-small div,
 .marker-cluster-medium div {
-  background-color: rgba(0, 158, 224, 0.7);
+  background-color: rgba(212, 0, 0, 0.7);
 }
 /* /MarkerCluster */
 

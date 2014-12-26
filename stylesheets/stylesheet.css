@@ -253,12 +253,12 @@ a:visited {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
-  color: #3498db;
+  color: #e52200;
 }
 a:hover,
 a:active,
 a:focus {
-  color: #217bb8;
+  color: #e12b00;
 }
 p {
   margin: 0;
@@ -745,37 +745,31 @@ img {
   display: block;
   padding: 0.600em 0.250em;
   text-indent: 0.313em;
-  color: black;
+  color: #161616;
   font-size: 1.000em;
-  font-family: Garamond;
   text-align:center;
   background: #f3f3f3;
   font-weight: bold;
-  width: 12.500em;
+  width: 17.5em;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-border-radius: 0.700em;
-  -moz-border-radius: 0.700em;
-  border-radius: 0.700em;
+  border-radius:3px;
+  -moz-border-radius:3px;
 }
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
-  margin: 0.500em auto auto auto;
+  margin: 1em auto auto auto;
   width: 19.000em;
   height: 3.000em;
-  background-color:#217bb8;
-  font-family: Garamond;
+  background-color:#e12b00;
   font-size:0.700em;
-
-
 }
 #mc_embed_signup_scroll label{ 
  display:block;
  font-size: 2.750em !important;
  padding-left: 0.650em; 
- color: #217bb8; 
+ color: #e12b00; 
  font-weight: bold;
- font-family: Garamond;	
 }
  /* ==========================================================================
    =FOOTER
@@ -1058,4 +1052,34 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 	color: #333333;
 	padding: 70px 0;
 	background-size: cover;
+}
+
+.tweets-feed {
+  font-size:150%;
+}
+
+.timePosted{
+  font-size:80%;
+}
+
+.tweet a{
+  color:#ff3100;
+}
+
+.tweet a:hover{
+  color:#e52200;
+}
+.tweets-feed .slides li{
+  list-style-type: none;
+}
+
+.follow {
+  position:absolute;
+  font-size:65%;
+  width:90%;
+  margin-top:10px;
+}
+.follow a {
+  color:#ff3f01;
+  text-decoration: underline;
 }
