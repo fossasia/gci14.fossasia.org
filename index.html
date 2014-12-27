@@ -132,7 +132,65 @@
     </section>
 
     <section id="map">
-        <div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>
+        <div id="map"></div>
+          <script type="text/template" class="template" id="community-popup">
+            <div class="community-popup">
+            <% if ( props.name ) { %>
+              <h2><a href="<%- props.url %>" target="_window"><%- props.name %></a></h2>
+            <% } %>
+            
+            <% if ( props.logo ) { %>
+              <img class="logo" src="<%- props.logo %>" />
+            <% } %>
+            
+            <% if (props.metacommunity) { %>
+              <h3><%- props.metacommunity %></h3>
+            <% } %>
+        
+            <% if (props.city) { %>
+              <div class="city"><%- props.city  %></div>
+            <% } %>
+          
+            <% if (props.nodes) { %>
+              <div class="nodes">
+                 Zug&auml;nge: <%- props.nodes  %>
+                 <% if (props.state && props.age) { %>
+                    <span class="state <%- props.state  %>" title="Die letzte Aktualisierung der Daten war vor <%- props.age  %> Tagen">(<%- props.state  %>)</span>
+                 <% } %>
+              </div>
+            <% } %>
+        
+            <% if (props.phone) { %>
+              <div class="phone">&#9742; <%- props.phone  %></div>
+            <% } %>
+        
+            <ul class="contacts" style="height:<%- Math.round(props.contacts.length/6+0.4)*30+10 %>px; width: <%- 6*(30+5)%>px;">
+            <% _.each(props.contacts, function(contact, index, list) { %>
+              <li class="contact">
+                <a href="<%- contact.url %>" class="button <%- contact.type %>" target="_window"></a>
+              </li>
+            <% }); %>
+            </ul>
+            </div>
+          </script>
+          <script type="text/javascript" src="external/leaflet/leaflet.js"></script>
+          <script type="text/javascript" src="external/leaflet/leaflet-button-control.js"></script>
+          <script type="text/javascript" src="external/leaflet/leaflet.markercluster.js"></script>
+          <script type="text/javascript" src="external/jquery/jquery.min.js"></script>
+          <script type="text/javascript" src="external/underscore/underscore-min.js"></script>
+          <script type="text/javascript" src="community_map.js"></script>
+          <script>
+            var widget = FFCommunityMapWidget({
+                geoJson: 'http://fossasia.net/map/ffGeoJsonp.php?callback=?',
+                scrollByMousewheel : false,
+                hideLocationButton: false,
+                hideLayerControl: false,
+                hideInfoBox: true 
+            });
+          </script>
+                <div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>
+                
+                
         <iframe src="map/map.html" style="border:0px #FFFFFF none; z-index:10;" name="myiframe" onmouseout="set_map_wrap();"  scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="800" width=100% ></iframe>
 	 </div>
     </section>
