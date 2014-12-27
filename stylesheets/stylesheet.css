@@ -726,7 +726,8 @@ img {
   font-size: 1.25em;
 }
 .person--contributer .person__img {
-  margin: 0 1em;
+  /*This line clashes with the CSS rules putting the Name and Link under Photo
+  margin: 0 1em;*/
 }
 /* ==========================================================================
    SUBSCRIBE EMAIL
