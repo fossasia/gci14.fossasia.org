@@ -132,7 +132,14 @@
     </section>
 
     <section id="cmap">
-        <div id="map"></div>
+        <div id="map" class="mapfull map_wrap" onclick="hide_map_wrap();"></div>
+          <link rel="stylesheet" href="map/external/leaflet/leaflet.css" />
+          <!--[if lte IE 8]><link rel="stylesheet" href="map/external/leaflet/leaflet.ie.css" /><![endif]-->
+          <link rel="stylesheet" href="map/external/leaflet/MarkerCluster.css" />
+          <link rel="stylesheet" href="map/external/leaflet/MarkerCluster.Default.css" />
+          <!--[if lte IE 8]><link rel="stylesheet" href="map/external/leaflet/MarkerCluster.Default.ie.css" /><![endif]-->
+          <link rel="stylesheet" href="map/external/leaflet/leaflet-button-control.css" />
+          <link rel="stylesheet" href="map/community_map.css" />
           <script type="text/template" class="template" id="community-popup">
             <div class="community-popup">
             <% if ( props.name ) { %>
@@ -188,10 +195,9 @@
                 hideInfoBox: true 
             });
           </script>
-                <div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>
+          <!--<div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>-->
                 
                 
-	 </div>
     </section>
 
     <section id="about">
@@ -673,7 +679,7 @@
 
             </div>
         </div>
-	</div>
+        <!--</div>-->
     </section>
     <section id="students">
         <div class="wrap">
@@ -1189,7 +1195,7 @@
             <div id="contr"></div>
          </div>
         </div>
-	</div>
+        <!--</div>-->
     </section>
 
 
