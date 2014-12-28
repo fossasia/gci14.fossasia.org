@@ -570,6 +570,12 @@ img {
 #students {
   background-color:#8BA6D7;
 }
+#facebook {
+    background-image: url("../images/fbsection-back.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
 /* ==========================================================================
    =MASTHEAD
    ========================================================================== */
@@ -726,7 +732,8 @@ img {
   font-size: 1.25em;
 }
 .person--contributer .person__img {
-  margin: 0 1em;
+  /*This line clashes with the CSS rules putting the Name and Link under Photo
+  margin: 0 1em;*/
 }
 /* ==========================================================================
    SUBSCRIBE EMAIL
