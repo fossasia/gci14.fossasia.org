@@ -21,7 +21,7 @@ var FFCommunityMapWidget = function(settings, map_options, link) {
     if (props.identica && !props.identica.match(/^identica:.*/)) {
       props.identica = "identica:" + props.identica;
     }
-    
+ 
     function getAgeFromProperties(props) {
       var ageindays = -1;
       if (props.mtime) {
@@ -199,9 +199,9 @@ attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy
           stroke: true,
           weight: 10,
           opacity: 0.3,
-          color: '#009ee0',
+          color: '#d40000',
           fill: true,
-          fillColor: '#009ee0',
+          fillColor: '#d40000',
           fillOpacity: 0.7
         });
         return marker;

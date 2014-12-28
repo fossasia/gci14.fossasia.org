@@ -253,12 +253,12 @@ a:visited {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
-  color: #3498db;
+  color: #e52200;
 }
 a:hover,
 a:active,
 a:focus {
-  color: #217bb8;
+  color: #e12b00;
 }
 p {
   margin: 0;
@@ -714,6 +714,7 @@ img {
   border-radius: 50%;
   display: block;
   width: 100%;
+  min-width: 120px;
 }
 .person__name {
   font-size: 1.5em;
@@ -743,37 +744,31 @@ img {
   display: block;
   padding: 0.600em 0.250em;
   text-indent: 0.313em;
-  color: black;
+  color: #161616;
   font-size: 1.000em;
-  font-family: Garamond;
   text-align:center;
   background: #f3f3f3;
   font-weight: bold;
-  width: 12.500em;
+  width: 17.5em;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-border-radius: 0.700em;
-  -moz-border-radius: 0.700em;
-  border-radius: 0.700em;
+  border-radius:3px;
+  -moz-border-radius:3px;
 }
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
-  margin: 0.500em auto auto auto;
+  margin: 1em auto auto auto;
   width: 19.000em;
   height: 3.000em;
-  background-color:#217bb8;
-  font-family: Garamond;
+  background-color:#e12b00;
   font-size:0.700em;
-
-
 }
 #mc_embed_signup_scroll label{ 
  display:block;
  font-size: 2.750em !important;
  padding-left: 0.650em; 
- color: #217bb8; 
+ color: #e12b00; 
  font-weight: bold;
- font-family: Garamond;	
 }
  /* ==========================================================================
    =FOOTER
@@ -948,33 +943,42 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 @media (max-width: 30em) {
     .person {
-        height: 100px;   
+        height: 180px;
+        margin-top:17px;
+        margin-bottom:17px;
     }
     .person__img {
         width: 25%;
         float: left;
         overflow: visible;
+        margin-left:35%;
     }
     .person__name {
         text-align: right;   
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        width:72%;
+        margin:0 auto 0 auto;
+        text-align:center;
+        padding-top:28px;
     }
     .person__img__info {
         opacity: 1;
         background: none;
         -webkit-transform:none;
         transform: none;
-        width: 400%;
+        width: 50%;
     }
     .person__img__info__cont {
         position: absolute;
-        right: 0px;
+        right: -9px;
         top: auto;
-        bottom: -20px;
+        bottom: -45px;
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
+        margin-right:-40%;
+        width:195%;
     }
 }
 
@@ -1058,12 +1062,23 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 
 .tweet a{
-  color:#38aaf8;
+  color:#ff3100;
 }
 
 .tweet a:hover{
-  color:#2cc3ff;
+  color:#e52200;
 }
 .tweets-feed .slides li{
   list-style-type: none;
+}
+
+.follow {
+  position:absolute;
+  font-size:65%;
+  width:90%;
+  margin-top:10px;
+}
+.follow a {
+  color:#ff3f01;
+  text-decoration: underline;
 }

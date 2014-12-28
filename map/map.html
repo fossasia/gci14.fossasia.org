@@ -28,6 +28,10 @@
       <h2><a href="<%- props.url %>" target="_window"><%- props.name %></a></h2>
     <% } %>
     
+    <% if ( props.logo ) { %>
+      <img class="logo" src="<%- props.logo %>" />
+    <% } %>
+    
     <% if (props.metacommunity) { %>
       <h3><%- props.metacommunity %></h3>
     <% } %>
@@ -66,7 +70,7 @@
   <script type="text/javascript" src="community_map.js"></script>
   <script>
     var widget = FFCommunityMapWidget({
-        geoJson: 'ffGeoJson.json',
+        geoJson: 'http://fossasia.net/map/ffGeoJsonp.php?callback=?',
         scrollByMousewheel : true,
         hideLocationButton: false,
         hideLayerControl: false,
