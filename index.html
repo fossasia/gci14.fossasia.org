@@ -35,11 +35,12 @@
       ga('create', 'UA-17146009-5', 'auto');
       ga('send', 'pageview');
       function hide_map_wrap(){
-          $(".map_wrap").css("display","none");
-          console.log("click");
+        if (! widget.map.scrollWheelZoom.enabled() ) {
+          widget.map.scrollWheelZoom.enable();
+        }
       }
       function set_map_wrap(){
-          $(".map_wrap").css("display","inline");
+          //$(".map_wrap").css("display","inline");
           console.log("out");
       }
     </script>
