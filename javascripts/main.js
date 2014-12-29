@@ -122,5 +122,20 @@ $(document).ready(function () {
         twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
     });
 
+
+    //
+    // MAP
+    //
+
+    function hide_map_wrap(){
+      $(".map-wrap").css("display","none");
+    }
+    function set_map_wrap(){
+      $(".map-wrap").css("display","inline");
+    }
+
+    $('.map-wrap').on('click', hide_map_wrap);
+    $('.map').on('click', set_map_wrap);
+
     
 });

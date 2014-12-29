@@ -34,14 +34,6 @@
 
       ga('create', 'UA-17146009-5', 'auto');
       ga('send', 'pageview');
-      function hide_map_wrap(){
-          $(".map_wrap").css("display","none");
-          console.log("click");
-      }
-      function set_map_wrap(){
-          $(".map_wrap").css("display","inline");
-          console.log("out");
-      }
     </script>
 <body>
 <section id="home">
@@ -129,24 +121,22 @@
     </section>
 
     <section id="map">
-        <div style="width:100%; height: 900px; z-index:20; position:absolute" class="map_wrap" onclick="hide_map_wrap();"></div>
-        <iframe src="map/map.html" style="border:0px #FFFFFF none; z-index:10;" name="myiframe" onmouseout="set_map_wrap();"  scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="800" width=100% ></iframe>
+        <div class="map-wrap"></div>
+        <iframe src="map/map.html" class="map" name="myiframe" scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="800" width=100% ></iframe>
 	 </div>
     </section>
 
-    <section id="about">
-    <div id="slide1">
+    <section id="about" class="page-section section-bg section-bg--3">
 		<div class="wrap">
             <h1 class="section__title">About</h1>
             <div>
                 <p>FOSSASIA is the top Free and Open Source technology event in Asia for developers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009. Previous events took place in Cambodia and Vietnam.</p>
             </div>
         </div>
-    </div>
 	</section>
 
 
-    <section id="mentors">
+    <section id="mentors" class="page-section">
         <div class="wrap">
             <h1 class="section__title">Mentors</h1>
             <div class="stack stack-clean">
@@ -426,7 +416,7 @@
                 </div>
 
                 <div class="sympl onethird">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
+                    <div class="box-team wow tada" data-wow-delay="0.2s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -593,7 +583,7 @@
         </div>
 	</div>
     </section>
-    <section id="students">
+    <section id="students" class="page-section">
         <div class="wrap">
             <h1 class="section__title">Students</h1>
             <div class="stack stack-clean">
@@ -1126,11 +1116,9 @@
 
 
   <section id="facebook" class="page-section section-bg section-bg--7">
-   <div id="facebook">
-		<div class="wrap" align="center">
-            <h1 class="section__title">Facebook</h1>
-              <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;width=800&amp;height=900&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true&amp;appId=1505876126310823" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95%; min-width:400px; height:700px; display:inline-block;" allowTransparency="false"></iframe>
-        </div>
+	<div class="wrap" align="center">
+        <h1 class="section__title">Facebook</h1>
+          <iframe class="facebook-iframe" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;width=800&amp;height=900&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true&amp;appId=1505876126310823" scrolling="no" frameborder="0" allowTransparency="false"></iframe>
     </div>
   </section>
 

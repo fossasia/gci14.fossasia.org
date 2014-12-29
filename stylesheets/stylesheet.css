@@ -1018,6 +1018,13 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
   text-decoration: underline;
 }
 
+.map-wrap {
+  width:100%;
+  height: 900px;
+  z-index:20;
+  position:absolute
+}
+
 .map {
   display: block;
   z-index: 10;
@@ -1053,4 +1060,16 @@ table{
   margin: 0 auto;
   max-width: 90%;
   display: block;
+}
+
+/* FB */
+
+.facebook-iframe {
+  border:none;
+  overflow:hidden;
+  width:95%;
+  min-width:400px;
+  height:700px;
+  display:inline-block;
+  background: white;
 }
