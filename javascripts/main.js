@@ -132,6 +132,7 @@ $(document).ready(function () {
     }
     function set_map_wrap(){
       $(".map-wrap").css("display","inline");
+      console.log('clicked');
     }
 
     $('.map-wrap').on('click', hide_map_wrap);
