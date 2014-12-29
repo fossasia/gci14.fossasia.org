@@ -21,7 +21,7 @@ var FFCommunityMapWidget = function(settings, map_options, link) {
     if (props.identica && !props.identica.match(/^identica:.*/)) {
       props.identica = "identica:" + props.identica;
     }
-    
+ 
     function getAgeFromProperties(props) {
       var ageindays = -1;
       if (props.mtime) {

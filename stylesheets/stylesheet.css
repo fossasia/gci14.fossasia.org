@@ -748,7 +748,8 @@ img {
   font-size: 1.25em;
 }
 .person--contributer .person__img {
-  margin: 0 1em;
+  /*This line clashes with the CSS rules putting the Name and Link under Photo
+  margin: 0 1em;*/
 }
 
 
@@ -960,10 +961,10 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width:72%;
-        margin:0 auto 0 auto;
+        width:50%;
+        margin-right:185px;
         text-align:center;
-        padding-top:28px;
+        padding-top:20px;
     }
     .person__img__info {
         opacity: 1;
@@ -974,13 +975,13 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
     }
     .person__img__info__cont {
         position: absolute;
-        right: -9px;
-        top: auto;
-        bottom: -45px;
+        right: 32px;
+        top: 164px;
+        bottom: -124px;
         border-radius: 10px;
         background-color: rgba(52, 152, 219, 0.5);   
-        margin-right:-40%;
-        width:195%;
+        margin-right:-100%;
+        width:95%;
     }
 }
 
