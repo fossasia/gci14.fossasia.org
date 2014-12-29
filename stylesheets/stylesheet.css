@@ -31,6 +31,9 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+html, body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
 }
@@ -877,7 +880,7 @@ input:focus {
 }
 
 .footer {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 .footer ul {
@@ -986,6 +989,10 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
    =MISC
    ========================================================================== */
 
+#tweet_feed {
+  padding-bottom: 5.5em;
+}
+
 .tweets-feed {
   font-size: 150%;
   padding-bottom: 6em; 
@@ -1008,11 +1015,11 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 
 .follow {
-  position:absolute;
-  font-size:65%;
-  width:90%;
-  margin-top:10px;
+  position: absolute;
+  font-size: 65%;
+  margin-top: 1em;
 }
+
 .follow a {
   color:#ff3f01;
   text-decoration: underline;
