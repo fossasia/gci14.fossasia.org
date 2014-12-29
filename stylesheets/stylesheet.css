@@ -875,14 +875,15 @@ input:focus {
   height: 48px;
   display: inline-block;
 }
-.bottom-git{
-  background-color:rgba(174, 174, 174, 0.66);
+
+.footer {
+  padding-top: 3em;
 }
 
-.bottom-git{
-  background-color:rgba(33, 123, 184, 0.26);
-  width:100%;
+.footer ul {
+  padding-left: 1.5em;
 }
+
 /* ==========================================================================
    =MEDIA
    ========================================================================== */
