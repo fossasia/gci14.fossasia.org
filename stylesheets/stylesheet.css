@@ -46,11 +46,6 @@ body {
   color: #FFFFFF;
   background-color: #66CC99;
 }
-#photostream {
-  width: 60em;
-  margin: 0 auto;
-  max-width: 90%
-}
 a:focus {
   outline: thin dotted;
 }
@@ -541,7 +536,7 @@ button:active,
 }
 .page-section {
   padding: 4em 0 3em;
-    overflow: hidden;
+  overflow: hidden;
 }
 .page-section:nth-child(odd) {
   background: #f6f6f6;
@@ -561,15 +556,7 @@ button:active,
 img {
   max-width: 100%;
 }
-/* ==========================================================================
-   =SECTIONS
-   ========================================================================== */
-#mentors {
-  background-color:#D49A6A;
-}
-#students {
-  background-color:#8BA6D7;
-}
+
 /* ==========================================================================
    =MASTHEAD
    ========================================================================== */
@@ -582,22 +569,47 @@ img {
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
+  
+  height: 3.25em;
+  overflow: hidden;
 }
 .masthead:hover {
   background: rgba(240,240,240,1);
 }
 .masthead-cont {
-  font-size: 16px;
+  font-size: .8em;
+  overflow: hidden;
 }
 .masthead .logo {
   height: 1.5em;
   float: left;
-  padding: 1.5em 0;
+  padding: 1.25em 0;
   text-align: center;
 }
 .masthead .logo img {
   max-height: 100%;
 }
+
+.masthead .logo--light { display: none; }
+
+/* Masthead Alt Style */
+
+.masthead--plain, .masthead--plain:hover  {
+  background: rgba(0, 0, 0, .2)
+}
+
+.masthead--plain .menu a {
+  color: white;
+}
+
+.masthead--plain .menu a:hover {
+  background: rgba(0, 0, 0, .2)
+}
+
+.masthead--plain .logo--dark { display: none; }
+.masthead--plain .logo--light { display: block; }
+
+
 .masthead .menu {
   float: right;
 }
@@ -615,14 +627,21 @@ img {
 .menu a {
   display: block;
   padding: 1.5em;
+  line-height: 1;
+  color: #444;
 }
 .menu a:hover {
   background: #fff;
   text-decoration: none;
 }
 .socialbtn{
-        margin-left: 15px;
-    }
+  margin-left: 15px;
+}
+.twitter-follow-button {
+  margin-top: 1.4em;
+  padding: 0;
+}
+
 /* Hero
    ========================================================================== */
 .section--hero.section--hero {
@@ -728,6 +747,9 @@ img {
 .person--contributer .person__img {
   margin: 0 1em;
 }
+
+
+
 /* ==========================================================================
    SECTIONS
    ========================================================================== */
@@ -741,6 +763,20 @@ img {
    SUBSCRIBE EMAIL
    ========================================================================== */
 
+input {
+  padding: .75em;
+  border: none;
+  border-radius: 2px;
+  transition: all .3s ease;
+  font-size: .8em;
+  margin: 1em;
+}
+
+input:focus {
+  outline: none;
+  background: #eee;
+}
+
 #mc_embed_signup{
  padding-bottom: 1.000em;
  clear:left;
@@ -748,36 +784,20 @@ img {
 #mc_embed_signup_scroll{
   text-align:center;
 }
-#mc_embed_signup_scroll input#mce-EMAIL{
-  margin:auto;
-  display: block;
-  padding: 0.600em 0.250em;
-  text-indent: 0.313em;
-  color: #161616;
-  font-size: 1.000em;
-  text-align:center;
-  background: #f3f3f3;
-  font-weight: bold;
-  width: 17.5em;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius:3px;
-  -moz-border-radius:3px;
-}
+
 #mc_embed_signup_scroll input#mc-embedded-subscribe {
-  margin: 1em auto auto auto;
-  width: 19.000em;
-  height: 3.000em;
+  padding: 1em;
+  color: white;
   background-color:#e12b00;
-  font-size:0.700em;
+  font-size: .8em;
 }
 #mc_embed_signup_scroll label{ 
- display:block;
- font-size: 2.750em !important;
- padding-left: 0.650em; 
- color: #e12b00; 
- font-weight: bold;
+  display:block;
+  font-size: 2em !important;
+  margin: 0 auto;
+  color: #fff; 
+  font-weight: 300;
+  font-size:0.700em;
 }
  /* ==========================================================================
    =FOOTER
@@ -785,16 +805,11 @@ img {
 .colophon {
   background: aliceblue;
   font-size: .75em;
+  padding: 2em 0;
+  text-align: center;
   margin-top: 3em;
 }
-.colophon h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
-.colophon p {
-  text-align: center;
-}
 .heart {
   color: hotpink;
 }
@@ -868,13 +883,10 @@ img {
   background-color:rgba(33, 123, 184, 0.26);
   width:100%;
 }
-
-.made_text {
-  padding: 3em 0;
-}
 /* ==========================================================================
    =MEDIA
    ========================================================================== */
+
 @media (max-width: 40em) {
   body,
   input,
@@ -896,29 +908,6 @@ img {
   }
 }
 
-/* ==========================================================================
-   =TWITTER FEED
-   ========================================================================== */
-
-.twitterFeed {
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
-  display: block;
-}
-
-/* ==========================================================================
-   =TABLE PROPERTIES
-   ========================================================================== */
-   
-table{
-  width:100%;
-  table-layout:fixed;
-}
-
-/* ==========================================================================
-   =MOBILE
-   ========================================================================== */
 body, html {
     /*Fixes an issue with unwanted horizontal scrolling on the whole page*/
     max-width: 100%;
@@ -991,14 +980,11 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
     }
 }
 
-/*= SLIDES STYLING
---------------------------------------------------------*/
 
-#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9{ 
-  width: 100%; 
-}
+/* ==========================================================================
+   =MISC
+   ========================================================================== */
 
-<<<<<<< HEAD
 .tweets-feed {
   font-size: 150%;
   padding-bottom: 6em; 
@@ -1029,98 +1015,41 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 .follow a {
   color:#ff3f01;
   text-decoration: underline;
-=======
-#slide1{
-	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	margin: 0;
-	padding: 70px 0 260px 0;
-	background-size: cover;
->>>>>>> upstream/master
 }
 
-#slide2{
-	
-	background:rgba(0,0,0,0.4);
-	background: url(../img/slide2.jpg) 50% 0 no-repeat fixed;
-	color: #333333;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 70px 0;
-	background-size: cover;
-	
+.map {
+  display: block;
+  z-index: 10;
+  border: none;
 }
 
-#slide3{
-	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
-	color: #fff;
-	padding: 70px 0 0 0;	
-	background-size: cover;
+table{
+  width:100%;
+  table-layout:fixed;
 }
 
-#slide4{background: url(../img/slide4.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
+/* Slides */
+
+.section-bg.section-bg {
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#slide5{
-	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 70px 0;
-	color: #fff;
-	background-size: cover;
-}
+.section-bg.section-bg--1 { background-image: url('../images/bg/slide1.jpg'); }
+.section-bg.section-bg--2 { background-image: url('../images/bg/slide2.jpg'); }
+.section-bg.section-bg--3 { background-image: url('../images/bg/slide3.jpg'); }
+.section-bg.section-bg--4 { background-image: url('../images/bg/slide4.jpg'); }
+.section-bg.section-bg--5 { background-image: url('../images/bg/slide5.jpg'); }
+.section-bg.section-bg--6 { background-image: url('../images/bg/slide6.jpg'); }
+.section-bg.section-bg--7 { background-image: url('../images/bg/slide7.jpg'); }
+.section-bg.section-bg--8 { background-image: url('../images/bg/slide8.jpg'); }
 
-#slide6{background: url(../img/slide6.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
-}
 
-#slide7{
-	background: url(../img/slide7.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 70px 0;
-	color: #fff;
-	background-size: cover;
-}
-
-#slide8{background: url(../img/slide8.jpg) 50% 0 no-repeat fixed;
-	background-color: #fff;
-	color: #333333;
-	padding: 70px 0;
-	background-size: cover;
-}
-
-.tweets-feed {
-  font-size:150%;
-}
-
-.timePosted{
-  font-size:80%;
-}
-
-.tweet a{
-  color:#ff3100;
-}
-
-.tweet a:hover{
-  color:#e52200;
-}
-.tweets-feed .slides li{
-  list-style-type: none;
-}
-
-.follow {
-  position:absolute;
-  font-size:65%;
-  width:90%;
-  margin-top:10px;
-}
-.follow a {
-  color:#ff3f01;
-  text-decoration: underline;
+#photostream {
+  width: 60em;
+  margin: 0 auto;
+  max-width: 90%;
+  display: block;
 }

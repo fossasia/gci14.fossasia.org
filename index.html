@@ -77,9 +77,6 @@
                             <li><a href="#students">Students</a></li>
                             <li><a href="#contributors">Contributors</a></li>
                             <li><a href="#social">Social</a></li>
- 	<!--	no need for links to every part of the site
- 	                        <li><a href="#photostream">Photo Stream</a></li>
-							<li><a href="#tweet_feed">Twitter Feed</a></li> -->
                         </ul>
                     </nav>
                 <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Ffossasia&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=139059259570625" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px; width:90px; margin-top:25px;" allowTransparency="true" class="socialbtn"></iframe>
@@ -1104,7 +1101,7 @@
 		</div>
     </section>
 
-    <section id="contributors">
+    <section id="contributors" class="page-section section-bg section-bg--4">
       <h1 class="section__title">Contributors</h1>
          <div class="stack stack-clean">
             <div id="contr"></div>
@@ -1114,12 +1111,12 @@
     </section>
 
 
-	<section id="social" class="page-section section-bg section-bg--6">
+	<section id="social" class="page-section section-bg section-bg--5">
         <h1 class="section__title">Photo Stream</h1>
 		<object id="photostream" width="900" height="680"><param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to=" width="900" height="680"></embed></object>
 	</section>
 
-    <div id="tweet_feed" class="page-section section-bg section-bg--7">
+    <div id="tweet_feed" class="page-section section-bg section-bg--6">
         <div class="wrap" align="center">
             <h1 class="section__title">Twitter</h1>
             <div class="tweets-feed" data-widget-id="524701520395137024">
@@ -1128,7 +1125,7 @@
 	</div>
 
 
-  <section id="facebook">
+  <section id="facebook" class="page-section section-bg section-bg--7">
    <div id="facebook">
 		<div class="wrap" align="center">
             <h1 class="section__title">Facebook</h1>
@@ -1138,8 +1135,7 @@
   </section>
 
 
-    <div id="email">
-	<div id="slide8">
+    <div id="email"  class="page-section section-bg section-bg--8">
         <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
             <form action="http://fossasia.us9.list-manage.com/subscribe/post?u=d5cf526b4ceea238da3512fb3&amp;id=2be821d83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -1151,7 +1147,6 @@
                 </div>
             </form>
         </div>
-    </div>
 	</div>
 
    <section id="footer">
@@ -1191,8 +1186,7 @@
      </section>
 
      <footer class="colophon">
-            <div class="bottom-git">
-            <p class="made_text">Made with <span class="heart">♥</span> for <a style="color:inherit;" href="http://www.google-melange.com/gci/homepage/google/gci2014">Code-In</a> &nbsp;&bull;&nbsp; <a href="https://github.com/fossasia/fossasia.github.io">Fork On Github</a>
+            <p>Made with <span class="heart">♥</span> for <a style="color:inherit;" href="http://www.google-melange.com/gci/homepage/google/gci2014">Code-In</a> &nbsp;&bull;&nbsp; <a href="https://github.com/fossasia/fossasia.github.io">Fork On Github</a>
             </p>
             </div>
       	</div>
@@ -1200,17 +1194,11 @@
 
     <!-- js -->
 
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-
-    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
-  -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="javascripts/wow.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
     <script type="text/javascript" src="javascripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="javascripts/twitter.fetcher.js"></script>
     <!-- Twitter js -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
