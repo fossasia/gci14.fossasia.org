@@ -34,15 +34,6 @@
 
       ga('create', 'UA-17146009-5', 'auto');
       ga('send', 'pageview');
-      function hide_map_wrap(){
-        if (! widget.map.scrollWheelZoom.enabled() ) {
-          widget.map.scrollWheelZoom.enable();
-        }
-      }
-      function set_map_wrap(){
-          //$(".map_wrap").css("display","inline");
-          console.log("out");
-      }
     </script>
 <body>
 <section id="home">
@@ -62,7 +53,7 @@
 <div class="page-wrap">
 
   <label for="sidebartoggler" class="toggle"><img src="images/menu.png" alt="Menu Button" height="42px" width="42px"></label>
-  <header class="masthead">
+  <header class="masthead masthead--plain">
         <div class="wrap">
             <div class="masthead-cont">
                 <div class="logo">
@@ -78,9 +69,6 @@
                             <li><a href="#students">Students</a></li>
                             <li><a href="#contributors">Contributors</a></li>
                             <li><a href="#social">Social</a></li>
- 	<!--	no need for links to every part of the site
- 	                        <li><a href="#photostream">Photo Stream</a></li>
-							<li><a href="#tweet_feed">Twitter Feed</a></li> -->
                         </ul>
                     </nav>
                 <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Ffossasia&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=139059259570625" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px; width:90px; margin-top:25px;" allowTransparency="true" class="socialbtn"></iframe>
@@ -132,87 +120,23 @@
         </ul>
     </section>
 
-    <section id="cmap">
-        <div id="map" class="mapfull map_wrap" onclick="hide_map_wrap();"></div>
-          <link rel="stylesheet" href="map/external/leaflet/leaflet.css" />
-          <!--[if lte IE 8]><link rel="stylesheet" href="map/external/leaflet/leaflet.ie.css" /><![endif]-->
-          <link rel="stylesheet" href="map/external/leaflet/MarkerCluster.css" />
-          <link rel="stylesheet" href="map/external/leaflet/MarkerCluster.Default.css" />
-          <!--[if lte IE 8]><link rel="stylesheet" href="map/external/leaflet/MarkerCluster.Default.ie.css" /><![endif]-->
-          <link rel="stylesheet" href="map/external/leaflet/leaflet-button-control.css" />
-          <link rel="stylesheet" href="map/community_map.css" />
-          <script type="text/template" class="template" id="community-popup">
-            <div class="community-popup">
-            <% if ( props.name ) { %>
-              <h2><a href="<%- props.url %>" target="_window"><%- props.name %></a></h2>
-            <% } %>
-            
-            <% if ( props.logo ) { %>
-              <img class="logo" src="<%- props.logo %>" />
-            <% } %>
-            
-            <% if (props.metacommunity) { %>
-              <h3><%- props.metacommunity %></h3>
-            <% } %>
-        
-            <% if (props.city) { %>
-              <div class="city"><%- props.city  %></div>
-            <% } %>
-          
-            <% if (props.nodes) { %>
-              <div class="nodes">
-                 Zug&auml;nge: <%- props.nodes  %>
-                 <% if (props.state && props.age) { %>
-                    <span class="state <%- props.state  %>" title="Die letzte Aktualisierung der Daten war vor <%- props.age  %> Tagen">(<%- props.state  %>)</span>
-                 <% } %>
-              </div>
-            <% } %>
-        
-            <% if (props.phone) { %>
-              <div class="phone">&#9742; <%- props.phone  %></div>
-            <% } %>
-        
-            <ul class="contacts" style="height:<%- Math.round(props.contacts.length/6+0.4)*30+10 %>px; width: <%- 6*(30+5)%>px;">
-            <% _.each(props.contacts, function(contact, index, list) { %>
-              <li class="contact">
-                <a href="<%- contact.url %>" class="button <%- contact.type %>" target="_window"></a>
-              </li>
-            <% }); %>
-            </ul>
-            </div>
-          </script>
-          <script type="text/javascript" src="map/external/leaflet/leaflet.js"></script>
-          <script type="text/javascript" src="map/external/leaflet/leaflet-button-control.js"></script>
-          <script type="text/javascript" src="map/external/leaflet/leaflet.markercluster.js"></script>
-          <script type="text/javascript" src="map/external/jquery/jquery.min.js"></script>
-          <script type="text/javascript" src="map/external/underscore/underscore-min.js"></script>
-          <script type="text/javascript" src="map/community_map.js"></script>
-          <script>
-            var widget = FFCommunityMapWidget({
-                geoJson: 'http://fossasia.net/map/ffGeoJsonp.php?callback=?',
-                scrollByMousewheel : false,
-                hideLocationButton: false,
-                hideLayerControl: false,
-                hideInfoBox: true 
-            });
-          </script>
-                
-                
+    <section id="map">
+        <div class="map-wrap"></div>
+        <iframe src="map/map.html" class="map" name="myiframe" scrolling="auto" frameborder="1" align=aus marginheight="0px" marginwidth="0px" height="800" width=100% ></iframe>
+	 </div>
     </section>
 
-    <section id="about">
-    <div id="slide1">
+    <section id="about" class="page-section section-bg section-bg--3">
 		<div class="wrap">
             <h1 class="section__title">About</h1>
             <div>
                 <p>FOSSASIA is the top Free and Open Source technology event in Asia for developers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009. Previous events took place in Cambodia and Vietnam.</p>
             </div>
         </div>
-    </div>
 	</section>
 
 
-    <section id="mentors">
+    <section id="mentors" class="page-section">
         <div class="wrap">
             <h1 class="section__title">Mentors</h1>
             <div class="stack stack-clean">
@@ -492,7 +416,7 @@
                 </div>
 
                 <div class="sympl onethird">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
+                    <div class="box-team wow tada" data-wow-delay="0.2s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 <div class="person__img__info">
@@ -679,7 +603,7 @@
         </div>
         </div>-->
     </section>
-    <section id="students">
+    <section id="students" class="page-section">
         <div class="wrap">
             <h1 class="section__title">Students</h1>
             <div class="stack stack-clean">
@@ -1174,7 +1098,7 @@
 	</div>
     </section>
 
-    <section id="thank_you">
+    <section id="thank_you" class="page-section section-bg section-bg--4">
 		<div id="slide3">
 	        <div class="wrap">
 		         <div class="box-team wow pulse" data-wow-delay="0.1s"><h1 class="section__title">  Thank you for contributing!</h1></div>
@@ -1187,7 +1111,7 @@
 		</div>
     </section>
 
-    <section id="contributors">
+    <section id="contributors" class="page-section">
       <h1 class="section__title">Contributors</h1>
          <div class="stack stack-clean">
             <div id="contr"></div>
@@ -1197,43 +1121,29 @@
     </section>
 
 
-	<div id="social">
-	<div id="slide6">
-		<div class="wrap" align="center">
- 		 <h1 class="section__title">Photo Stream</h1>
-        </div>
-		<div class="wrap" align="center">
-            <div style="width:100%;margin:auto;" >
-					<object id="photostream" width="900" height="680"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to=" width="900" height="680"></embed></object>
-				</div>
+	<section id="social" class="page-section section-bg section-bg--5">
+        <h1 class="section__title">Photo Stream</h1>
+		<object id="photostream" width="900" height="680"><param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Ffossasia%2Fshow%2F&page_show_back_url=%2Fphotos%2Ffossasia%2F&user_id=45240298@N08&jump_to=" width="900" height="680"></embed></object>
+	</section>
+
+    <div id="tweet_feed" class="page-section section-bg section-bg--7">
+        <div class="wrap" align="center">
+            <h1 class="section__title">Twitter</h1>
+            <div class="tweets-feed" data-widget-id="524701520395137024">
         </div>
     </div>
 	</div>
 
-  <div id="tweet_feed">
-      <div id="slide7">
-         <div class="wrap" align="center">
-		      <h1 class="section__title">Twitter</h1>
-              <div class="tweets-feed" data-widget-id="524701520395137024">
 
-              </div>
-          </div>
-      </div>
-	</div>
-
-  <section id="facebook">
-   <div id="facebook">
-		<div class="wrap" align="center">
-            <h1 class="section__title">Facebook</h1>
-              <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;width=800&amp;height=900&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true&amp;appId=1505876126310823" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95%; min-width:400px; height:700px; display:inline-block;" allowTransparency="false"></iframe>
-        </div>
+  <section id="facebook" class="page-section section-bg section-bg--6">
+	<div class="wrap" align="center">
+        <h1 class="section__title">Facebook</h1>
+          <iframe class="facebook-iframe" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&amp;width=800&amp;height=900&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true&amp;appId=1505876126310823" scrolling="no" frameborder="0" allowTransparency="false"></iframe>
     </div>
   </section>
 
 
-    <div id="email">
-	<div id="slide8">
-        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <div id="email"  class="page-section section-bg section-bg--8">
         <div id="mc_embed_signup">
             <form action="http://fossasia.us9.list-manage.com/subscribe/post?u=d5cf526b4ceea238da3512fb3&amp;id=2be821d83b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -1244,10 +1154,9 @@
                 </div>
             </form>
         </div>
-    </div>
 	</div>
 
-   <section id="footer">
+   <section id="footer" class="footer">
         <div class="wrap">
             <div class="stack sympl-stack">
                 <div class="sympl twofifths">
@@ -1262,7 +1171,7 @@
                     </ul>
                 </div>
                 <div class="sympl twofifths">
-                    <h3 style="margin-left:-22px;">FOSSASIA Links</h3>
+                    <h3>FOSSASIA Links</h3>
                     <ul class="list">
                         <a href="http://blog.fossasia.net/"><li class="link">FOSSASIA Blog</li></a>
                         <a href="http://fossasia.net/"><li class="link">FOSSASIA Community Network</li></a>
@@ -1271,7 +1180,7 @@
                     </ul>
                 </div>
                 <div class="sympl onefifth">
-                    <h3 style="margin-left:-22px;">Events</h3>
+                    <h3>Events</h3>
                     <ul class="list">
                         <a href="http://2015.fossasia.org/"><li class="event">FOSSASIA '15</li></a>
                         <a href="http://2014.fossasia.org/"><li class="event">FOSSASIA '14</li></a>
@@ -1284,8 +1193,7 @@
      </section>
 
      <footer class="colophon">
-            <div class="bottom-git">
-            <p class="made_text">Made with <span class="heart">♥</span> for <a style="color:inherit;" href="http://www.google-melange.com/gci/homepage/google/gci2014">Code-In</a> &nbsp;&bull;&nbsp; <a href="https://github.com/fossasia/fossasia.github.io">Fork On Github</a>
+            <p>Made with <span class="heart">♥</span> for <a style="color:inherit;" href="http://www.google-melange.com/gci/homepage/google/gci2014">Code-In</a> &nbsp;&bull;&nbsp; <a href="https://github.com/fossasia/fossasia.github.io">Fork On Github</a>
             </p>
             </div>
       	</div>
@@ -1293,15 +1201,13 @@
 
     <!-- js -->
 
-    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
-  -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="javascripts/wow.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
     <script type="text/javascript" src="javascripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="javascripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="javascripts/unslider.min.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="javascripts/twitter.fetcher.js"></script>
+    <script type="text/javascript" src="javascripts/wow.min.js"></script>
     <!-- Twitter js -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  <div class="sidebar"><!--didn't use jquery to change name of the class, so making a new div-->
@@ -1319,14 +1225,3 @@
 
 </body>
 </html>
-<!-- nicescroll -->
-<script type="text/javascript">
-	 $(document).ready(function() {
-		$("html").niceScroll({
-			cursorwidth: "10px",
-			zindex: 1000000, //High enough to be on top of the <header>
-			mousescrollstep: 80,
-		});
-	 });
-
- </script>
