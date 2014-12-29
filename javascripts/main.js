@@ -73,22 +73,8 @@ $(document).ready(function () {
         }
     }
 
-    function caller() {
-        changeTitle();
-    }
-
-    $(window).on('resize', caller);
-    $(window).trigger('resize')
-
-    // Scrolling menu
-
-    $(window).on('scroll', function() {
-        if ( parseFloat($(window).scrollTop()) >= parseFloat($('.masthead').height()) ) {
-            $('.masthead').removeClass('masthead--plain')
-        } else {
-            $('.masthead').addClass('masthead--plain')
-        }
-    });
+    $(window).on('resize', changeTitle);
+    $(window).trigger('resize');
 
 
     $('.tweets-feed').each(function(index) {
@@ -121,6 +107,4 @@ $(document).ready(function () {
         // fetch(id, domId, max-tweets, enableLinks, showUser, showTime, dateFunction, showRT, custom-callback, interaction);
         twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
     });
-
-    
 });
