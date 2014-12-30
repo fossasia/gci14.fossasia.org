@@ -469,9 +469,6 @@ h6 {
   }
 }
 @media (max-width: 30em) {
-  .sympl {
-    width: 100%;
-  }
   .s-full {
     width: 100%;
   }
@@ -689,7 +686,6 @@ img {
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  min-width: 120px;
 }
 
 .person__img__info {
@@ -943,46 +939,47 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
     .menu li {
         width:50%;
     }
+
+    body { font-size: 112.5%; }
 }
-@media (max-width: 30em) {
-    .person {
-        height: 180px;
-        margin-top:17px;
-        margin-bottom:17px;
-    }
-    .person__img {
-        width: 25%;
-        float: left;
-        overflow: visible;
-        margin-left:35%;
-    }
-    .person__name {
-        text-align: right;   
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width:50%;
-        margin-right:185px;
-        text-align:center;
-        padding-top:20px;
-    }
-    .person__img__info {
-        opacity: 1;
-        background: none;
-        -webkit-transform:none;
-        transform: none;
-        width: 50%;
-    }
-    .person__img__info__cont {
-        position: absolute;
-        right: 32px;
-        top: 164px;
-        bottom: -124px;
-        border-radius: 10px;
-        background-color: rgba(52, 152, 219, 0.5);   
-        margin-right:-100%;
-        width:95%;
-    }
+
+@media (max-width: 37.5em) {
+  .person__img { border-radius: 0; overflow: visible; }
+  .person__img img {
+    margin-bottom: 2.25em;
+  }
+  .person__img__info {
+    position: absolute;
+    bottom: -3em;
+    color: white;
+    opacity: 1;
+    border-radius: 0;
+    transform: scale(1);
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    font-size: .8em;
+    background: rgba(0,0,0,.1);
+    display: inline-block;
+    padding: 0;
+  }
+  .person__img__info__cont {
+    position: static;
+    transform: none;
+  }
+  .person__img__info a {
+    padding: .375em;
+    display: inline-block;
+  }
+  .person__name {
+    font-size: 1.25em;
+  }
+
+  #contributors .person__img__info {
+    width: 3em;
+    min-width: 0;
+    margin: 0 auto;
+  }
 }
 
 
