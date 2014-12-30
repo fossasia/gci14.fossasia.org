@@ -618,6 +618,14 @@ img {
 .masthead .menu {
   float: right;
 }
+
+.menu nav {
+  overflow: hidden;
+  float: left;
+}
+.menu__social {
+  float: right; 
+}
 .menu ul {
   margin: 0;
   padding: 0;
@@ -893,35 +901,14 @@ input:focus {
    =MEDIA
    ========================================================================== */
 
-@media (max-width: 40em) {
-  body,
-  input,
-  textarea,
-  button,
-  form,
-  select {
-    font-size: 125%;
-  }
-}
-@media (max-width: 30em) {
-  body,
-  input,
-  textarea,
-  button,
-  form,
-  select {
-    font-size: 100%;
-  }
+@media (max-width: 81em) {
+  .menu a { padding: 1.5em 1em; }
 }
 
-body, html {
-    /*Fixes an issue with unwanted horizontal scrolling on the whole page*/
-    max-width: 100%;
-    overflow-x: hidden;
+@media (max-width: 72.5em) {
+  .menu .menu__low-prio-1 { display: none; }
 }
-.toggle{
-display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
-}
+
 @media (max-width: 60em) {
     .menu li {
         width:33.3333%;
@@ -945,7 +932,14 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         width:50%;
     }
 
-    body { font-size: 112.5%; }
+    body,
+    input,
+    textarea,
+    button,
+    form,
+    select {
+      font-size: 112.5%; 
+    }
 }
 
 @media (max-width: 37.5em) {
@@ -984,6 +978,17 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
     width: 3em;
     min-width: 0;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 30em) {
+  body,
+  input,
+  textarea,
+  button,
+  form,
+  select {
+    font-size: 100%;
   }
 }
 
