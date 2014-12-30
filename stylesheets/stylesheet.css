@@ -579,7 +579,7 @@ img {
   overflow: hidden;
 }
 .masthead:hover {
-  background: rgba(240,240,240,1);
+  background: rgba(255,255,255,.9);
 }
 .masthead-cont {
   font-size: .8em;
@@ -611,14 +611,23 @@ img {
   background: rgba(0, 0, 0, .2)
 }
 
+.masthead--plain .dropdown {
+  background: rgba(64, 64, 64, .2)
+}
+
+.masthead--plain .menu__toggle {
+  color: white;
+}
+
 .masthead--plain .logo--dark { display: none; }
 .masthead--plain .logo--light { display: block; }
 
+.masthead--plain .menu-icon { border-color: rgba(255, 255, 255, .8)}
 
 .masthead .menu {
   float: right;
 }
-
+.menu__toggle { display: none; }
 .menu nav {
   overflow: hidden;
   float: left;
@@ -637,13 +646,13 @@ img {
   float: left;
   text-align: center;
 }
-.menu a {
+.menu nav a {
   display: block;
   padding: 1.5em;
   line-height: 1;
   color: #444;
 }
-.menu a:hover {
+.menu nav a:hover {
   background: #fff;
   text-decoration: none;
 }
@@ -654,6 +663,44 @@ img {
   margin-top: 1.4em;
   padding: 0;
 }
+
+/* Dropdown */
+.menu__toggle { 
+  cursor: pointer;
+  color: #444;
+  padding: 1.5em;
+  float: right;
+  line-height: 1;
+}
+.menu__toggle .menu-icon {
+  margin-top: -1px;
+}
+.menu-icon {
+  border-bottom: 11px double #444;
+  border-top: 4px solid #444;
+  height: 18px;
+  width: 30px;
+  display: block;
+}
+.dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4em;
+  text-align: center;
+  background: rgba(255, 255, 255, .8);
+}
+.dropdown nav {
+  width: 100%;
+}
+.dropdown.menu nav a {
+  padding: 1.5em;
+}
+.dropdown.menu li, .dropdown .menu__social {
+  width: 100%;
+  display: block;
+}
+
 
 /* Hero
    ========================================================================== */
@@ -909,6 +956,12 @@ input:focus {
   .menu .menu__low-prio-1 { display: none; }
 }
 
+@media (max-width: 66em) {
+  .menu { display: none; }
+  .menu__toggle { display: block; }
+  .masthead, .masthead-cont, .menu nav { overflow: visible; }
+}
+
 @media (max-width: 60em) {
     .menu li {
         width:33.3333%;
@@ -928,10 +981,6 @@ input:focus {
     }
 }
 @media (max-width: 45em) {
-    .menu li {
-        width:50%;
-    }
-
     body,
     input,
     textarea,
@@ -990,6 +1039,8 @@ input:focus {
   select {
     font-size: 100%;
   }
+
+  .masthead { position: absolute; }
 }
 
 
