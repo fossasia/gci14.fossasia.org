@@ -556,6 +556,11 @@ button:active,
 img {
   max-width: 100%;
 }
+.wrap {
+  width: 60em;
+  margin: 0 auto;
+  max-width: 90%;
+}
 
 /* ==========================================================================
    =MASTHEAD
