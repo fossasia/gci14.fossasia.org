@@ -637,6 +637,20 @@ img {
   background: #fff;
   text-decoration: none;
 }
+
+#bannerimg1 {
+  background-image: url('../images/IMG1.jpg');
+}
+#bannerimg2 {
+  background-image: url('../images/IMG2.jpg');
+}
+#bannerimg3 {
+  background-image: url('../images/IMG3.jpg');
+}
+#bannerimg4 {
+  background-image: url('../images/IMG4.jpg');
+}
+
 .socialbtn{
   margin-left: 15px;
 }
@@ -982,6 +996,22 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         background-color: rgba(52, 152, 219, 0.5);   
         margin-right:-100%;
         width:95%;
+    }
+    #bannerimg1 {
+      background-image: url('../images/IMG1_s.jpg');
+      background-size: cover;
+    }
+    #bannerimg2 {
+      background-image: url('../images/IMG2_s.jpg');
+      background-size: cover;
+    }
+    #bannerimg3 {
+      background-image: url('../images/IMG3_s.jpg');
+      background-size: cover;
+    }
+    #bannerimg4 {
+      background-image: url('../images/IMG4_s.jpg');
+      background-size: cover;
     }
 }
 

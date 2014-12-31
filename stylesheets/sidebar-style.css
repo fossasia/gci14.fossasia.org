@@ -43,7 +43,7 @@ display:block;
   transition: all 0.15s ease-out 0;
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 1;
   cursor: pointer; 
 }
@@ -89,14 +89,14 @@ display:block;
 }
   #sidebartoggler:checked + .page-wrap .sidebar 
 {
-    left: 0px; 
+    right: 0px; 
 }
   #sidebartoggler:checked + .page-wrap .toggle 
 {
-    left: 2.500em; 
+    right: 2.500em; 
 }
   #sidebartoggler:checked + .page-wrap .page-content 
 {
-    padding-left: 7.5em; 
+    padding-right: 7.5em; 
 }
 	
