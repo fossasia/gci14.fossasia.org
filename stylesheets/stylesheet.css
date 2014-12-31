@@ -656,6 +656,20 @@ img {
   background: #fff;
   text-decoration: none;
 }
+
+#bannerimg1 {
+  background-image: url('../images/IMG1.jpg');
+}
+#bannerimg2 {
+  background-image: url('../images/IMG2.jpg');
+}
+#bannerimg3 {
+  background-image: url('../images/IMG3.jpg');
+}
+#bannerimg4 {
+  background-image: url('../images/IMG4.jpg');
+}
+
 .socialbtn{
   margin-left: 15px;
 }
@@ -1031,16 +1045,22 @@ input:focus {
 }
 
 @media (max-width: 30em) {
-  body,
-  input,
-  textarea,
-  button,
-  form,
-  select {
-    font-size: 100%;
+  #bannerimg1 {
+    background-image: url('../images/IMG1_s.jpg');
+    background-size: cover;
   }
-
-  .masthead { position: absolute; }
+  #bannerimg2 {
+    background-image: url('../images/IMG2_s.jpg');
+    background-size: cover;
+  }
+  #bannerimg3 {
+    background-image: url('../images/IMG3_s.jpg');
+    background-size: cover;
+  }
+  #bannerimg4 {
+    background-image: url('../images/IMG4_s.jpg');
+    background-size: cover;
+  }
 }
 
 
