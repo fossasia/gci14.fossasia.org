@@ -1025,9 +1025,24 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
 }
 
 .tweets-feed {
-  font-size: 150%;
+  font-size: 1.5em;
   padding-bottom: 6em; 
   color: white;
+}
+@media (max-width: 1000px) {
+    .tweets-feed {
+      width:750px;
+    }
+}
+@media (max-width: 750px) {
+  .tweets-feed {
+    width:500px;
+  }
+}
+@media (max-width: 500px) {
+  .tweets-feed {
+    width:300px;
+  }
 }
 
 .timePosted{
