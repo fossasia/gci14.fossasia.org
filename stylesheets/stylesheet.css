@@ -760,6 +760,8 @@ img {
   display: block;
   border-radius: 50%;
   overflow: hidden;
+  height: 0;
+  padding-bottom: 100%;
 }
 
 .person__img__info {
@@ -810,6 +812,7 @@ img {
 }
 .person__name {
   font-size: 1.5em;
+  height: 1.5em;
 }
 
 
@@ -1009,7 +1012,12 @@ input:focus {
 }
 
 @media (max-width: 37.5em) {
-  .person__img { border-radius: 0; overflow: visible; }
+  .person__img { 
+    border-radius: 0; 
+    overflow: visible; 
+    height: auto;
+    padding: 0;
+  }
   .person__img img {
     margin-bottom: 2.25em;
   }

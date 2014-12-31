@@ -63,7 +63,9 @@ $(document).ready(function () {
     //
     // Animation
     //
-    new WOW().init();
+    new WOW().init({
+        mobile: false
+    });
 
     function changeTitle() {
         if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
