@@ -111,6 +111,7 @@ $(document).ready(function () {
 
             $('.tweets-feed').unslider({
                 fluid:true,
+                keys:true,
                 delay:5000
             });
             
