@@ -145,13 +145,33 @@ $(document).ready(function () {
     // MENU
     //
 
-    $('.menu__toggle').on('click', function() {
-        if ( $('.menu').is(':visible') ) 
+    var menu = function() {
+        var hide = function() {
             $('.menu').slideUp(300, function() {
                 $(this).removeClass('dropdown');
             });
-        else
+        }
+        var show = function() {
             $('.menu').addClass('dropdown').slideDown(300)
+        }
+        return {
+            hide: hide,
+            show: show
+        }
+    }
+
+    $('.menu__toggle').on('click', function() {
+        if ( $('.menu').is(':visible') ) 
+            menu().hide();
+        else
+            menu().show();
+    });
+
+    $(document).on('click', function(e) {
+        if( !$(event.target).closest('.menu, .menu__toggle').length ) {
+            if ( $('.menu').is(':visible') ) 
+                menu().hide();
+        }
     });
     
 });
