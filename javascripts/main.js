@@ -155,4 +155,25 @@ $(document).ready(function () {
             $('.menu').addClass('dropdown').slideDown(300)
     });
     
+    function validateEmail(m) {
+        if( typeof(m) == 'undefined'){
+            m = $('.email').val();
+            console.log(m);
+            console.log(validateEmail(m));
+        }
+        if(m == ""){
+            return true;
+        }
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(m);
+    }
+
+    $('.email').on('input', function(){
+        var m = $(this);
+        if(!validateEmail(m.val())){
+            m.addClass('email-error');
+        } else {
+            m.removeClass('email-error');
+        }
+    });
 });
