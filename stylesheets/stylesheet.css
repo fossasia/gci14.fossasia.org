@@ -1095,6 +1095,9 @@ input:focus {
 
 .follow {
   position: absolute;
+  left:0;
+  width:100%;
+  text-align: center;
   font-size: 65%;
   margin-top: 1em;
 }
