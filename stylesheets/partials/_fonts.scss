@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'fossasia';
+  src:url('../fonts/fossasia.eot?-twofvr');
+  src:url('../fonts/fossasia.eot?#iefix-twofvr') format('embedded-opentype'),
+  url('../fonts/fossasia.woff?-twofvr') format('woff'),
+  url('../fonts/fossasia.ttf?-twofvr') format('truetype'),
+  url('../fonts/fossasia.svg?-twofvr#fossasia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fossasia';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e604";
+}
+.icon-link:before {
+  content: "\e605";
+}
+.icon-github:before {
+  content: "\e600";
+}
+.icon-twitter:before {
+  content: "\e601";
+}
+.icon-facebook:before {
+  content: "\e602";
+}
+.icon-gplus:before {
+  content: "\e603";
+}

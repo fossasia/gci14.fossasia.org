@@ -1,18 +1,3 @@
-/* Copy paste this:
-
-{
-    "social": {
-      "mail": "email id",
-      "twitter": "twitter username",
-      "facebook": "facebook username",
-      "link": "link to your website",
-      "github": "github username"
-    },
-    "imgName": "full filename of image added in images/mentors with extension",
-    "name": "Your name" 
-},
-*/
-
 [{
   "social": {
     "twitter": "hpdang",
