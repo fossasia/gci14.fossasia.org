@@ -1086,23 +1086,54 @@ input:focus {
   font-size: 1.5em;
   padding-bottom: 6em; 
   color: white;
+  width:1400px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
     .tweets-feed {
-      width:750px;
+      width:1000px;
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
+    .tweets-feed {
+      width:800px;
+    }
+}
+@media (max-width: 900px) {
+  .tweets-feed {
+    width:600px;
+  }
+}
+@media (max-width: 700px) {
   .tweets-feed {
     width:500px;
   }
 }
+@media (max-width: 600px) {
+  .tweets-feed {
+    width:480px;
+  }
+}
 @media (max-width: 500px) {
+  .tweets-feed {
+    width:380px;
+  }
+}
+@media (max-width: 400px) {
   .tweets-feed {
     width:300px;
   }
 }
-
+#tweet_feed_wrap{
+  width: initial; 
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:600px){
+  #tweet_feed_wrap{
+    margin-left:2%;
+    margin-right:2%;
+  }
+}
 .timePosted{
   font-size:80%;
 }
