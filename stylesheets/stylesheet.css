@@ -992,7 +992,19 @@ button:active,
       width:100%;   
     }
     .masthead {
-      position:relative;   
+      position: fixed;   
+      background: -webkit-linear-gradient(#555, #BBB); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#555, #BBB); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#555, #BBB); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#555, #BBB); /* Standard syntax (must be last) */
+      opacity: 0.6;
+    }
+    .masthead:hover {
+      background: -webkit-linear-gradient(#555, #BBB); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#555, #BBB); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#555, #BBB); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#555, #BBB); /* Standard syntax (must be last) */
+      opacity: 1;
     }
     #map iframe {
       height: 300px;
