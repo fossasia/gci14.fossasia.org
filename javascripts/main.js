@@ -171,7 +171,7 @@ $(document).ready(function() {
     });
 
     $(document).on('click', function(e) {
-      if ( !$(event.target).closest('.menu, .menu__toggle').length ) {
+      if ( !$(e.target).closest('.menu, .menu__toggle').length ) {
         if ( $('.menu.dropdown').is(':visible') )
           menu().hide();
       }
