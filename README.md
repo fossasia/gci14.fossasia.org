@@ -66,8 +66,8 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 ## Contribution Guidelines
 
-1. Use 4 spaces instead of tabs
-2. Comment your code wherever possible
+1. Please Use 4 spaces instead of tabs
+1. Please Comment your code wherever possible
 
 URL of website: http://fossasia.github.io/  
 URL of main FOSSASIA's website: http://fossasia.org/  
