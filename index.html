@@ -147,8 +147,10 @@ foo: baz
                                     <div class="person__img__info">
                                         <div class="person__img__info__cont">
                                             {% for social_hash in mentor.social %}
-                                                {% for social in social_hash %}
-                                                    <a href="{{ social[1] }}">{{ social[0] }}</a>
+                                            {% for social in social_hash %}
+                                                <a href="{{ social[1] }}">{{ social[0] }}</a>
+                                            {% endfor %}
+                                            {% endfor %}
                                         </div>
                                     </div>
                                 <img src="images/students/{{ mentor.imgName }}">
@@ -157,7 +159,7 @@ foo: baz
                         </section>
                     </div>
                 </div>
-    
+                {% endfor %}
             </div>
         </div>
     </section>
