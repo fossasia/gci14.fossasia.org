@@ -31,6 +31,12 @@ There's number of tasks with a wide variety outthere. Feel free to claim and wor
 
 **Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work. So in addition to finishing tasks quickly pay attention to submit the best work you can. Help each others out. Engage in conversations. Make friends!. Enjoy!!
 
+## Contribution Guidelines
+
+1. Please 2 spaces for indentation everywhere.
+1. Comment your code wherever possible.
+1. JavaScript is written based on the [jQuery styleguide](http://contribute.jquery.org/style-guide/js). Please follow this whenever writing JavaScript.
+
 ## Adding images
 
 FOSSASIA invites all students to work on tasks mentored by itself. If you're the student you can add your name and photo to http://fossasia.github.io/ by uploading image and editing index.html file. 
@@ -64,10 +70,6 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 1. Congrats! Now wait until it will be reviewed!
 
-## Contribution Guidelines
-
-1. Please Use 4 spaces instead of the tab charcter for indentation
-1. Please Comment your code wherever possible
 
 URL of website: http://fossasia.github.io/  
 URL of main FOSSASIA's website: http://fossasia.org/  
