@@ -38,15 +38,15 @@ body {
 }
 ::selection {
   color: #FFFFFF;
-  background-color: #66CC99;
+  background-color: #e52200;
 }
 -webkit-::selection {
   color: #FFFFFF;
-  background-color: #66CC99;
+  background-color: #e52200;
 }
 -moz-::selection {
   color: #FFFFFF;
-  background-color: #66CC99;
+  background-color: #e52200;
 }
 a:focus {
   outline: thin dotted;
@@ -547,6 +547,8 @@ button:active,
     text-transform: uppercase;
     font-size: 2em;
     margin: 0 0 0.5em;
+    font-family: 'Nixie One';
+    color: #FFF;
   }
   .section__content {
     position: relative;
@@ -559,6 +561,7 @@ button:active,
     width: 60em;
     margin: 0 auto;
     max-width: 90%;
+    color: #FFF;
   }
 
 /* ==========================================================================
