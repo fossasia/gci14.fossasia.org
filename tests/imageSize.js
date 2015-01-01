@@ -16,7 +16,6 @@ var sizeOf = require('image-size');
 var assert = require('assert');
 
 function isImagesRatioEqual (path) {
-  var result = true;
   // Reads directories
   fs.readdir(path, function(err, files) {
     if ( err ) {
@@ -30,25 +29,17 @@ function isImagesRatioEqual (path) {
       if ( ext == 'jpg' || ext == 'png' || ext == 'gif' ) {
         var dimensions = sizeOf(path + file);
         // Asserts dimensions
-        assert.equal(dimensions.width, dimensions.height)
-        if ( dimensions.width !== dimensions.height ) {
-          result = false;
-          return false;
-        }
-      } else {
-        result = false;
-        return false;
+        assert.equal(dimensions.width, dimensions.height, file)
       }
     });
   }); 
-  return result;
 }
 
 describe('Image tester', function() {
   it('Should verify that all student images exist in 1:1 ratio', function() {
-    assert.equal(isImagesRatioEqual('./images/students/'), true)
+    isImagesRatioEqual('./images/students/')
   });
   it('Should verify that all mentor images exist in 1:1 ratio', function() {
-    assert.equal(isImagesRatioEqual('./images/mentors/'), true)
+    isImagesRatioEqual('./images/mentors/')
   })
 });
