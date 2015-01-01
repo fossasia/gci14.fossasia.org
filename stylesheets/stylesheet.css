@@ -1205,6 +1205,7 @@ button:active,
     margin: 0 auto;
     max-width: 90%;
     display: block;
+    text-align: center;
   }
 
   /* FB */
