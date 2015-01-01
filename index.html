@@ -144,16 +144,36 @@ foo: baz
                         <section class="person person--mentor">
                             <div class="person__img">
                                 {% if mentor.social %}
-                                    <div class="person__img__info">
-                                        <div class="person__img__info__cont">
-                                            {% for social_hash in mentor.social %}
-                                            {% for social in social_hash %}
-                                                <a href="{{ social[1] }}">{{ social[0] }}</a>
-                                            {% endfor %}
-                                            {% endfor %}
-                                        </div>
+                                <div class="person__img__info">
+                                    <div class="person__img__info__cont">
+                                        {% for social in mentor.social %}
+                                            {% case social[0] %}
+                                            {% when 'facebook' %}
+                                                {% assign socialPrefix = 'http://facebook.com/' %}
+                                            {% when 'twitter' %}
+                                                {% assign socialPrefix = 'http://twitter.com/' %}
+                                            {% when 'github' %}
+                                                {% assign socialPrefix = 'http://github.com/' %}
+                                            {% when 'facebook' %}
+                                                {% assign socialPrefix = 'http://facebook.com/' %}
+                                            {% when 'mail' %}
+                                                {% assign socialPrefix = 'mailto:' %}
+                                            {% when 'gplus' %}
+                                                {% assign socialPrefix = 'https://plus.google.com/u/0/+' %}
+                                            {% else %}
+                                                {% assign socialPrefix = '' %}
+                                            {% endcase %}
+                                            <a href="{{ socialPrefix }}{{ social[1] }}" target="_blank"><i class="icon-{{ social[0] }}"></i></a>
+                                        {% endfor %}
                                     </div>
-                                <img src="images/students/{{ mentor.imgName }}">
+                                </div>
+                                {% endif %}
+                                {% if mentor.imgName == null %}
+                                    {% assign imgName = "mentor.png" %}
+                                {% else %}
+                                    {% assign imgName = mentor.imgName %}
+                                {% endif %}
+                                <img src="images/mentors/{{ imgName }}">
                             </div>
                             <h1 class="person__name">{{ mentor.name }}</h1>
                         </section>
@@ -167,543 +187,43 @@ foo: baz
         <div class="wrap">
             <h1 class="section__title">Students</h1>
             <div class="stack stack-clean">
+                {% for student in site.data.students %}
                 <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                    <div class="box-team wow tada" data-wow-delay="0.1s">
                         <section class="person person--student">
                             <div class="person__img">
+                                {% if student.social %}
                                 <div class="person__img__info">
                                     <div class="person__img__info__cont">
-                                        <a href="mailto:namanyay.goel@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                        <a href="http://github.com/namangoel1" target="_blank"><i class="icon-github"></i></a>
+                                        {% for social in student.social %}
+                                            {% case social[0] %}
+                                            {% when 'facebook' %}
+                                                {% assign socialPrefix = 'http://facebook.com/' %}
+                                            {% when 'twitter' %}
+                                                {% assign socialPrefix = 'http://twitter.com/' %}
+                                            {% when 'github' %}
+                                                {% assign socialPrefix = 'http://github.com/' %}
+                                            {% when 'facebook' %}
+                                                {% assign socialPrefix = 'http://facebook.com/' %}
+                                            {% when 'mail' %}
+                                                {% assign socialPrefix = 'mailto:' %}
+                                            {% when 'gplus' %}
+                                                {% assign socialPrefix = 'https://plus.google.com/u/0/+' %}
+                                            {% else %}
+                                                {% assign socialPrefix = '' %}
+                                            {% endcase %}
+                                            <a href="{{ socialPrefix}}{{ social[1] }}" target="_blank"><i class="icon-{{ social[0] }}"></i></a>
+                                        {% endfor %}
                                     </div>
                                 </div>
-                                <img src="images/students/namanyay.jpg">
+                                {% endif %}
+                                <img src="images/students/{{ student.imgName }}">
                             </div>
-                            <h1 class="person__name">Namanyay</h1>
+                            <h1 class="person__name">{{ student.name }}</h1>
                         </section>
                     </div>
                 </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://github.com/EkkersWilliams" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
-                                    </div>
-                                </div>
-                                <img src="images/students/EkkersWilliams.jpg">
-                            </div>
-                            <h1 class="person__name">Eric Williams</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://twitter.com/pbozhinov" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="http://github.com/3phase" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="mailto:pbozhinow@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Petko.jpg">
-                            </div>
-                            <h1 class="person__name">Petko Bozhinov</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/profile.php?id=100008383789077" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="http://tymonradzik.pl" target="_blank"><i class="icon-link"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/tradzik.jpg">
-                            </div>
-                            <h1 class="person__name">Tymon Radzik</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://twitter.com/cj1mck" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="http://github.com/Cj1m" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/chris.jpg">
-                            </div>
-                            <h1 class="person__name">Christopher McKay</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://youtube.com/channel/UCvjsrHj_jF697kW-lC46rBg" target="_blank"><i class="icon-gplus"></i></a>
-                                        <a href="http://plus.google.com/u/0/+VamshiisaVampireBalanaga" target="_blank"><i class="icon-gplus"></i></a>
-                                        <a href="https://twitter.com/fazerlicourice" target="_blank"><i class="icon-twitter"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Vamshi.jpg">
-                            </div>
-                            <h1 class="person__name">Vamshi Balanaga</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://youtube.com/jerrytrosclair" target="_blank"><i class="icon-gplus"></i></a>
-                                        <a href="http://github.com/jtrosclair" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/jerryt.jpg">
-                            </div>
-                            <h1 class="person__name">Jerry Trosclair</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/aidarbek" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/aidarbek.jpg">
-                            </div>
-                            <h1 class="person__name">Aidarbek Suleimenov</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.4s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/udeepak" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="http://udeepak.wordpress.com/" target="_blank"><i class="icon-link"></i></a>
-                                        <a href="https://twitter.com/udeepak" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="https://www.facebook.com/upendra.deepak" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="mailto:udeepak010@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Deepak.jpg">
-                            </div>
-                            <h1 class="person__name">Deepak Upendra</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/legoben" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="http://helloben.co" target="_blank"><i class="icon-link"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/bens.jpg">
-                            </div>
-                            <h1 class="person__name">Ben Stobaugh</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/polbaladas" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="http://polbaladasprojects.wordpress.com/" target="_blank"><i class="icon-link"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/polbaladas.jpg">
-                            </div>
-                            <h1 class="person__name">Pol Baladas</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.4s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://twitter.com/amirulardy" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="http://github.com/amrl" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/amirul.jpg">
-                            </div>
-                            <h1 class="person__name">Amirul A</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://github.com/chaconne7" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Anna.jpg">
-                            </div>
-                            <h1 class="person__name">Anna</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="mailto:samarjeet2702@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                        <a href="http://github.com/samarjeet27" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/samarjeet.jpg">
-                            </div>
-                            <h1 class="person__name">Samarjeet</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://twitter.com/Amr__Ramadan" target="_blank"><i class="icon-twitter"></i></a> <!-- You can remove this line -->
-                                        <a href="https://github.com/amroto" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
-                                        <a href="https://www.facebook.com/AmrRamadan97" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="mailto:theamroto@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Amr.jpg">
-                            </div>
-                            <h1 class="person__name">Amr Ramadan</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.5s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/iamiqram" target="_blank"><i class="icon-facebook"></i></a> <!-- You can remove this line -->
-                                        <a href="https://twitter.com/Hossainalikram" target="_blank"><i class="icon-twitter"></i></a><!-- You can remove this line -->
-                                        <a href="https://plus.google.com/105021607665650472962" target="_blank"><i class="icon-gplus"></i></a>
-                                        <a href="https://github.com/hossainalikram" target="_blank"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/ikram.jpg">
-                            </div>
-                            <h1 class="person__name">Hossain Al Ikram</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/krisipironkova" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="https://twitter.com/krisipironkova" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="https://www.facebook.com/chrisiie" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="mailto:krisi.pironkova@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/Kristina.jpg">
-                            </div>
-                            <h1 class="person__name">Kristina Pironkova</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="http://github.com/kamena" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="https://www.facebook.com/kamichka" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="mailto:kamena.dacheva@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/kamena.jpg">
-                            </div>
-                            <h1 class="person__name">Kamena Dacheva</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.2s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://github.com/meghprkh" target="_blank"><i class="icon-github"></i></a> <!-- You can remove this line -->
-                                        <a href="mailto:meghjp@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/meghprkh.jpg">
-                            </div>
-                            <h1 class="person__name">Megh Parikh</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/anukulsangwan10" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="http://github.com/anukul" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="https://twitter.com/anukulsangwan" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="mailto:anukulsangwan@icloud.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/anukul.png">
-                            </div>
-                            <h1 class="person__name">Anukul Sangwan</h1>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/seadog007" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="https://github.com/seadog007" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="mailto:007seadog@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/jasper.jpg">
-                            </div>
-                            <h1 class="person__name">Jasper Yu</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.5s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/s3131212" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="https://github.com/s3131212" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="mailto:s3131212@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/allenchou.jpg">
-                            </div>
-                            <h1 class="person__name">Allen Chou</h1>
-                        </section>
-                    </div>
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/alvis.wong.1" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="http://github.com/pwmvx1289"><i class="icon-github"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/aw.png">
-                            </div>
-                            <h1 class="person__name">Alvis Wong</h1>
-                        </section>
-                    </div>
-
-                </div>
-                <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/akshat.tripathi.10" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="https://github.com/akshattripathi" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="mailto:akshat1tripathi@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/akshat.jpg">
-                            </div>
-                            <h1 class="person__name">Akshat Tripathi</h1>
-                        </section>
-                    </div>
-                </div>
-                   <div class="sympl onethird m-half">
-                    <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                        <section class="person person--student">
-                            <div class="person__img">
-                                <div class="person__img__info">
-                                    <div class="person__img__info__cont">
-                                        <a href="https://www.facebook.com/dilipa.rajapaksha" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="https://github.com/DileepaRajapaksha" target="_blank"><i class="icon-github"></i></a>
-                                        <a href="mailto:dilipa.rajapaksha@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/students/dileepa.png">
-                            </div>
-                            <h1 class="person__name">Dileepa</h1>
-                        </section>
-                    </div>
-                </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-            <section class="person person--student">
-                <div class="person__img">
-                <div class="person__img__info">
-                    <div class="person__img__info__cont">
-                        <a href="http://github.com/ducphanduyagentp" target="_blank"><i class="icon-github"></i></a>
-                    <a href="https://twitter.com/I_am_agentp_14" target="_blank"><i class="icon-twitter"></i></a>
-                    <a href="https://www.facebook.com/ducphanduy.agentp" target="_blank"><i class="icon-facebook"></i></a>
-                    <a href="mailto:ducphanduy.agentp@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                    <a href="https://plus.google.com/+PhanDucakaptnega" target="_blank"><i class="icon-gplus"></i></a>
-                    </div>
-                </div>
-                <img src="images/students/PhanDuyDuc.jpg">
-                </div>
-                <h1 class="person__name">Phan Duy Duc</h1>
-            </section>
-            </div>
-        </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">                                        
-                            <a href="https://www.facebook.com/dhruv.ramani" target="_blank"><i class="icon-facebook"></i></a>
-                                <a href="https://github.com/dhruvramani" target="_blank"><i class="icon-github"></i></a>
-                                <a href="mailto:dhruvramani98@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                                <a href="https://plus.google.com/u/0/+DhruvRamani/" target="_blank"><i class="icon-gplus"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/Dhruv.JPG">
-                    </div>
-
-                    <h1 class="person__name">Dhruv Ramani</h1>
-                </section>
-            </div>
-        </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">  
-                                <a href="https://github.com/prudhvirajn" target="_blank"><i class="icon-github"></i></a>
-                                <a href="mailto:prudhvinaidu@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/prudhvi.png">
-                    </div>
-                    <h1 class="person__name">Prudhviraj Naidu</h1>
-                </section>
-            </div>
-        </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">
-                                <a href="http://github.com/ignaciouy" target="_blank"><i class="icon-github"></i></a>
-                                <a href="https://twitter.com/NachoDeTodos" target="_blank"><i class="icon-twitter"></i></a>
-                                <a href="https://www.facebook.com/ignacio.rodriguez.uy" target="_blank"><i class="icon-facebook"></i></a>
-                                <a href="mailto:ignacio@sugarlabs.org" target="_blank"><i class="icon-mail"></i></a>
-                                <a href="https://google.com/+IgnacioRodriguezUy" target="_blank"><i class="icon-gplus"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/ignaciouy.jpg">
-                    </div>
-                    <h1 class="person__name">Ignacio Rodríguez</h1>
-                </section>
-            </div>
-        </div>
-		<div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.5s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">
-                                <a href="https://github.com/jatinluthra14" target="_blank"><i class="icon-github"></i></a> 
-                                <a href="mailto:jatinluthra14@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/Jatin.png">
-                    </div>
-                    <h1 class="person__name">Jatin Luthra</h1>
-                </section>
-            </div>
-        </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">
-                                <a href="http://github.com/Ludwant"><i class="icon-github"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/G0101178.jpg">
-                    </div>
-                    <h1 class="person__name">Anton Ludwig</h1>
-                </section>
-            </div>
-        </div>
-        <div class="sympl onethird m-half">
-            <div class="box-team wow bounceInDown" data-wow-delay="0.3s">
-                <section class="person person--student">
-                    <div class="person__img">
-                        <div class="person__img__info">
-                            <div class="person__img__info__cont">
-                                <a href="http://github.com/expodingpenguin" target="_blank"><i class="icon-github"></i></a>
-                                <a href="https://twitter.com/Expodingpenguin" target="_blank"><i class="icon-twitter"></i></a>
-                                <a href="mailto:danrrudy@gmail.com" target="_blank"><i class="icon-mail"></i></a>
-                            </div>
-                        </div>
-                        <img src="images/students/rudyDanielImage.jpg">
-                    </div>
-                    <h1 class="person__name">Daniel Rudy</h1>
-                </section>
-            </div>
+                {% endfor %}
         </div>
     </div>
     </section>
