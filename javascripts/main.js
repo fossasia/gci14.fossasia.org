@@ -1,16 +1,13 @@
 if (!String.prototype.format) {
     String.prototype.format = function() {
         var args = arguments;
-        return this.replace(/{(\d+)}/g, function(match, number) { 
-          return typeof args[number] != 'undefined'
-          ? args[number]
-          : match
-          ;
+        return this.replace(/{(\d+)}/g, function(match, number) {
+            return typeof args[number] != 'undefined' ? args[number] : match;
         });
     };
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     //
     // Main Slider
@@ -33,7 +30,7 @@ $(document).ready(function () {
     $.ajax({
         url: "http://api.github.com/repos/" + owner + "/" + repo + "/contributors",
         dataType: "jsonp",
-        success: function (data) {
+        success: function(data) {
             data = data.data;
             var n = data.length;
             for (var i = 0; i < n; i++) {
@@ -52,8 +49,8 @@ $(document).ready(function () {
 
         $('html, body').animate({
             scrollTop: $(id).offset().top
-        }, 1000, "swing", function(){
-           document.location.hash = id; 
+        }, 1000, "swing", function() {
+            document.location.hash = id;
         });
 
         return false;
@@ -85,8 +82,8 @@ $(document).ready(function () {
     // Scrolling menu
 
     $(window).on('scroll', function() {
-        if ( $('.masthead').css('position') != 'absolute' ) {
-            if ( parseFloat($(window).scrollTop()) >= parseFloat($('.masthead').height()) ) {
+        if ($('.masthead').css('position') != 'absolute') {
+            if (parseFloat($(window).scrollTop()) >= parseFloat($('.masthead').height())) {
                 $('.masthead').removeClass('masthead--plain')
             } else {
                 $('.masthead').addClass('masthead--plain')
@@ -112,13 +109,16 @@ $(document).ready(function () {
             element.innerHTML = html;
 
             $('.tweets-feed').unslider({
-                fluid:true,
-                keys:true,
-                delay:5000
+                fluid: true,
+                keys: true,
+                delay: 5000
             });
-            
+
             var elem = $('<p>').addClass('follow').text('Follow ');
-            elem.append($('<a>', {href:'http://twitter.com/fossasia', text:'@fossasia'}));
+            elem.append($('<a>', {
+                href: 'http://twitter.com/fossasia',
+                text: '@fossasia'
+            }));
             elem.append(' for more updates');
             $('.tweets-feed').append(elem);
             return html;
@@ -132,12 +132,13 @@ $(document).ready(function () {
     // MAP
     //
 
-    function hide_map_wrap(){
-      $(".map-wrap").css("display","none");
+    function hide_map_wrap() {
+        $(".map-wrap").css("display", "none");
     }
-    function set_map_wrap(){
-      $(".map-wrap").css("display","inline");
-      console.log('clicked');
+
+    function set_map_wrap() {
+        $(".map-wrap").css("display", "inline");
+        console.log('clicked');
     }
 
     $('.map-wrap').on('click', hide_map_wrap);
@@ -164,35 +165,35 @@ $(document).ready(function () {
     }
 
     $('.menu__toggle').on('click', function() {
-        if ( $('.menu').is(':visible') ) 
+        if ($('.menu').is(':visible'))
             menu().hide();
         else
             menu().show();
     });
 
     $(document).on('click', function(e) {
-        if( !$(event.target).closest('.menu, .menu__toggle').length ) {
-            if ( $('.menu.dropdown').is(':visible') ) 
+        if (!$(event.target).closest('.menu, .menu__toggle').length) {
+            if ($('.menu.dropdown').is(':visible'))
                 menu().hide();
         }
     });
-    
+
     function validateEmail(m) {
-        if( typeof(m) == 'undefined'){
+        if (typeof(m) == 'undefined') {
             m = $('.email').val();
             console.log(m);
             console.log(validateEmail(m));
         }
-        if(m == ""){
+        if (m == "") {
             return true;
         }
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(m);
     }
 
-    $('.email').on('input', function(){
+    $('.email').on('input', function() {
         var m = $(this);
-        if(!validateEmail(m.val())){
+        if (!validateEmail(m.val())) {
             m.addClass('email-error');
         } else {
             m.removeClass('email-error');
