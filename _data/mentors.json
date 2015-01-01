@@ -1,8 +1,23 @@
+/* Copy paste this:
+
+{
+    "social": {
+      "mail": "email id",
+      "twitter": "twitter username",
+      "facebook": "facebook username",
+      "link": "link to your website",
+      "github": "github username"
+    },
+    "imgName": "full filename of image added in images/mentors with extension",
+    "name": "Your name" 
+},
+*/
+
 [{
   "social": {
     "twitter": "hpdang",
     "facebook": "hpdang",
-    "link": "u/0/104694870145426083517",
+    "gplus": "u/0/104694870145426083517",
     "github": "hpdang"
   },
   "imgName": "HongPhucDang.jpg",
