@@ -28,7 +28,7 @@ $(document).ready(function() {
     var repo = "fossasia.github.io";
 
     $.ajax({
-      url: "http://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=500",
+      url: "http://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=100",
       dataType: "jsonp",
       success: function( data ) {
         data = data.data;
