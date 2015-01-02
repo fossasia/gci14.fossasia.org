@@ -76,30 +76,30 @@ FOSSASIA's Facebook: http://facebook.com/fossasia
 FOSSASIA's Twitter: http://twitter.com/fossasia  
 
 ## Installing GitHub on Windows
-1.	Signup for a [GitHub account](https://www.github.com) , or Login if you already have one.
+1) Signup for a [GitHub account](https://www.github.com) , or Login if you already have one.
 
-2.	Download the setup for GitHub from [Windows GitHub](https://windows.github.com/)
+2)	Download the setup for GitHub from [Windows GitHub](https://windows.github.com/)
  
  ![Download Button Previe](http://i58.tinypic.com/1677bki.png "Download Button Preview")
  
 Click on `Download GitHub for Windows` to download GitHub.
 
-3.	The download will take a while (depending on your Internet connection). After the installation, a window like this should appear:
+3)	The download will take a while (depending on your Internet connection). After the installation, a window like this should appear:
 
 ![GitHub Window Preview](http://i58.tinypic.com/30kghtg.png "GitHub Window Preview")
  
-4.	Login and then open up your web browser and log in to your account. Go to [FOSSASIA's GitHub Repository](https://github.com/fossasia/fossasia.github.io) and click on `Fork` at the top right corner.
+4)	Login and then open up your web browser and log in to your account. Go to [FOSSASIA's GitHub Repository](https://github.com/fossasia/fossasia.github.io) and click on `Fork` at the top right corner.
 
 ![Forking Preview](http://i61.tinypic.com/350udl5.png "Forking Preview")
  
-5.	Open up your GitHub client and clone the repository by clicking on the `+` sign on the top right corner, selecting `Clone` and then `Clone fossasia.github.io`.
+5)	Open up your GitHub client and clone the repository by clicking on the `+` sign on the top right corner, selecting `Clone` and then `Clone fossasia.github.io`.
 
 ![Cloning Repository Preview](http://i61.tinypic.com/21d0chd.png "Cloning Repository Preview")
  
-6.	The cloning process may take a while. After that, open up the cloned folder `fossasia.github.io`, navigate to `images/students` and add your image there.
+6)	The cloning process may take a while. After that, open up the cloned folder `fossasia.github.io`, navigate to `images/students` and add your image there.
 
 
-7.	Navigate to `_data` and open up `students.json` in your text editor. As others have added, add yourself to the list with the same format, your entered text should look something like this:
+7)	Navigate to `_data` and open up `students.json` in your text editor. As others have added, add yourself to the list with the same format, your entered text should look something like this:
 
 ```
   {
@@ -125,14 +125,14 @@ Click on `Download GitHub for Windows` to download GitHub.
 
 The text without inverted quotes should be your own credentials—your own facebook URL (not the complete, but just the part after `.com`), your email, your twitter (without the `@`) etc.
 
-8.	When you are done, your GitHub client’s window should look something like this:
+8)	When you are done, your GitHub client’s window should look something like this:
 
 ![Making The Changes Preview](http://i60.tinypic.com/e6q1qe.png "Making The Changes Preview")
  
 Describe the changes made and then click on `Sync` at the top right corner.
 
-9.	After that, open up your forked repository from your profile which would have a url of this type: `https://github.com/[yourusername]/fossasia.github.io.git`.
+9)	After that, open up your forked repository from your profile which would have a url of this type: `https://github.com/[yourusername]/fossasia.github.io.git`.
 
 ![Making The Pull Request Preview](http://i61.tinypic.com/2lm5e7d.png "Making The Pull Request Preview")
  
-10.	Now click on `Pull Request`; describe the changes you made and click on `Create Pull Request`. Congratulations, your pull request has been successfully made with your name and your photo added. 
+10)	Now click on `Pull Request`; describe the changes you made and click on `Create Pull Request`. Congratulations, your pull request has been successfully made with your name and your photo added. 
