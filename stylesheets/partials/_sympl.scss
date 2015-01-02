@@ -1,0 +1,288 @@
+/* Sympl.css v3.0.0 sympl.namanyayg.com |
+Namanyay Goel | www.namanyayg.com | @namanyayg */
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+input,
+textarea,
+button,
+form,
+select {
+  font-size: 125%;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  color: #081f2e;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #e52200;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #e12b00;
+}
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+/* Set defaults for all headings here,
+you might want to change fonts or sizes */
+font-weight: 100;
+color: #222;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 0.375em 0;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0.5em 0;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0.6em 0;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333333;
+  margin: 0.666666em 0;
+}
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0.75em 0;
+  text-transform: uppercase;
+}
+.stack {
+/* A set of grid items must be in a stack.
+Use sympl-stack when you want a margin at the bottom */
+clear: both;
+margin: 0 0 0 -1.5em;
+}
+.stack-sympl {
+  padding-bottom: 1.5em;
+}
+.stack-clean {
+  padding-bottom: 0;
+  padding-top: 1.5em;
+}
+.stack-clean .sympl {
+  padding-bottom: 1.5em;
+}
+.sympl {
+  /* Each grid item should have the sympl class, along with at least one class for size */
+  float: left;
+  padding: 0 0 0 1.5em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.stack:before,
+.stack:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.stack:after {
+  clear: both;
+}
+.half,
+.twoquarters,
+.threesixths {
+  width: 50%;
+}
+.onethird,
+.twosixths {
+  width: 33.333333%;
+}
+.twothirds,
+.foursixths {
+  width: 66.666666%;
+}
+.quarter {
+  width: 25%;
+}
+.three-quarters {
+  width: 75%;
+}
+.onefifth {
+  width: 20%;
+}
+.twofifths {
+  width: 40%;
+}
+.threefifths {
+  width: 60%;
+}
+.fourfifths {
+  width: 80%;
+}
+.onesixth {
+  width: 16.666666%;
+}
+.fivesixths {
+  width: 83.333333%;
+}
+@media (max-width: 60em) {
+  .l-half,
+  .l-twoquarters,
+  .l-threesixths {
+    width: 50%;
+  }
+  .l-onethird,
+  .l-twosixths {
+    width: 33.333333%;
+  }
+  .l-twothirds,
+  .l-foursixths {
+    width: 66.666666%;
+  }
+  .l-quarter {
+    width: 25%;
+  }
+  .l-three-quarters {
+    width: 75%;
+  }
+  .l-onefifth {
+    width: 20%;
+    margin-left: 1.2em;
+  }
+  .l-twofifths {
+    width: 35%;
+    margin-left: 1.2em;
+  }
+  .l-threefifths {
+    width: 60%;
+  }
+  .l-fourfifths {
+    width: 80%;
+  }
+  .l-onesixth {
+    width: 16.666666%;
+  }
+  .l-fivesixths {
+    width: 83.333333%;
+  }
+  .hide-l-and-below {
+    display: none;
+    visibility: hidden;
+  }
+  .show-l-and-below {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 60em) and (min-width: 45em) {
+  .hide-on-l {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-l {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 45em) {
+  .m-full {
+    width: 100%;
+  }
+  .m-half,
+  .m-twoquarters {
+    width: 50%;
+  }
+  .m-onethird {
+    width: 33.333333%;
+  }
+  .m-twothirds {
+    width: 66.666666%;
+  }
+  .m-quarter {
+    width: 25%;
+  }
+  .m-three-quarters {
+    width: 75%;
+  }
+  .hide-m-and-below {
+    display: none;
+    visibility: hidden;
+  }
+  .show-m-and-below {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 45em) and (min-width: 30em) {
+  .hide-on-m {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-m {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 30em) {
+  .s-full {
+    width: 100%;
+  }
+  .s-half,
+  .s-twoquarters {
+    width: 50%;
+  }
+  .s-onethird {
+    width: 33.333333%;
+  }
+  .s-twothirds {
+    width: 66.666666%;
+  }
+  .hide-on-s {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-s {
+    display: block;
+    visibility: visible;
+  }
+}
+input[type='button'],
+input[type='submit'],
+button,
+.button {
+  border: none;
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+}
+input[type='button']:hover,
+input[type='submit']:hover,
+button:hover,
+.button:hover {
+  box-shadow: inset 0 0 10em rgba(0,0,0,0.1);
+}
+input[type='button']:focus,
+input[type='submit']:focus,
+button:focus,
+.button:focus,
+input[type='button']:active,
+input[type='submit']:active,
+button:active,
+.button:active {
+  box-shadow: inset 0 0 10em rgba(0,0,0,0.2);
+}
