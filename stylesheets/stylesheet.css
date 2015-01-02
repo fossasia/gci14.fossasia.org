@@ -637,7 +637,9 @@ img {
   background: #fff;
   text-decoration: none;
 }
-
+.bannerimg{
+  background-size: cover;
+}
 #bannerimg1 {
   background-image: url('../images/IMG1.jpg');
 }
@@ -997,24 +999,49 @@ display:none;/*Implemented by Ramswaroop Soren, just to get that hidden*/
         margin-right:-100%;
         width:95%;
     }
+}
+@media only screen and (max-width: 800px) {
+    #bannerimg1 {
+      background-image: url('../images/IMG1_m.jpg');
+    }
+    #bannerimg2 {
+      background-image: url('../images/IMG2_m.jpg');
+    }
+    #bannerimg3 {
+      background-image: url('../images/IMG3_m.jpg');
+    }
+    #bannerimg4 {
+      background-image: url('../images/IMG4_m.jpg');
+    }
+}
+@media only screen and (max-width: 640px) {
     #bannerimg1 {
       background-image: url('../images/IMG1_s.jpg');
-      background-size: cover;
     }
     #bannerimg2 {
       background-image: url('../images/IMG2_s.jpg');
-      background-size: cover;
     }
     #bannerimg3 {
       background-image: url('../images/IMG3_s.jpg');
-      background-size: cover;
     }
     #bannerimg4 {
       background-image: url('../images/IMG4_s.jpg');
-      background-size: cover;
     }
 }
-
+@media only screen and (max-width: 480px) {
+    #bannerimg1 {
+      background-image: url('../images/IMG1_xs.jpg');
+    }
+    #bannerimg2 {
+      background-image: url('../images/IMG2_xs.jpg');
+    }
+    #bannerimg3 {
+      background-image: url('../images/IMG3_xs.jpg');
+    }
+    #bannerimg4 {
+      background-image: url('../images/IMG4_xs.jpg');
+    }
+}
 
 /* ==========================================================================
    =MISC
