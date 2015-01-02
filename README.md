@@ -8,6 +8,7 @@ There 5 kinds of tasks:
 
 a) Code
 
+
 b) Documentation/Training
 
 c) Outreach/research
@@ -33,7 +34,7 @@ There's number of tasks with a wide variety outthere. Feel free to claim and wor
 
 ## Contribution Guidelines
 
-1. Please use **2 spaces** for indentation everywhere.
+1. Please use **4 spaces** for indentation everywhere. Do not use tabs.
 1. Comment your code wherever possible.
 1. JavaScript is written based on the [jQuery styleguide](http://contribute.jquery.org/style-guide/js). Please follow this whenever writing JavaScript.
 
