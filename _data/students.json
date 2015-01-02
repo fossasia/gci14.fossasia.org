@@ -336,5 +336,17 @@
     },
     "imgName": "rudyDanielImage.jpg",
     "name": "Daniel Rudy" 
+},
+
+
+{
+    "social": {
+      "github": "domsaun",
+      "twitter": "theotherdominic",
+	  "facebook": "TheIllestSaunders",
+      "mail": "dominic.sc.saunders@gmail.com"
+    },
+    "imgName": "Dominic.jpg",
+    "name": "Dominic Saunders" 
 }
 ]
