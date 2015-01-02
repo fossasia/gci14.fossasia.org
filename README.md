@@ -56,9 +56,9 @@ There you can see guidelines: http://www.google-melange.com/gci/task/view/google
 
 1. Enter command `git add images/students/nameofyourphoto.yourfilextenstion` into the command line.
 
-1. Use editor to open index.html file in main directory, look for section for students. Copy a student's section and make changes to it. Add your name, photo, and social network details.
+1. Use any editor to open `_data/students.json` file. Add your own data there by copying and pasting a previous student's code and modifying it. For social networks, please only enter your *username*, not the whole URL. Feel free to remove lines of social networks you're not a part off.
 
-1. Enter command `git add index.html`
+1. Enter command `git add _data/students.json`
 
 1. Commit changes: `git commit -m "Added photo and information"`
 
