@@ -101,29 +101,22 @@ Click on `Download GitHub for Windows` to download GitHub.
 
 7)	Navigate to `_data` and open up `students.json` in your text editor. As others have added, add yourself to the list with the same format, your entered text should look something like this:
 
-```
-  {
-
-    “social” : {
-    
-           “github”: githubusername,
-           
-           “twitter”: githubuser,
-           
-          “facebook”: githubuser.3,
-          
-          “mail”: githubuser@mail.com
-          
-   },
-        
-    “imgName”: githubuser.jpg ,
-   
-    “name”: Github User
-   
-  },
+```javascript
+{
+    "social": {
+        "github": "your github username",
+        "twitter": "your twitter username, no @",
+        "facebook": "your facebook username",
+        "mail": "your email ID",
+        "link": "A link to your website/other profile",
+        "gplus": "Google plus username, without +"
+    },
+    "imgName": "The filename of the image you added.extension",
+    "name": "Your Name"
+},
 ```
 
-The text without inverted quotes should be your own credentials—your own facebook URL (not the complete, but just the part after `.com`), your email, your twitter (without the `@`) etc.
+The text without inverted quotes should be your own credentials—your own facebook URL (not the complete, but just the part after `.com`), your email, your twitter (without the `@`) etc. Note the commas and the quoted values. All social links are optional, you can even remove the social part entirerly. 
 
 8)	When you are done, your GitHub client’s window should look something like this:
 
