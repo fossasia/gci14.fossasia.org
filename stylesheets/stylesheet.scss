@@ -487,16 +487,25 @@ input:focus {
 }
 
 @media (max-width: 60em) {
-    .menu li {
-        width: 33.3333%;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
     .masthead {
         position: relative;
+        background: #f6f6f6;
+    }
+
+    .masthead .menu__toggle .menu-icon {
+        border-color: #444;
+    }
+
+    .masthead:hover {
+        background: #f6f6f6;
+    }
+
+    .masthead .dropdown {
+        background: rgba(#f6f6f6, .8)
+    }
+
+    .masthead .menu a {
+        color: #444;
     }
 
     #map iframe {
@@ -762,7 +771,6 @@ table{
     border:none;
     overflow:hidden;
     width:95%;
-    min-width:400px;
     height:700px;
     display:inline-block;
     background: white;
