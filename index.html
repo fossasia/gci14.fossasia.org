@@ -137,7 +137,7 @@
             <div class="stack stack-clean">
                 {% for mentor in site.data.mentors %}
                 <div class="sympl onethird m-half">
-                    {% assign rand2 = mentor.name.size | divided_by: 5 %}
+                    {% assign rand = mentor.name.size | divided_by: 5 %}
                     <div class="box-team wow tada" data-wow-delay="0.{{ rand }}s">
                         <section class="person person--mentor">
                             <div class="person__img">
