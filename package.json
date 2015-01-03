@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/fossasia/fossasia.github.io/issues"
   },
-  "homepage": "http://fossasia.github.io"
+  "homepage": "http://fossasia.github.io",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-scss-lint": "^0.1.4",
+    "image-size": "*",
+    "mocha": "*"
+  }
 }
