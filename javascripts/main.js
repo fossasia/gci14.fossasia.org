@@ -183,7 +183,7 @@ $(document).ready(function() {
             console.log(m);
             console.log(validateEmail(m));
         }
-        if (m === "") {
+        if (m === '') {
             return true;
         }
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;

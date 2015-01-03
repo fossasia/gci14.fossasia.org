@@ -17,7 +17,8 @@ gulp.task('js-lint', function() {
     }) )
     .pipe( jshint.reporter('default') )
     .pipe( jscs({
-      "preset": "jquery"
+      "preset": "jquery",
+      "validateQuoteMarks": "'"
     }) );
 });
 
