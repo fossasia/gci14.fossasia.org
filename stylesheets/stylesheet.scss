@@ -5,9 +5,9 @@
 // Do not edit until you know what you're doing.
 // Edit _main.scss to make any changes
 
-@import 'partials/normalize';
-@import 'partials/fonts';
-@import 'partials/sympl';
-@import 'partials/animate';
+@import 'external/normalize';
+@import 'external/fonts';
+@import 'external/sympl';
+@import 'external/animate';
 @import 'partials/slider';
 @import 'main';
