@@ -34,11 +34,11 @@ $(document).ready(function() {
             data = data.data;
             var n = data.length;
             for (var i = 0; i < n; i++) {
-                var str = '<div class="sympl onefifth l-onethird m-half"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login)
+                var str = '<div class="sympl onefifth l-onethird m-half"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login);
                 $("#contr").append(str);
             }
         }
-    })
+    });
 
 
     //
@@ -77,16 +77,16 @@ $(document).ready(function() {
     }
 
     $(window).on('resize', caller);
-    $(window).trigger('resize')
+    $(window).trigger('resize');
 
     // Scrolling menu
 
     $(window).on('scroll', function() {
         if ($('.masthead').css('position') != 'absolute') {
             if (parseFloat($(window).scrollTop()) >= parseFloat($('.masthead').height())) {
-                $('.masthead').removeClass('masthead--plain')
+                $('.masthead').removeClass('masthead--plain');
             } else {
-                $('.masthead').addClass('masthead--plain')
+                $('.masthead').addClass('masthead--plain');
             }
         }
     });
@@ -153,15 +153,15 @@ $(document).ready(function() {
             $('.menu').slideUp(300, function() {
                 $(this).removeClass('dropdown');
             });
-        }
+        };
         var show = function() {
-            $('.menu').addClass('dropdown').slideDown(300)
-        }
+            $('.menu').addClass('dropdown').slideDown(300);
+        };
         return {
             hide: hide,
             show: show
-        }
-    }
+        };
+    };
 
     $('.menu__toggle').on('click', function() {
         if ($('.menu').is(':visible'))
@@ -183,7 +183,7 @@ $(document).ready(function() {
             console.log(m);
             console.log(validateEmail(m));
         }
-        if (m == "") {
+        if (m === "") {
             return true;
         }
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
