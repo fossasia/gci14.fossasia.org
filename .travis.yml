@@ -12,4 +12,5 @@ before_install:
 script:
   - ./node_modules/.bin/mocha tests/
   - gulp scss-lint
+  - gulp js-lint
   - jekyll build
