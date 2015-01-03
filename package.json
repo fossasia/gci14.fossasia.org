@@ -20,7 +20,9 @@
   },
   "homepage": "http://fossasia.github.io",
   "devDependencies": {
-    "mocha": "*",
-    "image-size": "*"
+    "gulp": "^3.8.10",
+    "gulp-scss-lint": "^0.1.4",
+    "image-size": "*",
+    "mocha": "*"
   }
 }

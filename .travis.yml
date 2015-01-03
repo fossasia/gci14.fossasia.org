@@ -1,8 +1,15 @@
 language: node_js
 
+node_js: 
+  - "0.10"
+  - "0.11"
+
 before_install:
   - gem install github-pages --no-rdoc --no-ri
+  - gem install scss-lint
+  - npm install -g gulp
 
 script:
   - ./node_modules/.bin/mocha tests/
+  - gulp scss-lint
   - jekyll build

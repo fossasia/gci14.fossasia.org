@@ -11,12 +11,16 @@
 }
 
 .highlight {
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
-.banner h1, h2, h3, h4, b {
+.banner h1, 
+.banner h2, 
+.banner h3, 
+.banner h4, 
+.banner b {
     font-weight: 300;
-    font-family: Lato, Bree, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 h2 {
@@ -37,10 +41,10 @@ b {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: rgba(255,255,255,.6);
-    text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 1px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .3);
     background: #5b4d3d;
-    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
 }
 
 .banner ul {
@@ -60,10 +64,11 @@ b {
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
   /*      background-size: 100% 100%;*/
-    box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, .1);
 }
 
-.banner h1, .banner h2 {
+.banner h1, 
+.banner h2 {
     font-size: 40px;
     line-height: 52px;
     color: #fff;
@@ -79,12 +84,12 @@ b {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid rgba(255,255,255,.4);
+    border: 2px solid rgba(255, 255, 255, .4);
     border-radius: 5px;
 }
 
 .banner .btn:hover {
-    background: rgba(0,0,0, .5);
+    background: rgba(0, 0, 0, .5);
 }
 
 .banner .btn:active {
@@ -107,7 +112,7 @@ b {
     border: 2px solid #fff;
     border-radius: 6px;
     cursor: pointer;
-    opacity: 0.4;
+    opacity: .4;
     -webkit-transition: background .5s, opacity .5s;
     -moz-transition: background .5s, opacity .5s;
     transition: background .5s, opacity .5s;
@@ -120,7 +125,8 @@ b {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
   
-    .banner h1, .banner h2 {
+    .banner h1,
+    .banner h2 {
         font-size: 24px;
         line-height: 30px;
     }
