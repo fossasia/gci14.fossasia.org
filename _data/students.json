@@ -9,16 +9,6 @@
 
 {
     "social": {
-        "github": "DrAlias",
-        "gplus": "AmaanMarfatia"
-    },
-    "imgName": "amaan.jpg",
-    "name": "Amaan Marfatia" 
-},
-
-
-{
-    "social": {
         "github": "ekKerswilliams"
     },
     "imgName": "EkkersWilliams.jpg",
@@ -368,5 +358,14 @@
     },
     "imgName": "JohnMurzaku.jpg",
     "name": "John Murzaku" 
-}
+},
+
+{
+    "social": {
+        "github": "DrAlias",
+        "gplus": "AmaanMarfatia"
+    },
+    "imgName": "amaan.jpg",
+    "name": "Amaan Marfatia" 
+},
 ]
