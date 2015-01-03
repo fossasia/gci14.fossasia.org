@@ -137,12 +137,8 @@
             <div class="stack stack-clean">
                 {% for mentor in site.data.mentors %}
                 <div class="sympl onethird m-half">
-                    {% assign rand = forloop.index %}
-                    {% assign rand2 = student.name.size | divided_by: 4 %}
-                    {% if rand > 3 %}
-                        {% assign rand = rand | divided_by: 10 %}
-                    {% endif %}
-                    <div class="box-team wow tada" data-wow-delay="{{ rand2 }}.{{ rand }}s">
+                    {% assign rand = mentor.name.size | divided_by: 5 %}
+                    <div class="box-team wow tada" data-wow-delay="0.{{ rand }}s">
                         <section class="person person--mentor">
                             <div class="person__img">
                                 {% if mentor.social %}
@@ -161,7 +157,7 @@
                                             {% when 'mail' %}
                                                 {% assign socialPrefix = 'mailto:' %}
                                             {% when 'gplus' %}
-                                                {% assign socialPrefix = 'https://plus.google.com/u/0/+' %}
+                                                {% assign socialPrefix = 'https://plus.google.com/u/0/' %}
                                             {% else %}
                                                 {% assign socialPrefix = '' %}
                                             {% endcase %}
@@ -191,12 +187,8 @@
             <div class="stack stack-clean">
                 {% for student in site.data.students %}
                 <div class="sympl onethird m-half">
-                    {% assign rand = forloop.index %}
-                    {% assign rand2 = student.name.size | divided_by: 4 %}
-                    {% if rand > 3 %}
-                        {% assign rand = rand | divided_by: 10 %}
-                    {% endif %}
-                    <div class="box-team wow bounceInDown" data-wow-delay="{{ rand2 }}.{{ rand }}s">
+                    {% assign rand = student.name.size | divided_by: 4 %}
+                    <div class="box-team wow bounceInDown" data-wow-delay="0.{{ rand }}s">
                         <section class="person person--student">
                             <div class="person__img">
                                 {% if student.social %}
@@ -305,14 +297,12 @@
                         <a href="https://www.linkedin.com/groups/FOSSASIA-3762811"><li class="linkedin"></li></a>
                         <a href="https://www.flickr.com/photos/fossasia/"><li class="flickr"></li></a>
                         <a href="https://github.com/fossasia"><li class="github"></li></a>
-                        <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ"><li class="youtube"></li></a>
-                        <a href="https://en.wikipedia.org/wiki/FOSSASIA"><li class="wiki"></li></a>
                     </ul>
                 </div>
                 <div class="sympl twofifths m-full">
                     <h3>FOSSASIA Links</h3>
                     <ul class="list">
-                        <a href="http://blog.fossasia.net/"><li class="link">FOSSASIA Blog</li></a>
+                        <a href="http://blog.fossasia.org/"><li class="link">FOSSASIA Blog</li></a>
                         <a href="http://fossasia.net/"><li class="link">FOSSASIA Community Network</li></a>
                         <a href="http://blog.fossasia.org/code-conduct"><li class="link">Code of Conduct</li></a>
                         <a href="http://fossasia.org/"><li class="link">FOSSASIA Summit</li></a>
