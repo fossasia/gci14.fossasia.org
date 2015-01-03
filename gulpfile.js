@@ -11,6 +11,15 @@ gulp.task('scss-lint', function() {
 
 gulp.task('js-lint', function() {
   gulp.src('./javascripts/main.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe( jshint() )
+    .pipe( jshint.reporter('default') );
+});
+
+gulp.task('lint', function() {
+  gulp.run('scss-lint');
+  gulp.run('js-lint')
+});
+
+gulp.task('default', function() {
+  gulp.run('lint');
 });
