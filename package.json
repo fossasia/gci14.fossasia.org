@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/fossasia/fossasia.github.io/issues"
   },
-  "homepage": "http://fossasia.github.io"
+  "homepage": "http://fossasia.github.io",
+  "devDependencies": {
+    "mocha": "*",
+    "image-size": "*"
+  }
 }
