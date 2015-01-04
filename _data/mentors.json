@@ -208,5 +208,17 @@
   },
   "imgName": "NguyenVuHung.jpg",
   "name": "Nguyen Vu Hung"
+},
+
+
+{
+  "social": {
+    "twitter": "arcriley",
+	"mail": "arcriley@gmail.com",
+    "gplus": "https://plus.google.com/+ArcRiley",
+    "linkedin": "Arc Riley"
+  },
+  "imgName": "ariley.png",
+  "name": "Arc Riley"
 }
 ];
