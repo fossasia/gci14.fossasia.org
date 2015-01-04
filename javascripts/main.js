@@ -22,20 +22,20 @@ $(document).ready(function() {
 
 
     //
-    // Github linking contributers    
+    // Github linking contributers
     //
-    var owner = "fossasia";
-    var repo = "fossasia.github.io";
+    var owner = 'fossasia';
+    var repo = 'fossasia.github.io';
 
     $.ajax({
-        url: "http://api.github.com/repos/" + owner + "/" + repo + "/contributors?per_page=100",
-        dataType: "jsonp",
+        url: 'http://api.github.com/repos/' + owner + '/' + repo + '/contributors?per_page=100',
+        dataType: 'jsonp',
         success: function(data) {
             data = data.data;
             var n = data.length;
             for (var i = 0; i < n; i++) {
                 var str = '<div class="sympl onefifth l-onethird m-half"><section class="person person--contributer"><div class="person__img"><div class="person__img__info"><div class="person__img__info__cont"><a target="_blank" href="{0}"><i class="icon-github"></i></a></div></div><img src="{1}"></div><h1 class="person__name">{2}</h1></section></div>'.format(data[i].html_url, data[i].avatar_url, data[i].login);
-                $("#contr").append(str);
+                $('#contr').append(str);
             }
         }
     });
