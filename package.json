@@ -21,6 +21,8 @@
   "homepage": "http://fossasia.github.io",
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.0",
     "gulp-scss-lint": "^0.1.4",
     "image-size": "*",
     "mocha": "*"

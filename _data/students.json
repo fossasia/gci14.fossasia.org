@@ -1,6 +1,6 @@
 [{
     "social": {
-            "mail": "namanyay.goel@gmail.com",
+        "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
     },
     "imgName": "namanyay.jpg",
@@ -30,7 +30,7 @@
 {
     "social": {
         "facebook": "profile.php?id=100008383789077",
-      "link": "http://tymonradzik.pl"
+        "link": "http://tymonradzik.pl"
     },
     "imgName": "tradzik.jpg",
     "name": "Tymon Radzik" 
@@ -78,7 +78,7 @@
 {
     "social": {
         "github": "udeepak",
-      "link": "http://udeepak.wordpress.com/",
+        "link": "http://udeepak.wordpress.com/",
         "twitter": "udeepak",
         "facebook": "upendra.deepak",
         "mail": "udeepak010@gmail.com"
@@ -91,7 +91,7 @@
 {
     "social": {
         "github": "legoben",
-      "link": "http://helloben.co"
+        "link": "http://helloben.co"
     },
     "imgName": "bens.jpg",
     "name": "Ben Stobaugh" 
@@ -101,7 +101,7 @@
 {
     "social": {
         "github": "polbaladas",
-      "link": "http://polbaladasprojects.wordpress.com/"
+        "link": "http://polbaladasprojects.wordpress.com/"
     },
     "imgName": "polbaladas.jpg",
     "name": "Pol Baladas" 
