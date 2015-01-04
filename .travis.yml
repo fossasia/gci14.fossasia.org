@@ -6,10 +6,8 @@ node_js:
 
 before_install:
   - gem install github-pages --no-rdoc --no-ri
-  - gem install scss-lint
-  - npm install -g gulp
 
 script:
   - ./node_modules/.bin/mocha tests/
-  - gulp
+  - ./node_modules/.bin/gulp default
   - jekyll build
