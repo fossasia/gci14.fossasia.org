@@ -135,7 +135,15 @@
     "imgName": "samarjeet.jpg",
     "name": "Samarjeet" 
 },
-
+{
+    "social": {
+		"facebook": "manastaneja1",
+        "mail": "t.mns2001@gmail.com",
+        "github": "manastaneja"
+    },
+    "imgName": "manas.png",
+    "name": "Manas" 
+},
 
 {
     "social": {
