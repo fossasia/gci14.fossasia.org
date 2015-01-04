@@ -15,19 +15,17 @@ gulp.task('js-lint', function() {
     .pipe( jshint() )
     .pipe( jshint.reporter('default') )
     .pipe( jscs({
-      preset: "jquery",
-      validateQuoteMarks: "'",
-      disallowMultipleLineBreaks: null,
-      disallowMultipleVarDecl: null,
-      validateLineBreaks: "CRLF"
+      // preset: "jquery",
+      // validateQuoteMarks: "'",
+      // disallowMultipleLineBreaks: null,
+      // disallowMultipleVarDecl: null,
+      // validateLineBreaks: "CRLF"
     }) );
 });
 
-gulp.task('lint', function() {
-  gulp.run('scss-lint');
-  gulp.run('js-lint')
+gulp.task('lint', ['scss-lint', 'js-lint'], function() {
+  console.log('Linting: ');
 });
 
-gulp.task('default', function() {
-  gulp.run('lint');
+gulp.task('default', ['lint'], function() {
 });
