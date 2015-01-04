@@ -139,6 +139,16 @@
 
 {
     "social": {
+        "twitter":"manastaneja",
+        "github": "manastaneja",
+        "facebook": "manastaneja1",
+        "mail": "t.mns2001@gmail.com"
+    },
+    "imgName": "manas.png",
+    "name": "Manas Taneja" 
+},
+{
+    "social": {
         "twitter": "Amr__ramadan",
         "github": "amroto",
         "facebook": "amrramadan97",
