@@ -56,21 +56,9 @@ $(document).ready(function() {
     return false;
   });
 
-
-  //
-  // Animation
-  //
   new WOW().init({
     mobile: false
   });
-
-  function changeTitle() {
-    if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
-      $("#main-head").html('<span class="highlight">FOSSASIA</span>');
-    } else {
-      $("#main-head").html('<img src="images/logo.png" height="150px" width="300px">');
-    }
-  }
 
   function caller() {
     changeTitle();
@@ -79,7 +67,13 @@ $(document).ready(function() {
   $(window).on('resize', caller);
   $(window).trigger('resize');
 
-  // Scrolling menu
+    function changeTitle() {
+        if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
+            $('#main-head').html('<span class="highlight">FOSSASIA</span>');
+        } else {
+            $('#main-head').html('<img src="images/logo.png" height="150px" width="300px">');
+        }
+    }
 
   $(window).on('scroll', function() {
     if ($('.masthead').css('position') != 'absolute') {
@@ -184,6 +178,7 @@ $(document).ready(function() {
     if (m === '') {
       return true;
     }
+<<<<<<< HEAD
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(m);
   }
@@ -197,3 +192,15 @@ $(document).ready(function() {
     }
   });
 });
+=======
+
+    $('.email').on('input', function() {
+        var m = $(this);
+        if (!validateEmail(m.val())) {
+            m.addClass('email-error');
+        } else {
+            m.removeClass('email-error');
+        }
+    });
+});
+>>>>>>> Fixed issues about linting
