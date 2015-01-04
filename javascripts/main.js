@@ -180,8 +180,6 @@ $(document).ready(function() {
     function validateEmail(m) {
         if (typeof(m) == 'undefined') {
             m = $('.email').val();
-            console.log(m);
-            console.log(validateEmail(m));
         }
         if (m == "") {
             return true;
