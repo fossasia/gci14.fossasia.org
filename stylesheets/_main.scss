@@ -7,7 +7,7 @@
    =CORE
    ========================================================================== */
    
-.section__overlay {
+.section__overlay { 
     background: rgba(0, 0, 0, .1);
     background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
@@ -378,10 +378,31 @@ input:focus {
     padding: 0 0 15px;
 }
 
-.social li {
-    list-style: none;
-    padding: 0 5px;
+.social {
+    overflow: hidden;
 }
+
+.social a {
+    list-style: none;
+    margin: .25em;
+    display: block;
+    width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+    background-repeat: none;
+}
+
+.social a:nth-child(5) { clear: left; }
+
+.social .facebook { background-image: url('../images/list/facebook.png'); }
+.social .twitter { background-image: url('../images/list/twitter.png'); }
+.social .googleplus { background-image: url('../images/list/googleplus.png'); }
+.social .flickr { background-image: url('../images/list/flickr.png'); }
+.social .github { background-image: url('../images/list/github.png'); }
+.social .linkedin { background-image: url('../images/list/linkedin.png'); }
+.social .youtube { background-image: url('../images/list/youtube.png'); }
+.social .wiki { background-image: url('../images/list/wiki.png'); }
 
 .list .link {
     list-style-image: url('../images/list/list_style_link.png');
@@ -391,65 +412,7 @@ input:focus {
     list-style-image: url('../images/list/list_style_event.png');
 }
 
-.social {
-    width: 243px;
-}
 
-.social .facebook {
-    background: url('../images/list/facebook.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .twitter {
-    background: url('../images/list/twitter.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .googleplus {
-    background: url('../images/list/googleplus.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .flickr {
-    background: url('../images/list/flickr.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .github {
-    background: url('../images/list/github.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .linkedin {
-    background: url('../images/list/linkedin.png') no-repeat;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-}
-
-.social .youtube {
-  background: url(../images/list/youtube.png) no-repeat;
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-}
-
-.social .wiki {
-  background: url(../images/list/wiki.png) no-repeat;
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-}
 
 .footer {
     padding-top: 2em;
