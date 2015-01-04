@@ -40,7 +40,7 @@ function isImagesRatioEqual (done) {
   function checkRatio () {
     var $imgs = $('.images-cont img');
 
-    console.log( $imgs.length + " images loaded" );
+    console.log( $imgs.length + ' images loaded' );
 
     $imgs.each(function() {
       var $img = $(this);
@@ -49,12 +49,12 @@ function isImagesRatioEqual (done) {
       // Uncomment above for debugging.
 
       if ( $img.height() > 500 || $img.width() > 500 ) {
-        console.warn( $img.attr('src') + " has too large dimensions!" );
+        console.warn( $img.attr('src') + ' has too large dimensions!' );
         // Additional warning
       }
       
       if ( $img.height() !== $img.width() ) {
-        console.error( $img.attr('src') + " is incorrectly sized!" );
+        console.error( $img.attr('src') + ' is incorrectly sized!' );
       }
 
       var a = chai.assert.equal( $img.height(), $img.width(), $img.attr('src') )

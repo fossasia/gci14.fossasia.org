@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         $('html, body').animate({
             scrollTop: $(id).offset().top
-        }, 1000, "swing", function() {
+        }, 1000, 'swing', function() {
             document.location.hash = id;
         });
 
@@ -66,9 +66,9 @@ $(document).ready(function() {
 
     function changeTitle() {
         if (window.matchMedia('(max-width: 1024px)').matches && window.matchMedia('(min-width: 470px)')) {
-            $("#main-head").html('<span class="highlight">FOSSASIA</span>');
+            $('#main-head').html('<span class="highlight">FOSSASIA</span>');
         } else {
-            $("#main-head").html('<img src="images/logo.png" height="150px" width="300px">');
+            $('#main-head').html('<img src="images/logo.png" height="150px" width="300px">');
         }
     }
 

@@ -4,22 +4,22 @@ var FFCommunityMapWidget = function(settings, map_options, link) {
     //console.log(props);
     //clean up values before rendering
     if (props.url && !props.url.match(/^http([s]?):\/\/.*/)) { 
-      props.url = "http://" + props.url; 
+      props.url = 'http://' + props.url; 
     }
     if (props.email && !props.email.match(/^mailto:.*/)) {
-      props.email = "mailto:" + props.email;
+      props.email = 'mailto:' + props.email;
     }
     if (props.twitter && !props.twitter.match(/^http([s]?):\/\/.*/)) {
-      props.twitter = "https://twitter.com/" + props.twitter;
+      props.twitter = 'https://twitter.com/' + props.twitter;
     }
     if (props.irc && !props.irc.match(/^irc:.*/)) {
-      props.irc = "irc:" + props.irc;
+      props.irc = 'irc:' + props.irc;
     }
     if (props.jabber && !props.jabber.match(/^jabber:.*/)) {
-      props.jabber = "xmpp:" + props.jabber;
+      props.jabber = 'xmpp:' + props.jabber;
     }
     if (props.identica && !props.identica.match(/^identica:.*/)) {
-      props.identica = "identica:" + props.identica;
+      props.identica = 'identica:' + props.identica;
     }
  
     function getAgeFromProperties(props) {
@@ -113,7 +113,7 @@ var FFCommunityMapWidget = function(settings, map_options, link) {
   
   var options = L.extend({
     divId: 'map',
-    geoJSONUrl: settings.geoJson || "/map/ffGeoJson.json",
+    geoJSONUrl: settings.geoJson || '/map/ffGeoJson.json',
     getPopupHTML: renderPopup,
     zoom: 3,
     maxZoom: 8,
@@ -150,7 +150,7 @@ attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy
   }
   if (!settings.hideLocationButton) {
     var locationButton = new L.Control.Button({
-      iconUrl: "/map/images/location-icon.png",
+      iconUrl: '/map/images/location-icon.png',
       hideText: true,
       doToggle: false,
       onClick: function(e) {
@@ -175,8 +175,8 @@ attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy
   
   if (!settings.hideLayerControl) {
     var controls = L.control.layers({
-      "Gray": mapboxLayer,
-      "OSM": osmlayer
+      'Gray': mapboxLayer,
+      'OSM': osmlayer
     }).addTo(widget.map);
   }
   
@@ -227,9 +227,9 @@ attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy
   });
   
   //initialize underscore tamplating
-  _.templateSettings.variable = "props";
+  _.templateSettings.variable = 'props';
   widget.communityTemplate = _.template(
-    $( "script.template#community-popup" ).html()
+    $( 'script.template#community-popup' ).html()
   );
   
   return widget;

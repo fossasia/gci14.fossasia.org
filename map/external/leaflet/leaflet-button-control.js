@@ -26,7 +26,7 @@ L.Control.Button = L.Control.extend({
 
   setButton: function (options) {
     var button = {
-      'text': options.text || "",           //string
+      'text': options.text || '',           //string
       'iconUrl': options.iconUrl,           //string
       'onClick': options.onClick,           //callback function
       'hideText': !!options.hideText,       //forced bool

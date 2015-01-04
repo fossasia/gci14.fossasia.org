@@ -1,2 +1,3 @@
 {
+	"validateQuoteMarks": { "mark": "'", "escape": false }
 }
