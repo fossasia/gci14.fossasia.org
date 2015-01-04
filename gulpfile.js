@@ -12,9 +12,7 @@ gulp.task('scss-lint', function() {
 
 gulp.task('js-lint', function() {
   gulp.src('./javascripts/main.js')
-    .pipe( jshint({
-      'indent': 2
-    }) )
+    .pipe( jshint() )
     .pipe( jshint.reporter('default') )
     .pipe( jscs({
       preset: "jquery",
