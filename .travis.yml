@@ -6,6 +6,7 @@ node_js:
 
 before_install:
   - gem install github-pages --no-rdoc --no-ri
+  - gem install scss-lint
 
 script:
   - ./node_modules/.bin/mocha tests/
