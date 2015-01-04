@@ -75,16 +75,3 @@ function isImagesRatioEqual (done) {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
