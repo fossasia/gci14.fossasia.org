@@ -1,4 +1,4 @@
-﻿[{
+[{
     "social": {
         "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
@@ -386,5 +386,13 @@
     },
     "imgName": "amaan.jpg",
     "name": "Amaan Marfatia" 
+},
+{
+    "social": {
+        "mail": "ahmedazmii47gmail.com",
+        "github": "azmi47"
+    },
+    "imgName": "Ahmed.jpg",
+    "name": "Ahmedazmi" 
 },
 ]
