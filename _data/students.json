@@ -1,12 +1,5 @@
 [{
     "social": {
-        "github": "apoorvk"
-    },
-    "imgName": "apoorv.jpg",
-    "name": "Apoorv Khandelwal" 
-},
-{
-    "social": {
         "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
     },
@@ -385,4 +378,10 @@
     "imgName": "amaan.jpg",
     "name": "Amaan Marfatia" 
 },
-]
+{
+    "social": {
+        "github": "apoorvk"
+    },
+    "imgName": "apoorv.jpg",
+    "name": "Apoorv Khandelwal" 
+}]
