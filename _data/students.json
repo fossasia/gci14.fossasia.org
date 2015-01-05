@@ -378,4 +378,10 @@
     "imgName": "amaan.jpg",
     "name": "Amaan Marfatia" 
 },
-]
+{
+    "social": {
+        "github": "apoorvk"
+    },
+    "imgName": "apoorv.jpg",
+    "name": "Apoorv Khandelwal" 
+}]
