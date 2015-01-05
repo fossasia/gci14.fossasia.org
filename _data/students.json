@@ -1,5 +1,12 @@
 [{
     "social": {
+        "github": "apoorvk"
+    },
+    "imgName": "apoorv.jpg",
+    "name": "Apoorv Khandelwal" 
+},
+{
+    "social": {
         "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
     },
