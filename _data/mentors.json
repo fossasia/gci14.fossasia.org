@@ -213,5 +213,17 @@
     },
     "imgName": "NguyenVuHung.jpg",
     "name": "Nguyen Vu Hung"
+},
+
+{
+    "social": {
+        "github": "udinnet",
+        "linkedin": "udithawijerathna",
+        "twitter": "udinnet",
+        "gplus": "https://plus.google.com/+UdithaBandaraWijerathna",
+        "facebook": "uditha.wijerathna"
+    },
+    "imgName": "udith.png",
+    "name": "Uditha Wijerathna"
 }
 ]
