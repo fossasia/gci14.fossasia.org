@@ -1,3 +1,4 @@
 {
-    
+    "validateParameterSeparator": ",",
+    "validateIndentation": 2
 }
