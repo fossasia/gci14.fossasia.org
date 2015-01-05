@@ -14,7 +14,7 @@ gulp.task('js-lint', function() {
   gulp.src(['./javascripts/main.js', './tests/*.js'])
     .pipe( jshint() )
     .pipe( jshint.reporter('default') )
-    .pipe( jscs() );    
+    .pipe( jscs() );
 });
 
 gulp.task('lint', ['scss-lint', 'js-lint'], function() {
