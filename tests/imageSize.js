@@ -35,7 +35,7 @@ function isImagesRatioEqual (path) {
   }); 
 }
 
-describe('Image tester', function() {
+describe('Image ratio tester', function() {
   it('Should verify that all student images exist in 1:1 ratio', function() {
     isImagesRatioEqual('./images/students/')
   });
