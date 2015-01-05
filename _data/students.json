@@ -1,4 +1,4 @@
-[{
+﻿[{
     "social": {
         "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
@@ -170,6 +170,15 @@
     "name": "Hossain Al Ikram" 
 },
 
+{
+    "social": {
+        "github": "Kengwee",
+        "facebook": "kengweechew01",
+        "mail": "kengweechew@gmail.com"
+    },
+    "imgName": "Kengwee.jpg",
+    "name": "Kengwee Chew" 
+},
 
 {
     "social": {

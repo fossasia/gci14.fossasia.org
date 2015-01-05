@@ -116,7 +116,7 @@ Click on `Download GitHub for Windows` to download GitHub.
 },
 ```
 
-The text without inverted quotes should be your own credentials—your own facebook URL (not the complete, but just the part after `.com`), your email, your twitter (without the `@`) etc. Note the commas and the quoted values. All social links are optional, you can even remove the social part entirerly. 
+The text after the colon (`:`) should be your own credentials—your own facebook URL (not the complete, but just the part after `.com`), your email, your twitter (without the `@`) etc. Note the commas and the quoted values. All social links are optional, you can even remove the social part entirerly. 
 
 8)	When you are done, your GitHub client’s window should look something like this:
 
