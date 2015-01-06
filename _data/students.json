@@ -170,6 +170,15 @@
     "name": "Hossain Al Ikram" 
 },
 
+{
+    "social": {
+        "github": "Kengwee",
+        "facebook": "kengweechew01",
+        "mail": "kengweechew@gmail.com"
+    },
+    "imgName": "Kengwee.jpg",
+    "name": "Kengwee Chew" 
+},
 
 {
     "social": {
@@ -384,4 +393,12 @@
     },
     "imgName": "apoorv.jpg",
     "name": "Apoorv Khandelwal" 
+},
+{
+    "social": {
+        "mail": "ahmedazmii47gmail.com",
+        "github": "azmi47"
+    },
+    "imgName": "Ahmed.jpg",
+    "name": "Ahmedazmi" 
 }]

@@ -11,16 +11,10 @@ gulp.task('scss-lint', function() {
 });
 
 gulp.task('js-lint', function() {
-  gulp.src('./javascripts/main.js')
+  gulp.src(['./javascripts/main.js', './tests/*.js'])
     .pipe( jshint() )
     .pipe( jshint.reporter('default') )
-    .pipe( jscs({
-      // preset: "jquery",
-      // validateQuoteMarks: "'",
-      // disallowMultipleLineBreaks: null,
-      // disallowMultipleVarDecl: null,
-      // validateLineBreaks: "CRLF"
-    }) );
+    .pipe( jscs() );
 });
 
 gulp.task('lint', ['scss-lint', 'js-lint'], function() {

@@ -1,0 +1,5 @@
+{
+    "validateParameterSeparator": ", ",
+    "validateIndentation":2,
+    "validateQuoteMarks": {"mark": "'", "escape": true }
+}
