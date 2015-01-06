@@ -401,4 +401,17 @@
     },
     "imgName": "Ahmed.jpg",
     "name": "Ahmedazmi" 
-}]
+},
+{
+    "social": {
+        "github": "toshitabarve",
+        "twitter": "ToshitaB",
+        "facebook": "toshita.barve",
+        "mail": "toshibarve@gmail.com",
+	"gplus": "114406251656770489900",
+	"link": "http://colloquyonbooks.blogspot.in"
+    },
+    "imgName": "toshitab.jpg",
+    "name": "Toshita Barve" 
+}
+]
