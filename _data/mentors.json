@@ -192,7 +192,16 @@
 },
 
 {
-    "name": "Mitar"
+	"social": {
+        "mail": "mitar.homepage@tnode.com",
+        "link": "http://mitar.tnode.com",
+        "twitter": "mitar_m",
+        "facebook": "tonghuix",
+		"gplus": "117582050952370300162",
+		"github": "mitar"
+	},	
+    "imgName": "Mitar.jpg",
+	"name": "Mitar"
 },
 
 {
