@@ -386,5 +386,13 @@
     },
     "imgName": "toshitab.jpg",
     "name": "Toshita Barve" 
+},
+ {
+    "social": {
+        "github": "MarioScappini",
+        "mail": "makio.scappini@gmail.com",
+    },
+    "imgName": "mario.png",
+    "name": "Mario Scappini" 
 }
 ]
