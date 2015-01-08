@@ -381,18 +381,19 @@
         "twitter": "ToshitaB",
         "facebook": "toshita.barve",
         "mail": "toshibarve@gmail.com",
-	"gplus": "114406251656770489900",
-	"link": "http://colloquyonbooks.blogspot.in"
+    	"gplus": "114406251656770489900",
+    	"link": "http://colloquyonbooks.blogspot.in"
     },
     "imgName": "toshitab.jpg",
     "name": "Toshita Barve" 
 },
- {
+{
     "social": {
         "github": "MarioScappini",
-        "mail": "makio.scappini@gmail.com",
+        "mail": "makio.scappini@gmail.com"
     },
     "imgName": "mario.png",
     "name": "Mario Scappini" 
+
 }
 ]

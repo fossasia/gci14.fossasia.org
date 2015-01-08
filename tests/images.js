@@ -14,8 +14,17 @@
 var fs = require('fs');
 var sizeOf = require('image-size');
 var assert = require('assert');
-var students = JSON.parse( fs.readFileSync('./_data/students.json', 'utf-8') );
-var mentors = JSON.parse( fs.readFileSync('./_data/mentors.json', 'utf-8') );
+
+var studentsFile = fs.readFileSync('./_data/students.json', 'utf-8');
+var mentorsFile = fs.readFileSync('./_data/mentors.json', 'utf-8');
+
+studentsFile = studentsFile[0] != "[" ? studentsFile.substr(1) : studentsFile;
+mentorsFile = mentorsFile[0] != "[" ? mentorsFile.substr(1) : mentorsFile;
+
+console.log(studentsFile[0], mentorsFile[0]);
+
+var students = JSON.parse( studentsFile );
+var mentors = JSON.parse( mentorsFile );
 
 var jsonImages = [];
 var dirImages = [];
