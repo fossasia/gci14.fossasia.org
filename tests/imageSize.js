@@ -20,7 +20,6 @@ function isImagesRatioEqual (path) {
   fs.readdir(path, function(err, files) {
     if ( err ) {
       throw err;
-      return false;
     }
 
     files.forEach(function(file, i) {
@@ -29,7 +28,7 @@ function isImagesRatioEqual (path) {
       if ( ext == 'jpg' || ext == 'png' || ext == 'gif' ) {
         var dimensions = sizeOf(path + file);
         // Asserts dimensions
-        assert.equal(dimensions.width, dimensions.height, file)
+        assert.equal(dimensions.width, dimensions.height, file);
       }
     });
   }); 
@@ -37,9 +36,9 @@ function isImagesRatioEqual (path) {
 
 describe('Image ratio tester', function() {
   it('Should verify that all student images exist in 1:1 ratio', function() {
-    isImagesRatioEqual('./images/students/')
+    isImagesRatioEqual('./images/students/');
   });
   it('Should verify that all mentor images exist in 1:1 ratio', function() {
-    isImagesRatioEqual('./images/mentors/')
-  })
+    isImagesRatioEqual('./images/mentors/');
+  });
 });

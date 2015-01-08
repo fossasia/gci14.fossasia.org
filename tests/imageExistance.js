@@ -1,6 +1,6 @@
 var fs = require('fs');
 var assert = require('assert');
-var students = JSON.parse( fs.readFileSync('./_data/students.json', 'utf-8').substr(1) );
+var students = JSON.parse( fs.readFileSync('./_data/students.json', 'utf-8') );
 var mentors = JSON.parse( fs.readFileSync('./_data/mentors.json', 'utf-8') );
 
 var jsonImages = [];
@@ -9,7 +9,7 @@ var dirImages = [];
 function addImages(obj, path) {
   obj.forEach(function(item, i) {
     if ( item.imgName ) {
-      jsonImages.push( path + item.imgName )
+      jsonImages.push( path + item.imgName );
     }
   });
 }
