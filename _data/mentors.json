@@ -112,10 +112,6 @@
 },
 
 {
-    "name": "Uditha Bandara Wijerathna"
-},
-
-{
     "social": {
         "mail": "mcheng.work@gmail.com",
         "link": "http://coderkungfu.com",
@@ -147,10 +143,6 @@
 
 {
     "name": "astroiseur"
-},
-
-{
-    "name": "Uditha Wijerathna"
 },
 
 {
@@ -213,5 +205,17 @@
     },
     "imgName": "NguyenVuHung.jpg",
     "name": "Nguyen Vu Hung"
+},
+
+{
+    "social": {
+        "linkedin": "udithawijerathna",
+        "twitter": "udinnet",
+        "github": "udinnet",
+        "gplus": "https://plus.google.com/+UdithaBandaraWijerathna",
+        "facebook": "uditha.wijerathna"
+    },
+    "imgName": "udith.png",
+    "name": "Uditha Bandara Wijerathna"
 }
 ]
