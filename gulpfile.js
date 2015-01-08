@@ -18,7 +18,6 @@ gulp.task('js-lint', function() {
 });
 
 gulp.task('lint', ['scss-lint', 'js-lint'], function() {
-  console.log('Linting: ');
 });
 
 gulp.task('default', ['lint'], function() {
