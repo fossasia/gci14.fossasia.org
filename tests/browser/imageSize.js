@@ -57,7 +57,7 @@ function isImagesRatioEqual (done) {
         console.error( $img.attr('src') + " is incorrectly sized!" );
       }
 
-      var a = chai.assert.equal( $img.height(), $img.width(), $img.attr('src') )
+      var assertRatio = chai.assert.equal( $img.height(), $img.width(), $img.attr('src') )
     });
 
     done();

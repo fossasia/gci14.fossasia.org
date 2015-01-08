@@ -49,22 +49,16 @@ b {
 
 .banner ul {
     list-style: none;
-    width: 300%;
 }
 
 .banner ul li {
     display: block;
     float: left;
-    width: 33%;
-    padding: 160px 0 110px;
-    min-height: 640px;
+    list-style: none;
+    min-height: 40em;
+    padding: 8em 0 16em;
     background-position: center center;
-  /*      -webkit-background-size: 100% 100%;*/
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    -ms-background-size: 100% 100%;
-  /*      background-size: 100% 100%;*/
-    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, .1);
+    background-size: cover;
 }
 
 .banner h1, 
