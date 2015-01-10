@@ -1,36 +1,26 @@
 # Fossasia's site for Google Code-in
 
-GCI (Google Code-In) is annual contest sponsored by Google, which directed for students of middle and secondary schools. 
-Students have to be between 13 and 17 years old, they also have to upload parental consent and document, which proofs their attendance to pre-university institution.
-Main goal of contest is to propagate open-source idea between young people and give them possibility to solve tasks for partnering organizations.
+Google Code-in is an annual contest sponsored by Google, aimed towards 13-17 year olds, to foster in them an interest in developing for the open source community.
 
-There 5 kinds of tasks:
+Five type of tasks exist for Google Code-in:
 
-a) Code
+1. Code
+2. Documentation/Training
+3. Outreach/research
+4. Quality assurance
+5. User interface
 
-
-b) Documentation/Training
-
-c) Outreach/research
-
-d) Quality assurance
-
-e) User interface
-
-For solving tasks students can get many prizes. Grand Prize is founded by Google four-day trip to San Francisco and Google headquaters.
-
-Contest is hosted on Melange system. Its website is: [Melange System](http://www.google-melange.com/gci/homepage/google/gci2014)
+FOSSASIA is the top Free and Open Source technology event in Asia for developers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009.
 
 ## About
 
-FOSSASIA is Free and Open Source Software (FOSS) event for developers, officials and users in South-East Asia. Its main goal is fostering FOSS projects in Asia.
-This year FOSSASIA is one of mentoring organizations during Google Code-In. 
+FOSSASIA is a Free and Open Source Software (FOSS) event for developers, officials and users in South-East Asia. Its main goal is fostering FOSS projects in Asia.
+
+FOSSASIA is one of mentoring organizations during Google Code-In this year.
 
 ## Developers
 
-There's number of tasks with a wide variety outthere. Feel free to claim and work on!  
-
-**Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work. So in addition to finishing tasks quickly pay attention to submit the best work you can. Help each others out. Engage in conversations. Make friends!. Enjoy!!
+**Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work - so in addition to finishing tasks quickly, pay attention to submit the best work you can. Help each other out. Engage in conversations. Make friends. And most importantly, enjoy!
 
 ## Contribution Guidelines
 
