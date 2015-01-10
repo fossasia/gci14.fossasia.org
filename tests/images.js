@@ -18,8 +18,8 @@ var assert = require('assert');
 var studentsFile = fs.readFileSync('./_data/students.json', 'utf-8');
 var mentorsFile = fs.readFileSync('./_data/mentors.json', 'utf-8');
 
-studentsFile = studentsFile[0] != "[" ? studentsFile.substr(1) : studentsFile;
-mentorsFile = mentorsFile[0] != "[" ? mentorsFile.substr(1) : mentorsFile;
+studentsFile = studentsFile[0] != '[' ? studentsFile.substr(1) : studentsFile;
+mentorsFile = mentorsFile[0] != '[' ? mentorsFile.substr(1) : mentorsFile;
 
 console.log(studentsFile[0], mentorsFile[0]);
 
