@@ -404,5 +404,16 @@
     },
     "imgName": "Riyaz.jpg",
     "name": "Riyaz Shaikh"
-}    
+},
+{
+    "social": {
+        "github": "izzylys",
+        "twitter": "roguedalek",
+        "facebook": "lost.astronauts",
+        "mail": "izzy.lyseggen@gmail.com",
+        "gplus": "Izzy"
+    },
+    "imgName": "izzylys.jpg",
+    "name": "Izzy Lyseggen"
+}   
 ]
