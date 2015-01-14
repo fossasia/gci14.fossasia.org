@@ -20,7 +20,7 @@ FOSSASIA is one of mentoring organizations during Google Code-In this year.
 
 ## Developers
 
-**Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work - so in addition to finishing tasks quickly, pay attention to submit the best work you can. Help each other out. Engage in conversations. Make friends. And most importantly, enjoy!
+**Remember** : It is important that you do many tasks. But doing most tasks is not enough to be a winner. Out of the top ten students the finalists are picked on the quality of work - so in addition to finishing tasks quickly, pay attention to submit the best work you can. Help each other out, engage in conversations, make friends. And most importantly, enjoy!
 
 ## Contribution Guidelines
 
