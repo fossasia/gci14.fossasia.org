@@ -130,13 +130,20 @@ img {
 }
 .menu nav a {
     display: block;
-    padding: 1.5em;
+    padding: 1.25em;
     line-height: 1;
     color: #444;
 }
 .menu nav a:hover {
     background: #fff;
     text-decoration: none;
+}
+
+#___ytsubscribe_0{
+    position:relative; 
+    top:-12em; 
+    left:10px;
+    width:116px !important;
 }
 
 .bannerimg1 {
