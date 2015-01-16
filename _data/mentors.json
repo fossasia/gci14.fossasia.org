@@ -1,6 +1,8 @@
 [{
     "social": {
         "twitter": "hpdang",
+        "link": "http://blog.fossasia.org/",
+        "mail": "hp@fossasia.org",
         "facebook": "hpdang",
         "gplus": "+104694870145426083517",
         "github": "hpdang"
@@ -13,7 +15,8 @@
     "social": {
         "github": "mariobehling",
         "twitter": "mariobehling",
-        "facebook": "mariobehling"
+        "facebook": "mariobehling",
+        "link": "http://mariobehling.de/"
     },
     "imgName": "mariobehling.jpg",
     "name": "Mario Behling"
@@ -36,6 +39,7 @@
     "social": {
         "github": "birajkarmakar",
         "twitter": "birajkarmakar",
+        "facebook": "biraj.karmakar",
         "mail": "brnet00@gmail.com",
         "link": "http://birajkarmakar.wordpress.com/"
     },
@@ -70,16 +74,19 @@
     "social": {
         "link": "https://blog.andi95.de",
         "github": "andibraeu",
-        "twitter": "evaltenberga"
+        "facebook": "eddie.vonaltenberga",
+        "twitter": "evaltenberga",
+        "gplus": "113244991896061765096"
     },
     "imgName": "andreasbraeu.jpg",
-    "name": "Andreas Braeu"
+    "name": "Andreas Bräu"
 },
 
 {
     "social": {
         "github": "agonarch",
-        "twitter": "agonarch"
+        "twitter": "agonarch",
+        "link": "https://arebentisch.wordpress.com/"
     },
     "imgName": "andrerebentisch.png",
     "name": "Andre Rebentisch"
@@ -101,7 +108,8 @@
 {
     "social": {
         "twitter": "_gnovi",
-        "facebook": "praveenpatil103"
+        "facebook": "praveenpatil103",
+        "link": "https://canvasoflife.wordpress.com/"
     },
     "imgName": "praveenpatil.png",
     "name": "Praveen Patil"
@@ -121,8 +129,8 @@
 {
     "social": {
         "mail": "mcheng.work@gmail.com",
-        "link": "http://coderkungfu.com",
         "link": "https://www.linkedin.com/in/miccheng",
+        "link": "http://coderkungfu.com",
         "github": "miccheng",
         "twitter": "coderkungfu",
         "facebook": "miccheng"
