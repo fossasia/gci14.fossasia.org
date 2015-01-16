@@ -108,6 +108,13 @@
 },
 
 {
+    "social": {
+        "github": "sandareka",
+        "link": "http://sandaw89.blogspot.com/",
+        "twitter": "wsanda89",
+        "facebook": "sandareka.wickramanayake"
+    },
+    "imgName": "Wickramanayake.jpg",
     "name": "Sandareka Wickramanayake"
 },
 
@@ -125,6 +132,12 @@
 },
 
 {
+    "social": {
+        "mail": "uzadow@libavg.de",
+        "link": "https://www.libavg.de/site/",
+        "github": "uzadow"
+    },
+    "imgName": "Ulrich von Zadow.jpg",
     "name": "Ulrich von Zadow"
 },
 
@@ -138,11 +151,18 @@
         "facebook": "andres.colubri"
     },
     "imgName": "codeanticode.jpg",
-    "name": "codeanticode"
+    "name": "Andres Colubri"
 },
 
 {
-    "name": "astroiseur"
+    "social": {
+        "twitter": "h_suwono",
+        "link": "http://astroiseur.tiddlyspace.com/",
+        "facebook": "handoko.suwono",
+        "gplus": "112455413789709299868"
+    },
+    "imgName": "handokosuwono.jpg",
+    "name": "Handoko Suwono"
 },
 
 {
@@ -159,11 +179,12 @@
         "mail": "harshvd95@gmail.com",
         "github": "royalharsh",
         "twitter": "royalharsh95",
+        "link": "http://royalharsh.tumblr.com/",
         "facebook": "royalharsh95",
         "gplus": "+HarshVardhanroyalharsh95"
     },
     "imgName": "royalharsh95.jpg",
-    "name": "royalharsh95"
+    "name": "Harsh Vardhan"
 },
 
 {
@@ -192,7 +213,16 @@
 },
 
 {
-    "name": "Mitar"
+    "social": {
+        "mail": "mitar.homepage@tnode.com",
+        "link": "http://mitar.tnode.com/",
+        "github": "mitar",
+        "twitter": "mitar_m",
+        "facebook": "mmitar",
+        "gplus": "117582050952370300162"
+    },
+    "imgName": "mitar.jpg",
+    "name": "Mi Tar"
 },
 
 {
@@ -209,7 +239,7 @@
 
 {
     "social": {
-        "linkedin": "udithawijerathna",
+        "link": "udithawijerathna",
         "twitter": "udinnet",
         "github": "udinnet",
         "gplus": "+UdithaBandaraWijerathna",
