@@ -231,6 +231,8 @@ img {
     font-size: 1.125em;
     font-weight: 300;
 }
+
+
 /* Person
 ========================================================================== */
 .person {
@@ -740,4 +742,30 @@ table {
     height: 700px;
     display: inline-block;
     background: white;
+}
+
+/* COMMUNITIES TABLE */
+
+table {
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1em;
+    border: thin solid #eee;
+}
+
+tr:nth-child(odd) {
+    background: #fcfcfc;
+}
+
+td ul {
+    width: auto;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+td ul li {
+    padding: .125em 0;
 }
