@@ -424,5 +424,15 @@
     },
     "imgName": "izzylys.jpg",
     "name": "Izzy Lyseggen"
-}   
+},
+{
+    "social": {
+        "github": "Boquete",
+        "facebook": "Piotr Antosz",
+        "mail": "piotrantosz@protonmail.ch",
+        "gplus": "114350813988291002679"
+    },
+    "imgName": "Piotr.jpg",
+    "name": "Piotr"
+},
 ]
