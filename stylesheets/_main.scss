@@ -746,13 +746,21 @@ table {
 
 /* COMMUNITIES TABLE */
 
+.community-table {
+    font-size: .875em;
+}
+
+.contacts i {
+    padding: 0 .25em;
+}
+
 table {
     background: white;
     border-collapse: collapse;
 }
 
 th, td {
-    padding: 1em;
+    padding: .75em;
     border: thin solid #eee;
 }
 
@@ -760,10 +768,17 @@ tr:nth-child(odd) {
     background: #fcfcfc;
 }
 
+tr {
+    transition: all .3s ease;
+}
+
+tr:hover {
+    background: #f6f6f6 !important;
+}
+
 td ul {
     width: auto;
     list-style: none;
-    text-transform: capitalize;
 }
 
 td ul li {

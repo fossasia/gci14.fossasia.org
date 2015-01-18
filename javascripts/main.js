@@ -262,7 +262,7 @@ function generateTable (data) {
     // list of possible contacts
     var contacts = ['facebook', 'twitter', 'irc', 'email', 'googleplus', 'phone', 'jabber'];
     // create contact list
-    var cList = $('<ul>').addClass('contacts');
+    var cList = $('<div>').addClass('contacts');
 
     for ( var c in contacts ) {
 
@@ -270,9 +270,10 @@ function generateTable (data) {
       var contact = property[contact_name];
 
       if (contact !== undefined){
-        switch contact_name {
+        switch ( contact_name ) {
           case 'email':
             contact = 'mailto:' + contact;
+            contact_name = 'mail';
             break;
           case 'phone':
             contact = 'tel:' + contact;
@@ -287,13 +288,13 @@ function generateTable (data) {
 
         var e = $('<a>', { 
           href: contact,
-          text: '<i class="icon-' + contact_name + '"/>',
+          html: '<i class="icon-' + contact_name + '"></i>',
           class: 'link-'+contacts[c]
         });
 
-        var li = $('<li>');
-        li.append(e);
-        cList.append(li);
+        var span = $('<span>');
+        span.append(e);
+        cList.append(span);
       }
     }
 
