@@ -9,6 +9,16 @@
 
 {
     "social": {
+        "github": "ChingHannie",
+        "twitter": "hannniieeeee",
+        "mail": "ching.hannie@dhs.sg",
+    },
+    "imgName": "githubhannie.jpg",
+    "name": "Hannie"
+},
+
+{
+    "social": {
         "github": "ekKerswilliams"
     },
     "imgName": "EkkersWilliams.jpg",
