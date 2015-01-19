@@ -23,21 +23,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e606";
+}
+
 .icon-mail:before {
   content: "\e604";
 }
+
+.icon-irc:before {
+  content: "\e607";
+}
+
 .icon-link:before {
   content: "\e605";
 }
+
+.icon-jabber:before {
+  content: "\e608";
+}
+
 .icon-github:before {
   content: "\e600";
 }
+
+.icon-flickr:before {
+  content: "\e609";
+}
+
 .icon-twitter:before {
   content: "\e601";
 }
+
 .icon-facebook:before {
   content: "\e602";
 }
+
 .icon-gplus:before {
   content: "\e603";
 }
+

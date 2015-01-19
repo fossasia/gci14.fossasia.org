@@ -262,7 +262,7 @@ function generateTable (data) {
     // list of possible contacts
     var contacts = ['facebook', 'twitter', 'irc', 'email', 'googleplus', 'phone', 'jabber'];
     // create contact list
-    var cList = $('<ul>').addClass('contacts');
+    var cList = $('<div>').addClass('contacts');
 
     for ( var c in contacts ) {
 
@@ -270,24 +270,31 @@ function generateTable (data) {
       var contact = property[contact_name];
 
       if (contact !== undefined){
+        switch ( contact_name ) {
+          case 'email':
+            contact = 'mailto:' + contact;
+            contact_name = 'mail';
+            break;
+          case 'phone':
+            contact = 'tel:' + contact;
+            break;
+          case 'twitter':
+            contact = 'http://twitter.com/' + contact;
+            break;
+          case 'googleplus':
+            contact_name = 'gplus';
+            break;
+        }
+
         var e = $('<a>', { 
           href: contact,
-          text: contacts[c],
+          html: '<i class="icon-' + contact_name + '"></i>',
           class: 'link-'+contacts[c]
         });
-        // special cases
-        if ( contact_name == 'email') {
-          e.attr('href', 'mailto:'+e.attr('href'));
-        }
-        if ( contact_name == 'phone') {
-          e.attr('href', 'tel:'+e.attr('href'));
-        }
-        if ( contact_name == 'twitter'){
-          e.attr('href', 'http://twitter.com/'+e.attr('href'));
-        }
-        var li = $('<li>');
-        li.append(e);
-        cList.append(li);
+
+        var span = $('<span>');
+        span.append(e);
+        cList.append(span);
       }
     }
 
