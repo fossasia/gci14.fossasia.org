@@ -434,5 +434,15 @@
     },
     "imgName": "Piotr.jpg",
     "name": "Piotr"
+},
+{
+    "social": {
+        "github": "Xtremerox",
+        "twitter": "RamswaroopSoren",
+        "facebook": "ramswaroop.xtreme",
+        "mail": "admin@soren.in"
+    },
+    "imgName": "Techtronix.jpg",
+    "name": "Techtronix"
 }
 ]
