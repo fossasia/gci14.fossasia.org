@@ -163,20 +163,24 @@
                                             {% case social[0] %}
                                             {% when 'facebook' %}
                                                 {% assign socialPrefix = 'http://facebook.com/' %}
+                                                {% assign iconType = 'facebook' %}
                                             {% when 'twitter' %}
                                                 {% assign socialPrefix = 'http://twitter.com/' %}
+                                                {% assign iconType = 'twitter' %}
                                             {% when 'github' %}
                                                 {% assign socialPrefix = 'http://github.com/' %}
-                                            {% when 'facebook' %}
-                                                {% assign socialPrefix = 'http://facebook.com/' %}
+                                                {% assign iconType = 'github' %}
                                             {% when 'mail' %}
                                                 {% assign socialPrefix = 'mailto:' %}
+                                                {% assign iconType = 'mail' %}
                                             {% when 'gplus' %}
                                                 {% assign socialPrefix = 'https://plus.google.com/u/0/' %}
+                                                {% assign iconType = 'gplus' %}
                                             {% else %}
                                                 {% assign socialPrefix = '' %}
+                                                {% assign iconType = 'link' %}
                                             {% endcase %}
-                                            <a href="{{ socialPrefix }}{{ social[1] }}" target="_blank"><i class="icon-{{ social[0] }}"></i></a>
+                                            <a href="{{ socialPrefix }}{{ social[1] }}" target="_blank"><i class="icon-{{ iconType }}"></i></a>
                                         {% endfor %}
                                     </div>
                                 </div>

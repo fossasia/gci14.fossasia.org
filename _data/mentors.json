@@ -130,7 +130,7 @@
     "social": {
         "mail": "mcheng.work@gmail.com",
         "link": "https://www.linkedin.com/in/miccheng",
-        "link": "http://coderkungfu.com",
+        "link2": "http://coderkungfu.com",
         "github": "miccheng",
         "twitter": "coderkungfu",
         "facebook": "miccheng"
@@ -153,7 +153,7 @@
     "social": {
         "mail": "andres.colubri@gmail.com",
         "link": "http://andrescolubri.net/",
-        "link": "https://codeanticode.wordpress.com/",
+        "link2": "https://codeanticode.wordpress.com/",
         "github": "codeanticode",
         "twitter": "codeanticode",
         "facebook": "andres.colubri"
@@ -199,7 +199,7 @@
     "social": {
         "mail": "vanhonit@gmail.com",
         "link": "https://honnguyenvan.wordpress.com/",
-        "link": "http://fedoraproject.org/wiki/User:Vanhonit",
+        "link2": "http://fedoraproject.org/wiki/User:Vanhonit",
         "github": "vanhonit",
         "twitter": "vanhonit"
     },
@@ -211,8 +211,8 @@
     "social": {
         "mail": "tonghuix@fedoraproject.org",
         "link": "https://tonghuix.io",
-        "link": "http://tonghuix.blogspot.tw/",
-        "link": "https://fedoraproject.org/wiki/User:Tonghuix",
+        "link2": "http://tonghuix.blogspot.tw/",
+        "link3": "https://fedoraproject.org/wiki/User:Tonghuix",
         "twitter": "tonghuix",
         "facebook": "tonghuix"
     },
@@ -235,7 +235,6 @@
 
 {
     "social": {
-        "link": "VuHungNguyen",
         "twitter": "vuhung",
         "mail": "vuhung16plus@gmail.com",
         "link": "http://nguyen-vu-hung.blogspot.com/",
