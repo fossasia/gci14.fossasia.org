@@ -2,6 +2,16 @@ var gulp = require('gulp')
 var scsslint = require('gulp-scss-lint');
 var jshint = require('gulp-jshint')
 var jscs = require('gulp-jscs')
+var imagemin = require('gulp-imagemin');
+
+gulp.task('images-opt', function () {
+    gulp.src('images/**/*.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('images'));
+    gulp.src('images/*.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('images'));
+});
 
 gulp.task('scss-lint', function() {
   gulp.src(['./stylesheets/**/*.scss', '!./stylesheets/external/*', '!./stylesheets/stylesheet.scss'])
@@ -20,5 +30,5 @@ gulp.task('js-lint', function() {
 gulp.task('lint', ['scss-lint', 'js-lint'], function() {
 });
 
-gulp.task('default', ['lint'], function() {
+gulp.task('default', ['lint', 'images-opt'], function() {
 });
