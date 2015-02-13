@@ -198,6 +198,7 @@
                                 {% else %}
                                     {% assign imgName = mentor.imgName %}
                                 {% endif %}
+                                <a name="{{ mentor.name | downcase | replace:' ','_' }}"></a>
                                 <img alt="{{ mentor.name }}" src="images/mentors/{{ imgName }}">
                             </div>
                             <h1 class="person__name">{{ mentor.name }}</h1>
@@ -243,6 +244,7 @@
                                     </div>
                                 </div>
                                 {% endif %}
+                                <a name="{{ student.name | downcase | replace:' ','_' }}"></a>
                                 <img alt="{{ student.name }}" src="images/students/{{ student.imgName }}">
                             </div>
                             <h1 class="person__name">{{ student.name }}</h1>
