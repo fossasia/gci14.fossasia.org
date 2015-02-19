@@ -433,7 +433,7 @@
     },
     "imgName": "Faizah.jpg",
     "name": "Faizah Pathan" 
-}
+},
 {
     "social": {
         "github": "Xtremerox",
@@ -443,5 +443,17 @@
     },
     "imgName": "Techtronix.jpg",
     "name": "Techtronix"
+},
+{
+    "social": {
+        "github": "Denisa03",
+        "twitter": "Denisa Pîrlea",
+        "facebook": "Pîrlea Denisa",
+        "mail": "denisapirlea03@gmail.com"
+        
+    },
+    "imgName": "Denisa03.jpg",
+    "name": "Pîrlea Denisa"
 }
 ]
+
