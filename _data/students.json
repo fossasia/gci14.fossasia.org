@@ -1,4 +1,16 @@
-[{
+[
+{
+    "social": {
+        "github": "islamx",
+        "twitter": "IslamNet",
+        "facebook": "IslamNet7",
+        "mail": "Islam.abdelzaher@gmail.com",
+        "link": "piancy.com"
+    },
+    "imgName": "Islam.jpg",
+    "name": "Islam Mohamed Abd Elzaher"
+},
+{
     "social": {
         "mail": "namanyay.goel@gmail.com",
         "github": "namangoel1"
