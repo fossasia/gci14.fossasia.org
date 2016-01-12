@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/fossasia/fossasia.github.io.svg?branch=master)](https://travis-ci.org/fossasia/fossasia.github.io)
+[![Build Status](https://travis-ci.org/fossasia/gci14.fossasia.org.svg?branch=master)](https://travis-ci.org/fossasia/gci14.fossasia.org)
 
 # Fossasia's site for Google Code-in
 
