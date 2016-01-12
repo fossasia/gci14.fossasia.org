@@ -32,11 +32,8 @@ FOSSASIA is one of the few mentoring organizations during Google Code-In this ye
 
 ## Installing GitHub And Adding Images
 
-Check [Installing GitHub And Adding Images wiki page](https://github.com/fossasia/fossasia.github.io/wiki/Installing-GitHub-And-Adding-Images)
+Check [Installing GitHub And Adding Images wiki page](https://github.com/fossasia/gci14.fossasia.org/wiki/Installing-GitHub-And-Adding-Images)
 
 ## Setting up Jekyll locally
 
-Check [Setting up Jekyll locally wiki page](https://github.com/fossasia/fossasia.github.io/wiki/Setting-up-Jekyll-locally)
-
-
-
+Check [Setting up Jekyll locally wiki page](https://github.com/fossasia/gci14.fossasia.org/wiki/Setting-up-Jekyll-locally)
