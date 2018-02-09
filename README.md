@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/fossasia/gci14.fossasia.org.svg?branch=master)](https://travis-ci.org/fossasia/gci14.fossasia.org)
 
-# Fossasia's site for Google Code-in
+# FOSSASIA's site for Google Code-in 2014
+https://gci14.fossasia.org
 
 Google Code-in is an annual contest sponsored by Google, targeted to pre-university students aged 13-17 year olds, to foster an interest in developing for the open source community in them.
 
