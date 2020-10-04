@@ -45,7 +45,6 @@
 
 {
     "social": {
-        "gplus": "vamshiIsavampIrebalanaga",
         "twitter": "fazerlicourice"
     },
     "imgName": "Vamshi.jpg",
@@ -158,7 +157,6 @@
     "social": {
         "facebook": "iamiqram",
         "twitter": "Hossainalikram",
-        "gplus": "HossainAlIkram",
         "github": "hossainalikram"
     },
     "imgName": "ikram.jpg",
@@ -261,8 +259,7 @@
         "github": "ducphanduyagentp",
         "twitter": "i_am_agentp_14",
         "facebook": "ducphanduy.agentp",
-        "mail": "ducphanduy.agentp@gmail.com",
-        "gplus": "pHanducakaptnega"
+        "mail": "ducphanduy.agentp@gmail.com"
     },
     "imgName": "PhanDuyDuc.jpg",
     "name": "Phan Duy Duc" 
@@ -272,8 +269,7 @@
     "social": {                                        
         "facebook": "dhruv.ramani",
         "github": "dhruvramani",
-        "mail": "dhruvramani98@gmail.com",
-        "gplus": "dhRuvramani"
+        "mail": "dhruvramani98@gmail.com"
     },
     "imgName": "Dhruv.JPG",
     "name": "Dhruv Ramani" 
@@ -293,8 +289,7 @@
         "github": "ignaciouy",
         "twitter": "NaChodeTodos",
         "facebook": "ignacio.rodriguez.uy",
-        "mail": "ignacio@sugarlabs.org",
-        "gplus": "ignaCiorodrigUezUy"
+        "mail": "ignacio@sugarlabs.org"
     },
     "imgName": "ignaciouy.jpg",
     "name": "Ignacio Rodríguez" 
@@ -350,8 +345,7 @@
 
 {
     "social": {
-        "github": "DrAlias",
-        "gplus": "AmaanMarfatia"
+        "github": "DrAlias"
     },
     "imgName": "amaan.jpg",
     "name": "Amaan Marfatia" 
@@ -380,7 +374,6 @@
         "twitter": "ToshitaB",
         "facebook": "toshita.barve",
         "mail": "toshibarve@gmail.com",
-    	"gplus": "114406251656770489900",
     	"link": "http://colloquyonbooks.blogspot.in"
     },
     "imgName": "toshitab.jpg",
@@ -410,8 +403,7 @@
         "twitter": "roguedalek",
         "facebook": "lost.astronauts",
         "mail": "izzy.lyseggen@gmail.com",
-		"link": "http://toboldlyfuckingo.tumblr.com/",
-        "gplus": "116118332702372597922"
+		"link": "http://toboldlyfuckingo.tumblr.com/"
     },
     "imgName": "izzylys.jpg",
     "name": "Izzy Lyseggen"
@@ -420,8 +412,7 @@
     "social": {
         "github": "Boquete",
         "facebook": "Piotr Antosz",
-        "mail": "piotrantosz@protonmail.ch",
-        "gplus": "114350813988291002679"
+        "mail": "piotrantosz@protonmail.ch"
     },
     "imgName": "Piotr.jpg",
     "name": "Piotr"

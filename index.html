@@ -181,9 +181,6 @@
                                             {% when 'mail' %}
                                                 {% assign socialPrefix = 'mailto:' %}
                                                 {% assign iconType = 'mail' %}
-                                            {% when 'gplus' %}
-                                                {% assign socialPrefix = 'https://plus.google.com/u/0/' %}
-                                                {% assign iconType = 'gplus' %}
                                             {% else %}
                                                 {% assign socialPrefix = '' %}
                                                 {% assign iconType = 'link' %}
@@ -234,8 +231,6 @@
                                                 {% assign socialPrefix = 'http://facebook.com/' %}
                                             {% when 'mail' %}
                                                 {% assign socialPrefix = 'mailto:' %}
-                                            {% when 'gplus' %}
-                                                {% assign socialPrefix = 'https://plus.google.com/u/0/+' %}
                                             {% else %}
                                                 {% assign socialPrefix = '' %}
                                             {% endcase %}
@@ -313,7 +308,6 @@
                     <div class="social">
                         <a href="https://www.facebook.com/fossasia" class="facebook"></a>
                         <a href="https://twitter.com/fossasia" class="twitter"></a>
-                        <a href="https://plus.google.com/108920596016838318216" class="googleplus"></a>
                         <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" class="linkedin"></a>
                         <a href="https://www.flickr.com/photos/fossasia/" class="flickr"></a>
                         <a href="https://github.com/fossasia" class="github"></a>
